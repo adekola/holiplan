@@ -2,6 +2,8 @@
 
 An MCP server for planning a family's year around school holidays and a limited leave allowance.
 
+<!-- mcp-name: io.github.adekola/holiplan -->
+
 Assistants are good at suggesting destinations and bad at remembering that Whit Monday is a
 public holiday, that five carried-over days expire in June, and that you already said no
 drive over three and a half hours. This server does the parts that should be calculated;
@@ -13,38 +15,30 @@ public and school holidays for a growing list of countries, with no API key.
 ## Status
 
 Pre-release (0.1). Stateless: your ledger is a JSON file you keep, and the server stores nothing.
-See [PRIVACY.md](PRIVACY.md) for exactly what goes where, and
-[docs/examples.md](docs/examples.md) for what a conversation looks like.
-
-## Install
-
-```bash
-git clone https://github.com/adekola/holiplan.git
-cd holiplan
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -e ".[dev]"
-python -m unittest discover -s tests                # no network needed
-```
+See [PRIVACY.md](https://github.com/adekola/holiplan/blob/main/PRIVACY.md) for exactly what goes where, and
+[docs/examples.md](https://github.com/adekola/holiplan/blob/main/docs/examples.md) for what a conversation looks like.
 
 ## Use it in Claude Desktop
 
-Add to `claude_desktop_config.json`:
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then add holiplan to
+`claude_desktop_config.json` and restart Claude:
 
 ```json
 {
   "mcpServers": {
     "holiplan": {
-      "command": "/absolute/path/to/holiplan/.venv/bin/python",
-      "args": ["-m", "holiplan.server"]
+      "command": "uvx",
+      "args": ["holiplan"]
     }
   }
 }
 ```
 
-On Windows the interpreter is `.venv\Scripts\python.exe`.
+`uvx` fetches holiplan from PyPI and runs it; there is nothing else to install. Without uv,
+`pip install holiplan` and use `"command": "holiplan"` with no `args`.
 
 Start with the **Set up my family profile** prompt, which builds a ledger with you one
-question at a time, or copy `examples/ledger.example.json` to `my-ledger.json` and edit it.
+question at a time, or copy [`examples/ledger.example.json`](https://github.com/adekola/holiplan/blob/main/examples/ledger.example.json) to `my-ledger.json` and edit it.
 Tell Claude where the file is, and save the updated ledger whenever Claude hands it back.
 A conversation then looks like:
 
@@ -54,7 +48,7 @@ A conversation then looks like:
 
 > What needs booking next?
 
-[docs/examples.md](docs/examples.md) has these conversations in full, with real figures.
+[docs/examples.md](https://github.com/adekola/holiplan/blob/main/docs/examples.md) has these conversations in full, with real figures.
 
 ## Tools
 
@@ -116,6 +110,20 @@ Prompts: *Set up my family profile*, *Plan my year*, *Plan this holiday window*,
 - [ ] School holiday windows by school type, where the data supports it (Zürich splits
   primary, secondary and vocational; windows already list the types they apply to)
 
+## Development
+
+```bash
+git clone https://github.com/adekola/holiplan.git
+cd holiplan
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -e ".[dev]"
+python -m unittest discover -s tests                # offline
+```
+
+To run your working copy in Claude Desktop, point `command` at the venv's Python
+(`.venv/bin/python`, or `.venv\Scripts\python.exe` on Windows) with
+`"args": ["-m", "holiplan.server"]`.
+
 ## Licence
 
-MIT, see [LICENSE](LICENSE). Holiday data: [OpenHolidays](https://openholidaysapi.org), CC BY 4.0.
+MIT, see [LICENSE](https://github.com/adekola/holiplan/blob/main/LICENSE). Holiday data: [OpenHolidays](https://openholidaysapi.org), CC BY 4.0.
