@@ -22,7 +22,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/adekola/holiplan"
 Issues = "https://github.com/adekola/holiplan/issues"
-Privacy = "https://github.com/adekola/holiplan/blob/master/PRIVACY.md"
+Privacy = "https://github.com/adekola/holiplan/blob/main/PRIVACY.md"
 
 [project.scripts]
 holiplan = "holiplan.server:main"
