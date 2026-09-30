@@ -1,0 +1,598 @@
+{
+ "source": "OpenHolidays (https://openholidaysapi.org), CC BY 4.0, recorded 2026-09-24",
+ "public": [
+  {
+   "id": "013361c4-75d8-44e8-87d6-557aa7cd789f",
+   "startDate": "2026-12-08",
+   "endDate": "2026-12-08",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Immaculate Conception"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "c2d59f2d-d1bf-42b5-bb2b-6fb9ed915025",
+   "startDate": "2026-12-25",
+   "endDate": "2026-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "f4d2c08f-98f5-42fc-b538-1197f90d2291",
+   "startDate": "2026-12-26",
+   "endDate": "2026-12-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "St Stephen's Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "a8827fbc-587a-48b6-8fc9-25a1c9cf2f25",
+   "startDate": "2027-01-01",
+   "endDate": "2027-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "886497b4-fac6-4ba5-a125-5dc21722866c",
+   "startDate": "2027-01-06",
+   "endDate": "2027-01-06",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Epiphany"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "24aeeb53-cf6c-4dff-a037-a9e1b8e1dd17",
+   "startDate": "2027-03-29",
+   "endDate": "2027-03-29",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Monday"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "36b1b0be-724d-48d6-859a-38a172d6d2d4",
+   "startDate": "2027-05-01",
+   "endDate": "2027-05-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Labour Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "ac4284ad-3206-48cb-8210-3cabf0066c80",
+   "startDate": "2027-05-06",
+   "endDate": "2027-05-06",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Ascension Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "7330c90c-2d91-4890-bdd8-9e629123a078",
+   "startDate": "2027-05-17",
+   "endDate": "2027-05-17",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Pentecost Monday"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "fffe381b-c3e8-49a7-8f4e-7e82f66e4542",
+   "startDate": "2027-05-27",
+   "endDate": "2027-05-27",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Corpus Christi"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "bbcfd76e-2f2a-4242-a8e9-45dc605f560c",
+   "startDate": "2027-08-15",
+   "endDate": "2027-08-15",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Assumption Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "4a4acee4-50a5-4922-88ed-96b061dcadbe",
+   "startDate": "2027-10-26",
+   "endDate": "2027-10-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "National Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "4ec3e240-f7ee-45ac-a5d0-72150dce4f0d",
+   "startDate": "2027-11-01",
+   "endDate": "2027-11-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "All Saints' Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "99c0bb93-f225-4820-80b0-db7987075a11",
+   "startDate": "2027-12-08",
+   "endDate": "2027-12-08",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Immaculate Conception"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "8ceee611-65b7-44c5-b845-a53a6186c452",
+   "startDate": "2027-12-25",
+   "endDate": "2027-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "4a0be396-7658-4848-bc48-fcd4eac80f1b",
+   "startDate": "2027-12-26",
+   "endDate": "2027-12-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "St Stephen's Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "59758ad8-eb61-4599-bbc4-917b5c4bc2b5",
+   "startDate": "2028-01-01",
+   "endDate": "2028-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "ae3701d5-fb44-48c6-ad43-af11f6d7f28c",
+   "startDate": "2028-01-06",
+   "endDate": "2028-01-06",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Epiphany"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  }
+ ],
+ "school": [
+  {
+   "id": "38c3ddb0-251c-499e-b75a-aaeee7658080",
+   "startDate": "2026-12-24",
+   "endDate": "2027-01-06",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "9c8bb84f-2ddd-4cf6-bbb3-f5f9c0d233a6",
+   "startDate": "2027-01-30",
+   "endDate": "2027-02-06",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Semester Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "AT-NÖ",
+     "shortName": "NÖ"
+    },
+    {
+     "code": "AT-WI",
+     "shortName": "WI"
+    }
+   ],
+   "tags": [
+    "Provisional"
+   ]
+  },
+  {
+   "id": "1362d499-5a0d-415b-a139-7d7b1949b408",
+   "startDate": "2027-03-20",
+   "endDate": "2027-03-29",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Holidays"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "8cfd7234-afa1-4569-93e0-0069a03b1bc0",
+   "startDate": "2027-05-15",
+   "endDate": "2027-05-17",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Pentecost Holidays"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "eed130d6-f19c-4daf-b2e8-da1fbbd05e55",
+   "startDate": "2027-07-03",
+   "endDate": "2027-09-05",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "AT-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "AT-NÖ",
+     "shortName": "NÖ"
+    },
+    {
+     "code": "AT-WI",
+     "shortName": "WI"
+    }
+   ],
+   "tags": [
+    "Provisional"
+   ]
+  },
+  {
+   "id": "e01b8cae-db57-4a67-9d80-d578589ab6a2",
+   "startDate": "2027-10-27",
+   "endDate": "2027-10-31",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn Holidays"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "42d63b0f-b1b5-468f-b142-c496a14a106f",
+   "startDate": "2027-11-02",
+   "endDate": "2027-11-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "All Souls' Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "51c3f837-2909-48b8-a81a-4aa8c61a03f7",
+   "startDate": "2027-11-15",
+   "endDate": "2027-11-15",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Saint Leopold's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "AT-NÖ",
+     "shortName": "NÖ"
+    },
+    {
+     "code": "AT-WI",
+     "shortName": "WI"
+    }
+   ]
+  },
+  {
+   "id": "4203faf1-4379-4194-a1e5-ac52506b3bc8",
+   "startDate": "2027-12-24",
+   "endDate": "2028-01-06",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  }
+ ],
+ "subdivisions": [
+  {
+   "code": "AT-BL",
+   "isoCode": "AT-1",
+   "shortName": "BL",
+   "name": [
+    {
+     "language": "DE",
+     "text": "Burgenland"
+    },
+    {
+     "language": "EN",
+     "text": "Burgenland"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "AT-KÄ",
+   "isoCode": "AT-2",
+   "shortName": "KÄ",
+   "name": [
+    {
+     "language": "DE",
+     "text": "Kärnten"
+    },
+    {
+     "language": "EN",
+     "text": "Carinthia"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "AT-NÖ",
+   "isoCode": "AT-3",
+   "shortName": "NÖ",
+   "name": [
+    {
+     "language": "DE",
+     "text": "Niederösterreich"
+    },
+    {
+     "language": "EN",
+     "text": "Lower Austria"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "AT-OÖ",
+   "isoCode": "AT-4",
+   "shortName": "OÖ",
+   "name": [
+    {
+     "language": "DE",
+     "text": "Oberösterreich"
+    },
+    {
+     "language": "EN",
+     "text": "Upper Austria"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "AT-SB",
+   "isoCode": "AT-5",
+   "shortName": "SB",
+   "name": [
+    {
+     "language": "DE",
+     "text": "Salzburg"
+    },
+    {
+     "language": "EN",
+     "text": "Salzburg"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "AT-SM",
+   "isoCode": "AT-6",
+   "shortName": "SM",
+   "name": [
+    {
+     "language": "DE",
+     "text": "Steiermark"
+    },
+    {
+     "language": "EN",
+     "text": "Styria"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "AT-TI",
+   "isoCode": "AT-7",
+   "shortName": "TI",
+   "name": [
+    {
+     "language": "DE",
+     "text": "Tirol"
+    },
+    {
+     "language": "EN",
+     "text": "Tyrol"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "AT-VA",
+   "isoCode": "AT-8",
+   "shortName": "VA",
+   "name": [
+    {
+     "language": "DE",
+     "text": "Vorarlberg"
+    },
+    {
+     "language": "EN",
+     "text": "Vorarlberg"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "AT-WI",
+   "isoCode": "AT-9",
+   "shortName": "WI",
+   "name": [
+    {
+     "language": "DE",
+     "text": "Wien"
+    },
+    {
+     "language": "EN",
+     "text": "Vienna"
+    }
+   ],
+   "children": []
+  }
+ ]
+}

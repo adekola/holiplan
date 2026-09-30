@@ -1,0 +1,95 @@
+{
+  "schema_version": "1",
+  "profile": {
+    "country": "DE",
+    "region": "DE-BY",
+    "home": "Regensburg",
+    "max_leg_minutes": 240,
+    "children": [
+      {
+        "alias": "older",
+        "interests": [
+          "swimming",
+          "castles",
+          "drawing"
+        ]
+      },
+      {
+        "alias": "younger",
+        "interests": [
+          "horses"
+        ]
+      }
+    ],
+    "leave": [
+      {
+        "year": 2027,
+        "allowance": 26,
+        "carryover": 5,
+        "carryover_expires": "2027-06-30"
+      }
+    ],
+    "visited": [
+      "Salzburg",
+      "Lake Constance"
+    ],
+    "excluded": [
+      "Paris"
+    ]
+  },
+  "trips": [
+    {
+      "id": "feb-home",
+      "label": "Fasching week at home",
+      "start": "2027-02-08",
+      "end": "2027-02-12",
+      "intent": "home",
+      "status": "locked"
+    },
+    {
+      "id": "easter",
+      "label": "Lake Garda",
+      "start": "2027-03-20",
+      "end": "2027-03-29",
+      "destination": "Lake Garda",
+      "status": "booked",
+      "bookings": [
+        {
+          "what": "accommodation",
+          "status": "booked",
+          "cancel_by": "2027-03-01"
+        }
+      ]
+    },
+    {
+      "id": "pentecost",
+      "label": "Black Forest",
+      "start": "2027-05-16",
+      "end": "2027-05-23",
+      "destination": "Black Forest",
+      "status": "locked",
+      "bookings": [
+        {
+          "what": "accommodation",
+          "status": "todo",
+          "book_by": "2027-02-01"
+        }
+      ]
+    },
+    {
+      "id": "wedding",
+      "label": "Cousin's wedding",
+      "start": "2027-05-27",
+      "end": "2027-05-30",
+      "destination": "Hamburg",
+      "intent": "obligation",
+      "status": "booked",
+      "bookings": [
+        {
+          "what": "accommodation",
+          "status": "booked"
+        }
+      ]
+    }
+  ]
+}

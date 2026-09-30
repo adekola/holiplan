@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:holiplan:ledger:1",
+  "title": "Family holiday ledger",
+  "description": "The family's whole plan. Optional fields may be null, which is how the server writes them back.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "profile", "trips"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1" },
+    "profile": { "$ref": "#/$defs/profile" },
+    "trips": { "type": "array", "items": { "$ref": "#/$defs/trip" } }
+  },
+  "$defs": {
+    "profile": {
+      "title": "Family profile",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["country"],
+      "properties": {
+        "country": { "type": "string", "pattern": "^[A-Z]{2}$", "description": "ISO 3166-1 alpha-2" },
+        "region": {
+          "type": ["string", "null"],
+          "description": "Subdivision, e.g. DE-BY; OpenHolidays' own code (AT-WI) or the ISO code (AT-9)"
+        },
+        "home": { "type": ["string", "null"], "description": "Home town, or lat,lon" },
+        "max_leg_minutes": { "type": ["integer", "null"], "minimum": 0 },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["alias"],
+            "properties": {
+              "alias": { "type": "string", "description": "Never a real name" },
+              "birth_year": { "type": ["integer", "null"] },
+              "interests": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "day_pattern": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "workdays": {
+              "type": "array",
+              "items": { "type": "integer", "minimum": 0, "maximum": 6 },
+              "description": "Weekdays worked, Monday = 0"
+            },
+            "half_days": {
+              "type": "array",
+              "items": { "type": "string", "pattern": "^\\d{2}-\\d{2}$" },
+              "description": "MM-DD days that cost half a day of leave, e.g. 12-24"
+            }
+          }
+        },
+        "leave": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["year", "allowance"],
+            "properties": {
+              "year": { "type": "integer" },
+              "allowance": { "type": "number" },
+              "carryover": { "type": "number" },
+              "carryover_expires": { "type": ["string", "null"], "format": "date" }
+            }
+          }
+        },
+        "visited": { "type": "array", "items": { "type": "string" } },
+        "excluded": { "type": "array", "items": { "type": "string" } },
+        "local_holidays": {
+          "enum": ["auto", "include", "exclude"],
+          "default": "auto",
+          "description": "Whether holidays covering only part of the region (e.g. Augsburg's Peace Festival in DE-BY) count as days off. auto keeps those observed in `home`, or all of them when `home` is missing or coordinates"
+        },
+        "ignore_holidays": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^\\d{2}-\\d{2}$" },
+          "description": "MM-DD dates to treat as workdays although the data lists them for the whole region, e.g. 08-15 outside Catholic-majority Bavarian towns"
+        }
+      }
+    },
+    "trip": {
+      "title": "Trip, or any other plan for a stretch of days",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "start", "end"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "start": { "type": "string", "format": "date" },
+        "end": { "type": "string", "format": "date", "description": "Inclusive" },
+        "intent": { "enum": ["trip", "home", "camp", "obligation"] },
+        "status": { "enum": ["idea", "locked", "booked", "cancelled"] },
+        "destination": { "type": ["string", "null"] },
+        "window": { "type": ["string", "null"] },
+        "takes_leave": { "type": ["boolean", "null"], "description": "Override; defaults from intent" },
+        "notes": { "type": ["string", "null"] },
+        "bookings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["what"],
+            "properties": {
+              "what": { "type": "string" },
+              "status": { "enum": ["todo", "booked"] },
+              "reference": { "type": ["string", "null"] },
+              "book_by": { "type": ["string", "null"], "format": "date" },
+              "cancel_by": { "type": ["string", "null"], "format": "date" },
+              "note": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    }
+  }
+}

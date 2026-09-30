@@ -1,0 +1,38 @@
+[project]
+name = "holiplan"
+version = "0.1.0"
+description = "MCP server for planning a family's year around school holidays and a limited leave allowance"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "adekola" }]
+keywords = ["mcp", "model-context-protocol", "school holidays", "annual leave", "family", "bridge days"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Scheduling",
+]
+dependencies = [
+    "mcp>=2,<3",
+    "httpx>=0.27",
+]
+
+[project.urls]
+Homepage = "https://github.com/adekola/holiplan"
+Issues = "https://github.com/adekola/holiplan/issues"
+Privacy = "https://github.com/adekola/holiplan/blob/master/PRIVACY.md"
+
+[project.scripts]
+holiplan = "holiplan.server:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/holiplan"]
