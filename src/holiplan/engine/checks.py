@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from collections.abc import Set as AbstractSet
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date, timedelta
 
 from .leave import year_budget
@@ -84,10 +84,22 @@ def describe_window(
 
 @dataclass
 class Issue:
+    """One problem with the plan.
+
+    `message` is an English sentence for assistants. Front ends that word issues
+    themselves use `code` and `params` instead:
+
+    - bad_dates, overlap, outside_school_window: the trips are in `trip_ids`
+    - no_leave_account: `years` without a leave account
+    - over_budget: `year`, `days` over
+    - carryover_at_risk: `year`, `days` at risk, the date they `expires`
+    """
+
     level: str  # "error" | "warning"
     code: str
     message: str
     trip_ids: list[str]
+    params: dict = field(default_factory=dict)
 
     def as_dict(self) -> dict:
         return self.__dict__.copy()
@@ -143,16 +155,17 @@ def validate_ledger(
                         "no_leave_account",
                         f"{trip.label} takes leave in {years}, which has no leave account.",
                         [trip.id],
+                        {"years": missing},
                     )
                 )
         for account in ledger.profile.leave:
             budget = year_budget(
                 ledger, account.year, public_holidays, half_holidays=half_holidays
             )
-            for warning in budget.warnings:
-                level = "error" if warning.startswith("Over budget") else "warning"
-                code = "over_budget" if level == "error" else "carryover_at_risk"
-                issues.append(Issue(level, code, warning, []))
+            for notice, message in zip(budget.notices, budget.warnings):
+                issues.append(
+                    Issue(notice["level"], notice["code"], message, [], notice["params"])
+                )
 
     if windows:
         pattern = ledger.profile.day_pattern if ledger.profile else None
@@ -199,6 +212,8 @@ def deadlines(ledger: Ledger, today: date | None = None) -> list[dict]:
                         "due": booking.book_by,
                         "kind": "book_by",
                         "trip_id": trip.id,
+                        "trip_label": trip.label,
+                        "what": booking.what,
                         "message": f"Book {booking.what} for {trip.label}.",
                         "overdue": date.fromisoformat(booking.book_by) < today,
                     }
@@ -209,6 +224,8 @@ def deadlines(ledger: Ledger, today: date | None = None) -> list[dict]:
                         "due": booking.cancel_by,
                         "kind": "cancel_by",
                         "trip_id": trip.id,
+                        "trip_label": trip.label,
+                        "what": booking.what,
                         "message": (
                             f"Free cancellation for {booking.what} "
                             f"({trip.label}) ends {booking.cancel_by}."
@@ -223,6 +240,8 @@ def deadlines(ledger: Ledger, today: date | None = None) -> list[dict]:
                     "due": trip.start,
                     "kind": "unbooked",
                     "trip_id": trip.id,
+                    "trip_label": trip.label,
+                    "what": None,
                     "message": f"{trip.label} has no bookings recorded.",
                     "overdue": trip.start_date < today,
                 }

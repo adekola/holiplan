@@ -92,6 +92,11 @@ def leave_cost(
     )
 
 
+def _days(n: float) -> str:
+    """A day count for a sentence: 4, not 4.0; 4.5 stays 4.5."""
+    return f"{n:g}"
+
+
 @dataclass
 class YearBudget:
     year: int
@@ -102,7 +107,11 @@ class YearBudget:
     carryover_used_before_expiry: float
     remaining: float
     carryover_at_risk: float
-    warnings: list[str]
+    warnings: list[str]  # English sentences, one per notice
+    # The same, structured: {"level", "code", "params"} for front ends that word
+    # them themselves (in another language, say). Codes: over_budget (error;
+    # days), carryover_at_risk (warning; days, expires).
+    notices: list[dict]
 
     def as_dict(self) -> dict:
         return self.__dict__.copy()
@@ -153,12 +162,23 @@ def year_budget(
     at_risk = round(account.carryover - carryover_used, 2)
     remaining = round(account.allowance + account.carryover - planned, 2)
 
+    notices: list[dict] = []
     if remaining < 0:
-        warnings.append(f"Over budget by {abs(remaining)} days.")
+        warnings.append(f"Over budget by {_days(abs(remaining))} days.")
+        notices.append(
+            {"level": "error", "code": "over_budget", "params": {"year": year, "days": abs(remaining)}}
+        )
     if at_risk > 0 and expiry:
         warnings.append(
-            f"{at_risk} carried-over day(s) expire on {expiry.isoformat()} "
+            f"{_days(at_risk)} carried-over day(s) expire on {expiry.isoformat()} "
             "and no planned trip uses them."
+        )
+        notices.append(
+            {
+                "level": "warning",
+                "code": "carryover_at_risk",
+                "params": {"year": year, "days": at_risk, "expires": expiry.isoformat()},
+            }
         )
 
     return YearBudget(
@@ -171,4 +191,5 @@ def year_budget(
         remaining=remaining,
         carryover_at_risk=at_risk,
         warnings=warnings,
+        notices=notices,
     )

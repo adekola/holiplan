@@ -121,9 +121,13 @@ that would make an older ledger read differently needs `SCHEMA_VERSION` bumped a
   Year costs each year only its own days. A trip that takes leave in a year with no `LeaveAccount`
   gets a `no_leave_account` warning.
 - **Carryover** is spent first, but only by trips ending on or before `carryover_expires`. Anything
-  left becomes `carryover_at_risk`. `validate_ledger` turns budget warnings into issues by string
-  prefix (`"Over budget"` means error `over_budget`, anything else is warning `carryover_at_risk`),
-  so changing warning text in `year_budget` changes issue classification.
+  left becomes `carryover_at_risk`.
+- **Every warning comes twice: an English `message` and a `code` with `params`.** Assistants read
+  the message; the web app words the code in German or English. `year_budget` emits `notices`
+  (aligned one-to-one with `warnings`), `validate_ledger` turns them into issues, and deadlines
+  carry `what` and `trip_label` beside their message. The codes and their params are listed on
+  `checks.Issue`. When adding a warning, add the code and params too, and never derive one
+  from the other's wording.
 - **`effective_window`** stretches an official school window outwards over adjacent weekends and
   public holidays (Whit Monday before Bavaria's Pentecost window), capped at `_MAX_STRETCH` days.
   It drives the `outside_school_window` warning, which applies only to intent `trip`.

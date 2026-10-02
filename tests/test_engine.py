@@ -205,6 +205,15 @@ class BudgetTests(unittest.TestCase):
         budget = year_budget(Ledger.from_dict(data), 2027, DE_BY_2027, half_holidays={"2027-03-23"})
         self.assertEqual(budget.planned, 3.5)
 
+    def test_notices_carry_codes_and_values_for_other_languages(self):
+        data = {**LEDGER, "trips": [LEDGER["trips"][3]]}  # only the May obligation
+        budget = year_budget(Ledger.from_dict(data), 2027, DE_BY_2027)
+        self.assertEqual(
+            budget.notices,
+            [{"level": "warning", "code": "carryover_at_risk", "params": {"year": 2027, "days": 4, "expires": "2027-06-30"}}],
+        )
+        self.assertEqual(len(budget.notices), len(budget.warnings))
+
     def test_over_budget_is_flagged(self):
         data = {
             **LEDGER,
@@ -216,6 +225,14 @@ class BudgetTests(unittest.TestCase):
 
 
 class LedgerCheckTests(unittest.TestCase):
+    def test_budget_issues_come_from_notices_not_wording(self):
+        # Allowance 5 against 9 planned; the 5 carried over are used before June.
+        data = {**LEDGER, "profile": {**LEDGER["profile"], "leave": [{"year": 2027, "allowance": 0, "carryover": 5, "carryover_expires": "2027-06-30"}]}}
+        issues = validate_ledger(Ledger.from_dict(data), DE_BY_2027)
+        over = [i for i in issues if i["code"] == "over_budget"]
+        self.assertEqual([(i["level"], i["params"]) for i in over], [("error", {"year": 2027, "days": 4})])
+        self.assertEqual(over[0]["message"], "Over budget by 4 days.")
+
     def test_clean_ledger_has_no_errors(self):
         issues = validate_ledger(Ledger.from_dict(LEDGER), DE_BY_2027)
         self.assertEqual([i for i in issues if i["level"] == "error"], [])
@@ -251,6 +268,13 @@ class LedgerCheckTests(unittest.TestCase):
 
         self.assertFalse(flagged("2027-03-20"))  # Saturday
         self.assertTrue(flagged("2027-03-19"))  # Friday, a school day
+
+    def test_deadlines_carry_their_parts(self):
+        items = deadlines(Ledger.from_dict(LEDGER), today=date(2027, 1, 15))
+        self.assertEqual(
+            [(i["kind"], i["what"], i["trip_label"]) for i in items],
+            [("book_by", "accommodation", "Black Forest"), ("cancel_by", "accommodation", "Lake Garda")],
+        )
 
     def test_home_week_needs_nothing_booked(self):
         items = deadlines(Ledger.from_dict(LEDGER), today=date(2027, 1, 15))
@@ -384,6 +408,7 @@ class NewYearTests(unittest.TestCase):
         missing = [i for i in issues if i["code"] == "no_leave_account"]
         self.assertEqual(len(missing), 1)
         self.assertIn("2028", missing[0]["message"])
+        self.assertEqual(missing[0]["params"], {"years": [2028]})
 
     def test_no_warning_when_every_year_has_an_account(self):
         issues = validate_ledger(self.ledger([2027, 2028]), NEW_YEAR_HOLIDAYS)
