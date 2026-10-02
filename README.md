@@ -14,7 +14,7 @@ public and school holidays for a growing list of countries, with no API key.
 
 ## Status
 
-Pre-release (0.1). Stateless: your ledger is a JSON file you keep, and the server stores nothing.
+Pre-release (0.2). Stateless: your ledger is a JSON file you keep, and the server stores nothing.
 See [PRIVACY.md](https://github.com/adekola/holiplan/blob/main/PRIVACY.md) for exactly what goes where, and
 [docs/examples.md](https://github.com/adekola/holiplan/blob/main/docs/examples.md) for what a conversation looks like.
 
