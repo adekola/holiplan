@@ -100,6 +100,17 @@ class ValidAgainstSchemaTests(unittest.TestCase):
         self.assertEqual([a.year for a in ledger.profile.leave], [2027, 2028])
 
 
+class ServiceTests(unittest.TestCase):
+    def test_service_does_not_need_the_mcp_sdk(self):
+        # Other front ends (the web API) call holiplan.service without MCP.
+        import subprocess
+
+        code = "import sys, holiplan.service; print('mcp' in sys.modules)"
+        env = {**__import__("os").environ, "PYTHONPATH": str(ROOT / "src")}
+        out = subprocess.run([sys.executable, "-c", code], capture_output=True, text=True, env=env, check=True)
+        self.assertEqual(out.stdout.strip(), "False")
+
+
 @unittest.skipIf(server is None, "mcp is not installed")
 class ServedTests(unittest.TestCase):
     def run_async(self, coroutine):

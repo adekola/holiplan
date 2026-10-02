@@ -45,13 +45,19 @@ Two layers with a hard boundary:
   `HolidayDataUnavailable` with a message an assistant can relay; a 4xx becomes a `ValueError`
   about the input. It also owns the data-shaped logic: `resolve_region`, `is_local`, `covers`,
   `locate`, `is_half_day`, and `holiday_dates` (which filters by all of them).
-- **`src/holiplan/server.py`**: the MCP surface. Each tool resolves its region, fetches what it
-  needs, parses the ledger into models, calls the engine and returns plain dicts. Shared helpers:
-  `_holiday_set` returns `(full, half)` holiday sets filtered by the profile's local-holiday
-  settings; `_padded` widens a year range by a month either side, because windows stretch over
-  holidays just past them (Christmas into January); `_school_windows` merges the per-school-type
-  repeats the data contains; `_described_windows` adds effective dates and sizes; `_validate`
+- **`src/holiplan/service.py`**: the operations, for every front end (the MCP server here, the
+  private web app's API). JSON-shaped dicts in and out; no MCP import, so other front ends don't
+  need the SDK (a test enforces this). Each operation resolves its region, fetches what it needs,
+  parses the ledger into models, calls the engine and returns plain dicts. Shared helpers:
+  `holiday_sets` returns `(full, half)` holiday sets filtered by the profile's local-holiday
+  settings; `padded` widens a year range by a month either side, because windows stretch over
+  holidays just past them (Christmas into January); `school_windows` merges the per-school-type
+  repeats the data contains; `described_windows` adds effective dates and sizes; `_validate`
   backs `check_ledger` and `upsert_trip`, and falls back to date-only checks without a profile.
+  Names follow an optional `language` ("EN", "DE"); the engine never sees them.
+- **`src/holiplan/server.py`**: the MCP surface only: one-line tools that call `service`, plus
+  resources and prompts. Tool docstrings are what assistants read, so wording changes there are
+  behaviour changes. Put new logic in `service`, not here.
 
 The server is built on **MCP SDK v2** (`mcp>=2,<3`): `from mcp.server.mcpserver import MCPServer`.
 Do not use the v1 `FastMCP` import. Tools are registered with `@_tool`, not `@mcp.tool()`: SDK v2

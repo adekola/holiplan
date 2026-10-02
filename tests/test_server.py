@@ -111,6 +111,18 @@ class ServerTests(StubbedHolidays):
         with self.assertRaisesRegex(ToolError, "not responding"):
             server.calculate_leave_cost("2027-03-22", "2027-03-26", "DE", "DE-BY")
 
+    def test_names_come_in_the_requested_language(self):
+        result = server.get_holiday_windows("DE", 2027, "DE-BY", language="de")
+        self.assertEqual(result["language"], "DE")
+        self.assertEqual(self.public.call_args.args[4], "DE")
+        self.assertEqual(self.school.call_args.args[4], "DE")
+        server.summarise_plan(LEDGER, today="2027-01-15", language="DE")
+        self.assertEqual(self.school.call_args.args[4], "DE")
+
+    def test_bad_language_is_explained(self):
+        with self.assertRaisesRegex(ToolError, "two-letter code"):
+            server.get_holiday_windows("DE", 2027, "DE-BY", language="German")
+
     def test_holiday_windows_are_shaped_for_the_assistant(self):
         result = server.get_holiday_windows("DE", 2027, "DE-BY")
         self.assertEqual(
