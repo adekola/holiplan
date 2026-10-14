@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0
+
+- **Calendar to-dos in German.** `export_ics` (and `holiplan.service.calendar`) take an optional
+  `language`; booking and cancellation to-dos are worded in German for `"DE"`, English otherwise.
+  Trip names stay as the user wrote them.
+- To-do UIDs are now built from the deadline itself (kind, trip, what), not its wording, so
+  switching language updates a calendar's to-dos instead of duplicating them. Calendars that
+  imported an earlier export see each to-do replaced once.
+
 ## 0.2.0
 
 For MCP users nothing breaks: tools, arguments and outputs are unchanged, with new fields

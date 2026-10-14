@@ -168,12 +168,13 @@ def summarise_plan(ledger: dict, today: str | None = None, language: str = "EN")
 
 
 @_tool
-def export_ics(ledger: dict, include_deadlines: bool = True) -> str:
+def export_ics(ledger: dict, include_deadlines: bool = True, language: str = "EN") -> str:
     """The ledger as an .ics calendar file the user can import.
 
-    Returns file contents -- tell the user to save it and import it.
+    Returns file contents -- tell the user to save it and import it. Booking
+    to-dos are worded in `language` ("EN" or "DE").
     """
-    return service.calendar(ledger, include_deadlines)
+    return service.calendar(ledger, include_deadlines, language)
 
 
 @mcp.resource("holiplan://schema/ledger", mime_type="application/schema+json")

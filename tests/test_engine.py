@@ -361,6 +361,16 @@ class IcsTests(unittest.TestCase):
         unfolded = text.replace("\r\n ", "")
         self.assertIn("DESCRIPTION:" + "Wörthersee über Brücken " * 8, unfolded)
 
+    def test_todos_are_worded_in_the_chosen_language(self):
+        english = to_ics(Ledger.from_dict(LEDGER))
+        german = to_ics(Ledger.from_dict(LEDGER), language="DE")
+        self.assertIn("SUMMARY:Book accommodation for Black Forest", english)
+        self.assertIn("SUMMARY:accommodation für Black Forest buchen", german)
+        self.assertIn("SUMMARY:Kostenlose Stornierung endet: accommodation (Lake Garda)", german)
+        # Same to-dos either way: a calendar switching language updates, not duplicates.
+        uids = lambda text: sorted(l for l in text.split("\r\n") if l.startswith("UID:deadline-"))
+        self.assertEqual(uids(english), uids(german))
+
     def test_deadline_uids_are_stable_and_unique(self):
         def uids(ledger: dict) -> list[str]:
             text = to_ics(Ledger.from_dict(ledger))

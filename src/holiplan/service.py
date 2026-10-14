@@ -307,9 +307,9 @@ def summarise_plan(ledger: dict, today: str | None = None, language: str = "EN")
     return summary.summarise(parsed, full, windows, as_of, half)
 
 
-def calendar(ledger: dict, include_deadlines: bool = True) -> str:
-    """The ledger as .ics file contents."""
-    return ics.to_ics(Ledger.from_dict(ledger), include_deadlines)
+def calendar(ledger: dict, include_deadlines: bool = True, language: str = "EN") -> str:
+    """The ledger as .ics file contents, to-dos worded in `language`."""
+    return ics.to_ics(Ledger.from_dict(ledger), include_deadlines, language_code(language))
 
 
 # The ledger contract

@@ -36,13 +36,27 @@ def _fold(line: str) -> str:
     return "\r\n".join(lines)
 
 
+# How a deadline reads as a calendar to-do, per language; others fall back to English.
+TODO_TEXT = {
+    "EN": {"book_by": "Book {what} for {trip}", "cancel_by": "Free cancellation ends: {what} ({trip})"},
+    "DE": {"book_by": "{what} für {trip} buchen", "cancel_by": "Kostenlose Stornierung endet: {what} ({trip})"},
+}
+
+
 def _deadline_uid(item: dict) -> str:
-    """Stable across exports, so re-importing updates a VTODO instead of duplicating it."""
-    key = f"{item['kind']}|{item['trip_id']}|{item['message']}".encode("utf-8")
+    """Stable across exports and languages, so re-importing updates a VTODO instead of
+    duplicating it. Built from what the deadline is about, not from its wording."""
+    key = f"{item['kind']}|{item['trip_id']}|{item['what']}".encode("utf-8")
     return f"deadline-{hashlib.sha1(key).hexdigest()[:16]}@holiplan"
 
 
-def to_ics(ledger: Ledger, include_deadlines: bool = True) -> str:
+def to_ics(ledger: Ledger, include_deadlines: bool = True, language: str = "EN") -> str:
+    """The ledger as .ics: an all-day event per trip, a to-do per booking deadline.
+
+    Trip names and destinations are the user's own words; the to-dos are worded
+    in `language` ("EN" or "DE"; anything else gets English).
+    """
+    words = TODO_TEXT.get(language.upper(), TODO_TEXT["EN"])
     from .checks import deadlines as compute_deadlines
 
     lines = [
@@ -83,7 +97,7 @@ def to_ics(ledger: Ledger, include_deadlines: bool = True) -> str:
                 f"UID:{_deadline_uid(item)}",
                 f"DTSTAMP:{_stamp()}",
                 f"DUE;VALUE=DATE:{date.fromisoformat(item['due']).strftime('%Y%m%d')}",
-                _fold(f"SUMMARY:{_esc(item['message'])}"),
+                _fold(f"SUMMARY:{_esc(words[item['kind']].format(what=item['what'], trip=item['trip_label']))}"),
                 "END:VTODO",
             ]
 
