@@ -1,0 +1,1082 @@
+{
+ "source": "OpenHolidays (https://openholidaysapi.org), CC BY 4.0, recorded 2026-10-27",
+ "public": [
+  {
+   "id": "b37c8536-925e-455c-9e61-8e2b984a74d1",
+   "startDate": "2026-12-25",
+   "endDate": "2026-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "fafc28cf-c8fc-4290-97b0-99904f920d4f",
+   "startDate": "2026-12-26",
+   "endDate": "2026-12-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "2nd Day of Christmas"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "a9951b88-fbfa-4634-8b80-39c60abb2a0c",
+   "startDate": "2027-01-01",
+   "endDate": "2027-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "f5967e35-9fbb-4cd9-ae3d-622f6cf90028",
+   "startDate": "2027-03-26",
+   "endDate": "2027-03-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Good Friday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "fcd0558e-3e01-4902-b785-d8bd45baba24",
+   "startDate": "2027-03-29",
+   "endDate": "2027-03-29",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Monday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "5dce4648-d6e6-400a-936e-b85edbf85622",
+   "startDate": "2027-05-01",
+   "endDate": "2027-05-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Labour Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "889b46cc-0934-44a1-9468-d88f880acc94",
+   "startDate": "2027-05-06",
+   "endDate": "2027-05-06",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Ascension Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "689daf70-cc0e-44d6-a501-8a17d4a551dc",
+   "startDate": "2027-05-17",
+   "endDate": "2027-05-17",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Pentecost Monday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "3e88b5c4-993a-4bd1-9f9a-149545598bc6",
+   "startDate": "2027-10-03",
+   "endDate": "2027-10-03",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Day of German Unity"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "d56e42d5-08a0-471e-a3c5-ee5922a6a91c",
+   "startDate": "2027-10-31",
+   "endDate": "2027-10-31",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Reformation Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "DE-ST",
+     "shortName": "ST"
+    },
+    {
+     "code": "DE-HH",
+     "shortName": "HH"
+    },
+    {
+     "code": "DE-HB",
+     "shortName": "HB"
+    },
+    {
+     "code": "DE-TH",
+     "shortName": "TH"
+    },
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    },
+    {
+     "code": "DE-SN",
+     "shortName": "SN"
+    },
+    {
+     "code": "DE-NI",
+     "shortName": "NI"
+    },
+    {
+     "code": "DE-BB",
+     "shortName": "BB"
+    }
+   ]
+  },
+  {
+   "id": "ba7542be-fca8-427b-ac2d-797470860c62",
+   "startDate": "2027-12-25",
+   "endDate": "2027-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "ee8fc25d-db77-48d9-a74f-6374d74642fa",
+   "startDate": "2027-12-26",
+   "endDate": "2027-12-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "2nd Day of Christmas"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "286433c6-b1ce-4835-b16a-95f6dbf28e11",
+   "startDate": "2028-01-01",
+   "endDate": "2028-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  }
+ ],
+ "school": [
+  {
+   "id": "74875362-e705-4227-94bf-4232f6df2903",
+   "startDate": "2026-12-21",
+   "endDate": "2027-01-06",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "61a1f854-0863-47fe-a21d-25f12a4edec2",
+   "startDate": "2027-03-30",
+   "endDate": "2027-04-10",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "5c72cce9-3058-4f4e-9bef-82cd4c1eca9e",
+   "startDate": "2027-05-07",
+   "endDate": "2027-05-07",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Ascension"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "4743f7af-800d-4d0b-afb2-2e07fa82d13b",
+   "startDate": "2027-07-03",
+   "endDate": "2027-08-14",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "9aa4c32e-e8f8-4a8e-80ea-5b83bda3b448",
+   "startDate": "2027-07-03",
+   "endDate": "2027-08-07",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ],
+   "comment": [
+    {
+     "language": "EN",
+     "text": "Islands Sylt, Föhr, Amrum, Helgoland and the Halligen"
+    }
+   ],
+   "tags": [
+    "Exception"
+   ]
+  },
+  {
+   "id": "4e2c2a5c-4a71-4c3e-98cb-1eb269431519",
+   "startDate": "2027-10-04",
+   "endDate": "2027-10-23",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ],
+   "comment": [
+    {
+     "language": "EN",
+     "text": "Islands Sylt, Föhr, Amrum, Helgoland and the Halligen"
+    }
+   ],
+   "tags": [
+    "Exception"
+   ]
+  },
+  {
+   "id": "377af68e-2c15-458a-ac42-bdc8354ac6dd",
+   "startDate": "2027-10-11",
+   "endDate": "2027-10-23",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "ed341123-ee3c-478a-9dea-ffbbf460b8d3",
+   "startDate": "2027-12-23",
+   "endDate": "2028-01-08",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "89cf029f-a702-40d2-a462-a11ad3a92f4c",
+   "startDate": "2028-04-03",
+   "endDate": "2028-04-15",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "5774e099-8873-4e9a-a744-19a2664f325d",
+   "startDate": "2028-05-26",
+   "endDate": "2028-05-26",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Ascension"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "678de58c-7267-419c-8d49-6dbac21e490a",
+   "startDate": "2028-06-24",
+   "endDate": "2028-08-04",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "6a3fda5f-6c73-4f3a-b85a-84792ab399e0",
+   "startDate": "2028-06-24",
+   "endDate": "2028-07-28",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ],
+   "comment": [
+    {
+     "language": "EN",
+     "text": "Islands Sylt, Föhr, Amrum, Helgoland and the Halligen"
+    }
+   ],
+   "tags": [
+    "Exception"
+   ]
+  },
+  {
+   "id": "3c83cf6f-154c-412c-baa7-15d6099c589e",
+   "startDate": "2028-10-09",
+   "endDate": "2028-10-30",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ],
+   "comment": [
+    {
+     "language": "EN",
+     "text": "Islands Sylt, Föhr, Amrum, Helgoland and the Halligen"
+    }
+   ],
+   "tags": [
+    "Exception"
+   ]
+  },
+  {
+   "id": "d4c682e4-c864-432e-8108-bb8518f46556",
+   "startDate": "2028-10-16",
+   "endDate": "2028-10-30",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  },
+  {
+   "id": "1314c1d4-675b-428b-a240-2930c4567973",
+   "startDate": "2028-12-21",
+   "endDate": "2029-01-05",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    }
+   ]
+  }
+ ],
+ "subdivisions": [
+  {
+   "code": "DE-BB",
+   "isoCode": "DE-BB",
+   "shortName": "BB",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Brandenburg"
+    },
+    {
+     "language": "EN",
+     "text": "Brandenburg"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-BE",
+   "isoCode": "DE-BE",
+   "shortName": "BE",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Berlin"
+    },
+    {
+     "language": "EN",
+     "text": "Berlin"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-BW",
+   "isoCode": "DE-BW",
+   "shortName": "BW",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Baden-Württemberg"
+    },
+    {
+     "language": "EN",
+     "text": "Baden-Württemberg"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-BY",
+   "isoCode": "DE-BY",
+   "shortName": "BY",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Bayern"
+    },
+    {
+     "language": "EN",
+     "text": "Bavaria"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": [
+    {
+     "code": "DE-BY-AU",
+     "isoCode": "",
+     "shortName": "BY-AU",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Gemeinde"
+      },
+      {
+       "language": "EN",
+       "text": "municipality"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Augsburg"
+      },
+      {
+       "language": "EN",
+       "text": "Augsburg"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "DE-HB",
+   "isoCode": "DE-HB",
+   "shortName": "HB",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Bremen"
+    },
+    {
+     "language": "EN",
+     "text": "Bremen"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-HE",
+   "isoCode": "DE-HE",
+   "shortName": "HE",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Hessen"
+    },
+    {
+     "language": "EN",
+     "text": "Hesse"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-HH",
+   "isoCode": "DE-HH",
+   "shortName": "HH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Hamburg"
+    },
+    {
+     "language": "EN",
+     "text": "Hamburg"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-MV",
+   "isoCode": "DE-MV",
+   "shortName": "MV",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Mecklenburg-Vorpommern"
+    },
+    {
+     "language": "EN",
+     "text": "Mecklenburg-Western Pomerania"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    },
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "code": "DE-NI",
+   "isoCode": "DE-NI",
+   "shortName": "NI",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Niedersachsen"
+    },
+    {
+     "language": "EN",
+     "text": "Lower Saxony"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-NW",
+   "isoCode": "DE-NW",
+   "shortName": "NW",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Nordrhein-Westfalen"
+    },
+    {
+     "language": "EN",
+     "text": "North Rhine-Westphalia"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-RP",
+   "isoCode": "DE-RP",
+   "shortName": "RP",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Rheinland-Pfalz"
+    },
+    {
+     "language": "EN",
+     "text": "Rhineland-Palatinate"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-SH",
+   "isoCode": "DE-SH",
+   "shortName": "SH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Schleswig-Holstein"
+    },
+    {
+     "language": "EN",
+     "text": "Schleswig-Holstein"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-SL",
+   "isoCode": "DE-SL",
+   "shortName": "SL",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Saarland"
+    },
+    {
+     "language": "EN",
+     "text": "Saarland"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-SN",
+   "isoCode": "DE-SN",
+   "shortName": "SN",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Sachsen"
+    },
+    {
+     "language": "EN",
+     "text": "Saxony"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-ST",
+   "isoCode": "DE-ST",
+   "shortName": "ST",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Sachsen-Anhalt"
+    },
+    {
+     "language": "EN",
+     "text": "Saxony-Anhalt"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-TH",
+   "isoCode": "DE-TH",
+   "shortName": "TH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Thüringen"
+    },
+    {
+     "language": "EN",
+     "text": "Thuringia"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  }
+ ],
+ "groups": []
+}

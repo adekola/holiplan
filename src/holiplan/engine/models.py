@@ -138,6 +138,9 @@ class FamilyProfile:
     # "MM-DD" dates to treat as workdays even though the data lists them for the whole
     # region -- Assumption Day in DE-BY is only a holiday in Catholic-majority towns.
     ignore_holidays: list[str] = field(default_factory=list)
+    # The OpenHolidays school-type group whose holidays the children have, where the
+    # region's dates differ by school type ("DE-MV-ABS"). None: the general schools.
+    school_group: str | None = None
 
     @staticmethod
     def from_dict(data: dict[str, Any]) -> "FamilyProfile":

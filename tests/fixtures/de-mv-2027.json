@@ -1,0 +1,1732 @@
+{
+ "source": "OpenHolidays (https://openholidaysapi.org), CC BY 4.0, recorded 2026-10-27",
+ "public": [
+  {
+   "id": "b37c8536-925e-455c-9e61-8e2b984a74d1",
+   "startDate": "2026-12-25",
+   "endDate": "2026-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "fafc28cf-c8fc-4290-97b0-99904f920d4f",
+   "startDate": "2026-12-26",
+   "endDate": "2026-12-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "2nd Day of Christmas"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "a9951b88-fbfa-4634-8b80-39c60abb2a0c",
+   "startDate": "2027-01-01",
+   "endDate": "2027-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "1ddfa412-ebda-4571-a6fd-aa8e2ba340d5",
+   "startDate": "2027-03-08",
+   "endDate": "2027-03-08",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "International Women's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ]
+  },
+  {
+   "id": "f5967e35-9fbb-4cd9-ae3d-622f6cf90028",
+   "startDate": "2027-03-26",
+   "endDate": "2027-03-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Good Friday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "fcd0558e-3e01-4902-b785-d8bd45baba24",
+   "startDate": "2027-03-29",
+   "endDate": "2027-03-29",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Monday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "5dce4648-d6e6-400a-936e-b85edbf85622",
+   "startDate": "2027-05-01",
+   "endDate": "2027-05-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Labour Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "889b46cc-0934-44a1-9468-d88f880acc94",
+   "startDate": "2027-05-06",
+   "endDate": "2027-05-06",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Ascension Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "689daf70-cc0e-44d6-a501-8a17d4a551dc",
+   "startDate": "2027-05-17",
+   "endDate": "2027-05-17",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Pentecost Monday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "3e88b5c4-993a-4bd1-9f9a-149545598bc6",
+   "startDate": "2027-10-03",
+   "endDate": "2027-10-03",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Day of German Unity"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "d56e42d5-08a0-471e-a3c5-ee5922a6a91c",
+   "startDate": "2027-10-31",
+   "endDate": "2027-10-31",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Reformation Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "DE-ST",
+     "shortName": "ST"
+    },
+    {
+     "code": "DE-HH",
+     "shortName": "HH"
+    },
+    {
+     "code": "DE-HB",
+     "shortName": "HB"
+    },
+    {
+     "code": "DE-TH",
+     "shortName": "TH"
+    },
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    },
+    {
+     "code": "DE-SN",
+     "shortName": "SN"
+    },
+    {
+     "code": "DE-NI",
+     "shortName": "NI"
+    },
+    {
+     "code": "DE-BB",
+     "shortName": "BB"
+    }
+   ]
+  },
+  {
+   "id": "ba7542be-fca8-427b-ac2d-797470860c62",
+   "startDate": "2027-12-25",
+   "endDate": "2027-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "ee8fc25d-db77-48d9-a74f-6374d74642fa",
+   "startDate": "2027-12-26",
+   "endDate": "2027-12-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "2nd Day of Christmas"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "286433c6-b1ce-4835-b16a-95f6dbf28e11",
+   "startDate": "2028-01-01",
+   "endDate": "2028-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  }
+ ],
+ "school": [
+  {
+   "id": "3025300f-9738-4eb8-942f-61874d2d4030",
+   "startDate": "2026-12-19",
+   "endDate": "2027-01-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "070bae4d-8671-4c87-8dbb-6f790aa12e4e",
+   "startDate": "2026-12-21",
+   "endDate": "2027-01-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "80d1a9e2-9c3e-41b7-925f-3cdf7a3b3cc0",
+   "startDate": "2027-02-08",
+   "endDate": "2027-02-13",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Winter Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "97de5c95-2c41-4709-a8bf-bf5910ee758d",
+   "startDate": "2027-02-08",
+   "endDate": "2027-02-19",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Winter Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "1ac0ffdc-5f96-4bee-9253-713659fd6229",
+   "startDate": "2027-03-22",
+   "endDate": "2027-04-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "72a82721-5402-44fb-a689-3e69c35afb8f",
+   "startDate": "2027-03-24",
+   "endDate": "2027-04-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "25993d31-fe48-4f71-ad7a-f7b536224646",
+   "startDate": "2027-05-07",
+   "endDate": "2027-05-07",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "f067c14f-cc84-4406-9ef5-57f6492ed058",
+   "startDate": "2027-05-07",
+   "endDate": "2027-05-07",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "7290bcd1-e9cb-4c73-8fe2-58e6069872d4",
+   "startDate": "2027-05-14",
+   "endDate": "2027-05-18",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Pentecost Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "e6959de8-eb3f-4b03-a040-1fe9fde9505e",
+   "startDate": "2027-07-05",
+   "endDate": "2027-08-14",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "627b53fd-8a65-4a5a-b918-ae19d28ecdac",
+   "startDate": "2027-07-12",
+   "endDate": "2027-08-28",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "c0603985-81a2-43c8-a714-25b65f40c21b",
+   "startDate": "2027-10-14",
+   "endDate": "2027-10-23",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "737ade84-4c91-4ac0-a403-141007e2dcff",
+   "startDate": "2027-10-16",
+   "endDate": "2027-10-23",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "19332be1-0020-4e23-95de-27b1b8b849db",
+   "startDate": "2027-11-25",
+   "endDate": "2027-11-25",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    },
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "bd056361-d360-44d7-8240-2492920b414d",
+   "startDate": "2027-11-26",
+   "endDate": "2027-11-26",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    },
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "42a05609-93b0-4398-90e1-b36f3cc4cb0a",
+   "startDate": "2027-12-22",
+   "endDate": "2028-01-04",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "8cbf47d4-941a-4c82-9092-5c336d34bc10",
+   "startDate": "2027-12-22",
+   "endDate": "2027-12-31",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "95eefce2-a004-49d0-a13e-5448b8611813",
+   "startDate": "2028-02-05",
+   "endDate": "2028-02-17",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Winter Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "da80c851-b104-4096-925b-abcf83638b07",
+   "startDate": "2028-02-05",
+   "endDate": "2028-02-12",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Winter Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "9dc0f76f-3de6-459c-9fde-122b211c556d",
+   "startDate": "2028-02-18",
+   "endDate": "2028-02-18",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "School free"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "93ab0ef1-45e5-4e91-8546-4f660cc023f2",
+   "startDate": "2028-03-09",
+   "endDate": "2028-03-09",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "2e1685cc-9759-4965-b1eb-ce54e304625d",
+   "startDate": "2028-03-10",
+   "endDate": "2028-03-10",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "aa17fa73-99a7-4123-a674-99a5153f575c",
+   "startDate": "2028-04-12",
+   "endDate": "2028-04-21",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    },
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "6e2a0909-650d-43fe-869d-e2cbaa2bf9e3",
+   "startDate": "2028-05-26",
+   "endDate": "2028-05-26",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    },
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "a2024625-80c4-4e1f-b54b-d2f3823786d2",
+   "startDate": "2028-06-02",
+   "endDate": "2028-06-06",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Pentecost Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "a3edc618-ff88-432e-b83b-3950ca02cdd7",
+   "startDate": "2028-06-26",
+   "endDate": "2028-08-05",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "8545601b-80f1-422b-a66c-48b61ea4f105",
+   "startDate": "2028-07-17",
+   "endDate": "2028-09-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "3a4ac034-f278-4a77-9dcd-6a16f42607d9",
+   "startDate": "2028-10-02",
+   "endDate": "2028-10-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "551779d9-c334-467b-b2da-759e27b428ab",
+   "startDate": "2028-10-02",
+   "endDate": "2028-10-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  },
+  {
+   "id": "247c004c-89f8-4238-9022-e6c2a880ffca",
+   "startDate": "2028-10-23",
+   "endDate": "2028-10-28",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    },
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "4857fa79-4d2f-48b3-aae7-227fd75d9fe0",
+   "startDate": "2028-10-30",
+   "endDate": "2028-10-30",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Additional holiday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    },
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "bd3ff057-e8a8-4bed-8019-a9c50b5c3bca",
+   "startDate": "2028-12-21",
+   "endDate": "2029-01-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "id": "979f871c-5356-47b1-8388-df788af98652",
+   "startDate": "2028-12-22",
+   "endDate": "2029-01-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas Holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    }
+   ]
+  }
+ ],
+ "subdivisions": [
+  {
+   "code": "DE-BB",
+   "isoCode": "DE-BB",
+   "shortName": "BB",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Brandenburg"
+    },
+    {
+     "language": "EN",
+     "text": "Brandenburg"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-BE",
+   "isoCode": "DE-BE",
+   "shortName": "BE",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Berlin"
+    },
+    {
+     "language": "EN",
+     "text": "Berlin"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-BW",
+   "isoCode": "DE-BW",
+   "shortName": "BW",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Baden-Württemberg"
+    },
+    {
+     "language": "EN",
+     "text": "Baden-Württemberg"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-BY",
+   "isoCode": "DE-BY",
+   "shortName": "BY",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Bayern"
+    },
+    {
+     "language": "EN",
+     "text": "Bavaria"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": [
+    {
+     "code": "DE-BY-AU",
+     "isoCode": "",
+     "shortName": "BY-AU",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Gemeinde"
+      },
+      {
+       "language": "EN",
+       "text": "municipality"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Augsburg"
+      },
+      {
+       "language": "EN",
+       "text": "Augsburg"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "DE-HB",
+   "isoCode": "DE-HB",
+   "shortName": "HB",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Bremen"
+    },
+    {
+     "language": "EN",
+     "text": "Bremen"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-HE",
+   "isoCode": "DE-HE",
+   "shortName": "HE",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Hessen"
+    },
+    {
+     "language": "EN",
+     "text": "Hesse"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-HH",
+   "isoCode": "DE-HH",
+   "shortName": "HH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Hamburg"
+    },
+    {
+     "language": "EN",
+     "text": "Hamburg"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-MV",
+   "isoCode": "DE-MV",
+   "shortName": "MV",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Mecklenburg-Vorpommern"
+    },
+    {
+     "language": "EN",
+     "text": "Mecklenburg-Western Pomerania"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "DE-MV-ABS",
+     "shortName": "MV-ABS"
+    },
+    {
+     "code": "DE-MV-BBS",
+     "shortName": "MV-BBS"
+    }
+   ]
+  },
+  {
+   "code": "DE-NI",
+   "isoCode": "DE-NI",
+   "shortName": "NI",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Niedersachsen"
+    },
+    {
+     "language": "EN",
+     "text": "Lower Saxony"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-NW",
+   "isoCode": "DE-NW",
+   "shortName": "NW",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Nordrhein-Westfalen"
+    },
+    {
+     "language": "EN",
+     "text": "North Rhine-Westphalia"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-RP",
+   "isoCode": "DE-RP",
+   "shortName": "RP",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Rheinland-Pfalz"
+    },
+    {
+     "language": "EN",
+     "text": "Rhineland-Palatinate"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-SH",
+   "isoCode": "DE-SH",
+   "shortName": "SH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Schleswig-Holstein"
+    },
+    {
+     "language": "EN",
+     "text": "Schleswig-Holstein"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-SL",
+   "isoCode": "DE-SL",
+   "shortName": "SL",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Saarland"
+    },
+    {
+     "language": "EN",
+     "text": "Saarland"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-SN",
+   "isoCode": "DE-SN",
+   "shortName": "SN",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Sachsen"
+    },
+    {
+     "language": "EN",
+     "text": "Saxony"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-ST",
+   "isoCode": "DE-ST",
+   "shortName": "ST",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Sachsen-Anhalt"
+    },
+    {
+     "language": "EN",
+     "text": "Saxony-Anhalt"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  },
+  {
+   "code": "DE-TH",
+   "isoCode": "DE-TH",
+   "shortName": "TH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Bundesland"
+    },
+    {
+     "language": "EN",
+     "text": "federal state"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Thüringen"
+    },
+    {
+     "language": "EN",
+     "text": "Thuringia"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "code": "DE-MV-ABS",
+   "shortName": "MV-ABS",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Schulart"
+    },
+    {
+     "language": "EN",
+     "text": "school type"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Allgemeinbildende Schulen"
+    },
+    {
+     "language": "EN",
+     "text": "General Schools"
+    }
+   ],
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ]
+  },
+  {
+   "code": "DE-MV-BBS",
+   "shortName": "MV-BBS",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Schulart"
+    },
+    {
+     "language": "EN",
+     "text": "school type"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Berufliche Schulen"
+    },
+    {
+     "language": "EN",
+     "text": "Vocational Schools"
+    }
+   ],
+   "subdivisions": [
+    {
+     "code": "DE-MV",
+     "shortName": "MV"
+    }
+   ]
+  }
+ ]
+}

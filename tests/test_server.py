@@ -168,11 +168,13 @@ class ServerTests(StubbedHolidays):
             entry("Ascension Bridge", "2027-05-06", "2027-05-08", "CH-ZH-BS", "CH-ZH-MS"),
             entry("Christmas holidays", "2027-12-20", "2028-01-01"),
         ]
-        result = server.get_holiday_windows("DE", 2027, "DE-BY")
+        result = server.get_holiday_windows("DE", 2027, "DE-BY", school_group="CH-ZH-MS")
         windows = {w["name"]: w for w in result["school_windows"]}
         self.assertEqual(windows["Spring holidays"]["groups"], ["CH-ZH-BS", "CH-ZH-MS", "CH-ZH-VS"])
         self.assertEqual(windows["Christmas holidays"]["groups"], [])
         self.assertEqual([c["name"] for c in result["school_closures"]], ["Ascension Bridge"])
+        # Primary schools, the default, have no Ascension bridge.
+        self.assertEqual(server.get_holiday_windows("DE", 2027, "DE-BY")["school_closures"], [])
 
 
 # Two weeks spanning both of Bavaria's partial holidays: ten workdays.

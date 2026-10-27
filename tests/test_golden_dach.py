@@ -1,7 +1,9 @@
-"""Golden tests for Vienna (AT-WI) and Zürich (CH-ZH), 2027.
+"""Golden tests for Vienna (AT-WI), Zürich (CH-ZH), Mecklenburg-Vorpommern
+(DE-MV) and Schleswig-Holstein (DE-SH), 2027.
 
 The fixtures in tests/fixtures are real OpenHolidays responses (CC BY 4.0),
-recorded on 2026-09-24 and replayed offline through the MCP tools. Every
+recorded on 2026-09-24 (DE-MV and DE-SH on 2026-10-27) and replayed offline
+through the MCP tools. Every
 expected figure below was worked out by hand from the calendar, not from the
 code, so a failure means the arithmetic a family relies on broke -- or the
 recorded data was re-recorded and changed.
@@ -26,7 +28,7 @@ FIXTURES = Path(__file__).resolve().parent / "fixtures"
 
 
 class Recorded(unittest.TestCase):
-    """Serves one recorded region through the three OpenHolidays calls."""
+    """Serves one recorded region through the four OpenHolidays calls."""
 
     fixture: str
 
@@ -43,6 +45,7 @@ class Recorded(unittest.TestCase):
             mock.patch("holiplan.holidays.public_holidays", side_effect=public),
             mock.patch("holiplan.holidays.school_holidays", side_effect=school),
             mock.patch("holiplan.holidays.subdivisions", return_value=data["subdivisions"]),
+            mock.patch("holiplan.holidays.groups", return_value=data.get("groups", [])),
         ]
         for p in patches:
             p.start()
@@ -224,6 +227,9 @@ class ZurichTests(Recorded):
 
     def test_windows_merge_school_types_and_split_out_closures(self):
         result = server.get_holiday_windows("CH", 2027, "CH-ZH", home="Zürich")
+        self.assertEqual(result["school_groups"], ["CH-ZH-BS", "CH-ZH-MS", "CH-ZH-VS"])
+        # Without a choice, the Volksschule's holidays.
+        self.assertEqual(result["school_group"], "CH-ZH-VS")
         windows = {w["name"]: w for w in result["school_windows"]}
         self.assertEqual(windows["Spring holidays"]["groups"], ["CH-ZH-BS", "CH-ZH-MS", "CH-ZH-VS"])
         self.assertEqual(
@@ -236,7 +242,15 @@ class ZurichTests(Recorded):
         # Easter is Good Friday to Easter Monday: no school days at all.
         self.assertEqual(closures["Easter"]["school_days"], 0)
         # The Ascension bridge (Fri 7 May) is for secondary and vocational schools only.
+        self.assertNotIn("Ascension Bridge", closures)
+
+    def test_a_secondary_school_gets_the_ascension_bridge(self):
+        result = server.get_holiday_windows("CH", 2027, "CH-ZH", school_group="CH-ZH-MS")
+        self.assertEqual(result["school_group"], "CH-ZH-MS")
+        closures = {c["name"]: c for c in result["school_closures"]}
         self.assertEqual(closures["Ascension Bridge"]["groups"], ["CH-ZH-BS", "CH-ZH-MS"])
+        # The data has no summer holidays for Mittelschulen, so none are shown.
+        self.assertNotIn("Summer holidays", {w["name"] for w in result["school_windows"]})
 
     def test_half_day_local_holidays_are_marked(self):
         holidays = {
@@ -250,6 +264,109 @@ class ZurichTests(Recorded):
             (sechselaeuten["half_day"], sechselaeuten["local"], sechselaeuten["observed"]),
             (True, True, False),
         )
+
+
+# A family in Rostock whose children go to a general school (the default).
+ROSTOCK = {
+    "schema_version": "1",
+    "profile": {
+        "country": "DE",
+        "region": "DE-MV",
+        "leave": [{"year": 2027, "allowance": 30}],
+    },
+    "trips": [
+        # Winter holidays (general schools 8-19 Feb), Sat 6 - Sun 21 Feb: two
+        # full weeks, no public holidays.
+        trip("winter", "2027-02-06", "2027-02-21"),
+        # Summer (general schools from Mon 5 Jul), Sat 3 - Sun 18 Jul: two weeks.
+        trip("summer", "2027-07-03", "2027-07-18"),
+    ],
+}
+
+
+@unittest.skipIf(server is None, "mcp is not installed")
+class MecklenburgTests(Recorded):
+    """General and vocational schools have different holidays in DE-MV."""
+
+    fixture = "de-mv-2027.json"
+
+    def with_group(self, group: str) -> dict:
+        return {**ROSTOCK, "profile": {**ROSTOCK["profile"], "school_group": group}}
+
+    def test_one_set_of_holidays_for_general_schools(self):
+        result = server.get_holiday_windows("DE", 2027, "DE-MV")
+        self.assertEqual(result["school_groups"], ["DE-MV-ABS", "DE-MV-BBS"])
+        self.assertEqual(result["school_group"], "DE-MV-ABS")
+        names = [w["name"] for w in result["school_windows"]]
+        self.assertEqual(names.count("Winter Holidays"), 1)
+        # Christmas twice, the one ending in January and the one starting in December.
+        self.assertEqual(names.count("Christmas Holidays"), 2)
+        self.assertEqual(len(names), len(set(names)) + 1)
+        easter = next(w for w in result["school_windows"] if w["name"] == "Easter Holidays")
+        # Wed 24 Mar - Fri 2 Apr; Tue 23 Mar and Mon 5 Apr are school days, so it
+        # stretches only to Sun 4 Apr. Good Friday (26th) and Easter Monday (29th)
+        # leave six school days: 24, 25, 30, 31 Mar, 1, 2 Apr.
+        self.assertEqual(
+            (easter["effective_start"], easter["effective_end"], easter["days_off"], easter["school_days"]),
+            ("2027-03-24", "2027-04-04", 12, 6),
+        )
+
+    def test_vocational_schools_have_their_own(self):
+        result = server.get_holiday_windows("DE", 2027, "DE-MV", school_group="DE-MV-BBS")
+        easter = next(w for w in result["school_windows"] if w["name"] == "Easter Holidays")
+        # Mon 22 Mar - Fri 2 Apr, stretched over the weekends either side.
+        self.assertEqual((easter["effective_start"], easter["effective_end"]), ("2027-03-20", "2027-04-04"))
+
+    def test_plan_checks_against_the_familys_school_type(self):
+        self.assertEqual(server.check_ledger(ROSTOCK)["issues"], [])
+        # Vocational schools: winter is 8-13 Feb and summer starts 12 Jul, so
+        # neither trip fits inside a school holiday.
+        issues = server.check_ledger(self.with_group("DE-MV-BBS"))["issues"]
+        self.assertEqual(
+            sorted((i["code"], i["trip_ids"]) for i in issues),
+            [("outside_school_window", ["summer"]), ("outside_school_window", ["winter"])],
+        )
+
+    def test_year_budget(self):
+        budget = server.get_year_budget(ROSTOCK, 2027)
+        self.assertEqual((budget["planned"], budget["remaining"]), (20, 10))
+
+    def test_school_groups_are_named_in_either_language(self):
+        from holiplan import service
+
+        german = service.school_groups("DE", "DE-MV", 2027, "DE")
+        self.assertEqual(german["default"], "DE-MV-ABS")
+        self.assertEqual(
+            german["groups"],
+            [
+                {"code": "DE-MV-ABS", "name": "Allgemeinbildende Schulen", "default": True},
+                {"code": "DE-MV-BBS", "name": "Berufliche Schulen", "default": False},
+            ],
+        )
+        english = service.school_groups("DE", "DE-MV", 2027)
+        self.assertEqual([g["name"] for g in english["groups"]], ["General Schools", "Vocational Schools"])
+
+
+@unittest.skipIf(server is None, "mcp is not installed")
+class SchleswigHolsteinTests(Recorded):
+    """The islands' holidays are listed beside the mainland's, as exceptions."""
+
+    fixture = "de-sh-2027.json"
+
+    def test_the_mainland_holidays_are_shown(self):
+        result = server.get_holiday_windows("DE", 2027, "DE-SH")
+        self.assertEqual((result["school_groups"], result["school_group"]), ([], None))
+        windows: dict[str, list] = {}
+        for w in result["school_windows"]:
+            windows.setdefault(w["name"], []).append((w["start"], w["end"]))
+        # Not the islands' summer to 7 Aug or their autumn from 4 Oct.
+        self.assertEqual(windows["Summer Holidays"], [("2027-07-03", "2027-08-14")])
+        self.assertEqual(windows["Autumn Holidays"], [("2027-10-11", "2027-10-23")])
+
+    def test_no_school_types_to_choose_from(self):
+        from holiplan import service
+
+        self.assertEqual(service.school_groups("DE", "DE-SH", 2027)["groups"], [])
 
 
 if __name__ == "__main__":

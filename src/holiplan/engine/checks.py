@@ -82,6 +82,51 @@ def describe_window(
     }
 
 
+# Where a region's school holidays differ by school type, the type most children
+# attend: Swiss Volksschulen, then Mecklenburg-Vorpommern's allgemeinbildende
+# Schulen, then Swiss Mittelschulen. Vocational schools come last.
+_GENERAL_SCHOOLS = ("-VS", "-ABS", "-MS")
+
+
+def default_school_group(codes: AbstractSet[str] | list[str]) -> str | None:
+    """The school-type group to use when a family hasn't chosen one: the general schools."""
+
+    def rank(code: str) -> tuple[int, str]:
+        ends = [code.endswith(suffix) for suffix in _GENERAL_SCHOOLS]
+        return (ends.index(True) if True in ends else len(ends), code)
+
+    return min(codes, key=rank, default=None)
+
+
+def school_type_windows(
+    windows: list[dict], school_group: str | None = None
+) -> tuple[list[dict], str | None]:
+    """One school type's holidays, from windows that may repeat per type.
+
+    `windows` are {"name", "start", "end", "groups"} plus an optional
+    "exception" flag. Kept are the windows without groups (every school) and
+    those of `school_group`, or of `default_school_group` when it is None or
+    not among the windows' groups. An exception (Schleswig-Holstein's islands
+    get their own summer holidays) is dropped where a regular window of the
+    same name overlaps it. Returns the windows, without "exception", and the
+    group used (None when the windows have no groups).
+    """
+    codes = {g for w in windows for g in w["groups"]}
+    used = school_group if school_group in codes else default_school_group(codes)
+    kept = [w for w in windows if not w["groups"] or used in w["groups"]]
+    regular = [w for w in kept if not w.get("exception")]
+
+    def overruled(w: dict) -> bool:
+        return bool(w.get("exception")) and any(
+            r["name"] == w["name"] and r["start"] <= w["end"] and w["start"] <= r["end"]
+            for r in regular
+        )
+
+    return [
+        {k: v for k, v in w.items() if k != "exception"} for w in kept if not overruled(w)
+    ], used
+
+
 @dataclass
 class Issue:
     """One problem with the plan.

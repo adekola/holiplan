@@ -103,6 +103,11 @@ def subdivisions(country: str) -> list[dict]:
     return _get("/Subdivisions", {"countryIsoCode": country})
 
 
+def groups(country: str) -> list[dict]:
+    """The country's school-type groups (DE-MV-ABS, CH-ZH-VS), names in every language."""
+    return _get("/Groups", {"countryIsoCode": country})
+
+
 def resolve_region(country: str, region: str | None) -> str | None:
     """The OpenHolidays code for `region`, which may also be given as its ISO code.
 

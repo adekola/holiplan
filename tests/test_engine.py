@@ -17,8 +17,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from holiplan.engine.bridges import bridge_days  # noqa: E402
 from holiplan.engine.checks import (  # noqa: E402
     deadlines,
+    default_school_group,
     describe_window,
     effective_window,
+    school_type_windows,
     validate_ledger,
 )
 from holiplan.engine.ics import to_ics  # noqa: E402
@@ -446,6 +448,94 @@ class DescribeWindowTests(unittest.TestCase):
     def test_two_school_days_is_still_a_closure_but_three_is_not(self):
         self.assertTrue(self.describe("2027-10-04", "2027-10-05")["closure"])
         self.assertFalse(self.describe("2027-10-04", "2027-10-06")["closure"])
+
+
+def window(name: str, start: str, end: str, *groups: str, exception: bool = False) -> dict:
+    return {"name": name, "start": start, "end": end, "groups": list(groups), "exception": exception}
+
+
+# A region whose general and vocational schools have different holidays, the
+# way OpenHolidays lists Mecklenburg-Vorpommern, with one day off for both.
+BY_SCHOOL_TYPE = [
+    window("Winter", "2027-02-08", "2027-02-19", "XX-ABS"),
+    window("Winter", "2027-02-08", "2027-02-13", "XX-BBS"),
+    window("Extra day", "2027-05-07", "2027-05-07", "XX-ABS", "XX-BBS"),
+    window("Summer", "2027-07-05", "2027-08-14", "XX-ABS"),
+    window("Summer", "2027-07-12", "2027-08-28", "XX-BBS"),
+    window("Christmas", "2027-12-22", "2028-01-04"),
+]
+
+
+class SchoolTypeTests(unittest.TestCase):
+    def dates(self, windows: list[dict]) -> list[tuple[str, str, str]]:
+        return [(w["name"], w["start"], w["end"]) for w in windows]
+
+    def test_general_schools_are_the_default(self):
+        self.assertEqual(default_school_group({"CH-ZH-BS", "CH-ZH-MS", "CH-ZH-VS"}), "CH-ZH-VS")
+        self.assertEqual(default_school_group({"DE-MV-BBS", "DE-MV-ABS"}), "DE-MV-ABS")
+        # Solothurn's data has no Volksschule entries: secondary before vocational.
+        self.assertEqual(default_school_group({"CH-SO-BS", "CH-SO-MS"}), "CH-SO-MS")
+        self.assertEqual(default_school_group({"XX-B", "XX-A"}), "XX-A")
+        self.assertIsNone(default_school_group(set()))
+
+    def test_one_school_types_windows_and_those_for_every_school(self):
+        windows, used = school_type_windows(BY_SCHOOL_TYPE)
+        self.assertEqual(used, "XX-ABS")
+        self.assertEqual(
+            self.dates(windows),
+            [
+                ("Winter", "2027-02-08", "2027-02-19"),
+                ("Extra day", "2027-05-07", "2027-05-07"),
+                ("Summer", "2027-07-05", "2027-08-14"),
+                ("Christmas", "2027-12-22", "2028-01-04"),
+            ],
+        )
+        self.assertNotIn("exception", windows[0])
+
+    def test_the_familys_school_type_wins(self):
+        windows, used = school_type_windows(BY_SCHOOL_TYPE, "XX-BBS")
+        self.assertEqual(used, "XX-BBS")
+        self.assertEqual(
+            [w["end"] for w in windows if w["name"] in ("Winter", "Summer")],
+            ["2027-02-13", "2027-08-28"],
+        )
+
+    def test_a_school_type_the_data_doesnt_have_falls_back_to_the_default(self):
+        self.assertEqual(school_type_windows(BY_SCHOOL_TYPE, "XX-GYM")[1], "XX-ABS")
+
+    def test_without_groups_nothing_is_chosen(self):
+        windows, used = school_type_windows([window("Summer", "2027-07-03", "2027-08-14")], "XX-ABS")
+        self.assertIsNone(used)
+        self.assertEqual(len(windows), 1)
+
+    def test_an_exception_gives_way_to_the_regular_window(self):
+        # Schleswig-Holstein: the islands' summer and autumn holidays are listed
+        # beside the mainland's, tagged as exceptions.
+        windows, _ = school_type_windows(
+            [
+                window("Summer", "2027-07-03", "2027-08-14"),
+                window("Summer", "2027-07-03", "2027-08-07", exception=True),
+                window("Autumn", "2027-10-04", "2027-10-23", exception=True),
+                window("Autumn", "2027-10-11", "2027-10-23"),
+                # An exception nothing regular overlaps is all there is: kept.
+                window("Island day", "2027-11-12", "2027-11-12", exception=True),
+            ]
+        )
+        self.assertEqual(
+            self.dates(windows),
+            [
+                ("Summer", "2027-07-03", "2027-08-14"),
+                ("Autumn", "2027-10-11", "2027-10-23"),
+                ("Island day", "2027-11-12", "2027-11-12"),
+            ],
+        )
+
+    def test_the_profile_keeps_its_school_type(self):
+        data = {"profile": {"country": "DE", "region": "DE-MV", "school_group": "DE-MV-BBS"}}
+        ledger = Ledger.from_dict(data)
+        self.assertEqual(ledger.profile.school_group, "DE-MV-BBS")
+        self.assertEqual(Ledger.from_dict(ledger.to_dict()).to_dict(), ledger.to_dict())
+        self.assertIsNone(Ledger.from_dict({"profile": {"country": "DE"}}).profile.school_group)
 
 
 class BridgeDayTests(unittest.TestCase):

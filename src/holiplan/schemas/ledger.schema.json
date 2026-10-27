@@ -79,6 +79,10 @@
           "type": "array",
           "items": { "type": "string", "pattern": "^\\d{2}-\\d{2}$" },
           "description": "MM-DD dates to treat as workdays although the data lists them for the whole region, e.g. 08-15 outside Catholic-majority Bavarian towns"
+        },
+        "school_group": {
+          "type": ["string", "null"],
+          "description": "The school type whose holidays the children have, as an OpenHolidays group code (e.g. DE-MV-ABS), where the region's dates differ by school type. null: the general schools. get_holiday_windows lists the region's groups"
         }
       }
     },

@@ -97,8 +97,17 @@ that would make an older ledger read differently needs `SCHEMA_VERSION` bumped a
 - **`temporalScope: "HalfDay"`** marks half-day holidays (Zürich's Sechseläuten). They are kept out
   of the full-day set and cost at most half a day of leave; they don't stretch windows.
 - **School holidays repeat per school-type group** where types differ (Zürich: `CH-ZH-VS` primary,
-  `-MS`, `-BS`). Identical repeats are merged and their `groups` listed; no groups means every
-  school. There is no per-child school type in the profile yet.
+  `-MS`, `-BS`; Mecklenburg-Vorpommern: `DE-MV-ABS` general, `-BBS` vocational). Identical repeats
+  are merged and their `groups` listed; no groups means every school. Then
+  `checks.school_type_windows` keeps one type: the profile's `school_group`, or
+  `default_school_group` (Volksschule, then allgemeinbildende Schulen, then Mittelschule) when it
+  is unset or not in the data. Names for the groups come from `/Groups` (`holidays.groups`), read
+  only by `service.school_groups`, so the other operations still make three calls.
+- **Entries tagged `"Exception"`** are alternative dates for part of a region (Schleswig-Holstein's
+  islands, one Gymnasium in Basel-Landschaft), listed with no groups beside the regular entry of
+  the same name. They are dropped where a regular window of that name overlaps them.
+- **Some school holidays differ by municipality** (Appenzell Innerrhoden, Graubünden): the entries
+  list subdivisions below the region. These are not filtered yet, so both show.
 - **Single-day school closures** exist as short school-holiday entries (All Souls' Day in Austria).
   `describe_window` marks anything with `CLOSURE_MAX_SCHOOL_DAYS` (2) or fewer school days as a
   closure; `get_holiday_windows` lists those separately. Checks treat closures like any window.

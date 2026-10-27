@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.4.0
+
+- **One school type's holidays.** Where OpenHolidays lists a region's school holidays per
+  school type (Mecklenburg-Vorpommern: general and vocational schools; Bern, Zürich,
+  Solothurn), the new optional profile field `school_group` (an OpenHolidays group code such
+  as `"DE-MV-ABS"`) picks whose holidays count. Without it the general schools are used. This
+  applies to holiday windows, checks, bridge days and summaries; ledgers need no migration.
+  **Change:** windows that only applied to other school types (Zürich's Ascension bridge for
+  secondary schools) no longer appear by default.
+- `get_holiday_windows` takes an optional `school_group` and returns `school_groups` (the
+  year's group codes) and `school_group` (the one used).
+- `holiplan.service.school_groups` lists a region's school types with names in German or
+  English, for an app to offer a choice.
+- **Exceptions give way.** Entries OpenHolidays tags as exceptions (Schleswig-Holstein's
+  islands, one Gymnasium in Basel-Landschaft) are dropped where a regular holiday of the same
+  name overlaps them, so those regions show one summer holiday, not two.
+
 ## 0.3.0
 
 - **Calendar to-dos in German.** `export_ics` (and `holiplan.service.calendar`) take an optional

@@ -85,26 +85,90 @@ def padded(first_year: int, last_year: int) -> tuple[str, str]:
     return f"{first_year - 1}-12-01", f"{last_year + 1}-01-31"
 
 
-def school_windows(
-    country: str, region: str | None, start: str, end: str, language: str = "EN"
-) -> list[dict]:
-    """School holidays as {name, start, end, groups}, one entry per distinct window.
-
-    Where holidays differ by school type the data repeats a window once per
-    type group (Zürich: primary, secondary, vocational); identical repeats are
-    merged and their groups combined. An entry without groups applies to all.
-    """
+def _school_windows(
+    country: str,
+    region: str | None,
+    start: str,
+    end: str,
+    language: str = "EN",
+    school_group: str | None = None,
+) -> tuple[list[dict], list[str], str | None]:
+    """`school_windows`, plus every group code in the data and the one used."""
     merged: dict[tuple, dict] = {}
     for entry in oh.school_holidays(country, start, end, region, language_code(language)):
         name = (entry.get("name") or [{}])[0].get("text")
         window = (name, entry["startDate"], entry.get("endDate", entry["startDate"]))
         groups = [g["code"] for g in entry.get("groups", []) if g.get("code")]
+        exception = "Exception" in (entry.get("tags") or [])
         seen = merged.get(window)
         if seen is None:
-            merged[window] = {"name": name, "start": window[1], "end": window[2], "groups": groups}
-        elif seen["groups"]:  # an empty list already means every school
+            merged[window] = {
+                "name": name,
+                "start": window[1],
+                "end": window[2],
+                "groups": groups,
+                "exception": exception,
+            }
+            continue
+        seen["exception"] = seen["exception"] and exception
+        if seen["groups"]:  # an empty list already means every school
             seen["groups"] = sorted(set(seen["groups"]) | set(groups)) if groups else []
-    return sorted(merged.values(), key=lambda w: (w["start"], w["end"]))
+
+    codes = sorted({g for w in merged.values() for g in w["groups"]})
+    windows, used = checks.school_type_windows(list(merged.values()), school_group)
+    return sorted(windows, key=lambda w: (w["start"], w["end"])), codes, used
+
+
+def school_windows(
+    country: str,
+    region: str | None,
+    start: str,
+    end: str,
+    language: str = "EN",
+    school_group: str | None = None,
+) -> list[dict]:
+    """School holidays as {name, start, end, groups}, one entry per distinct window.
+
+    Where holidays differ by school type the data repeats a window once per
+    type group (Mecklenburg-Vorpommern: general and vocational schools);
+    identical repeats are merged and their groups combined. Then only one
+    school type's windows are kept, as `checks.school_type_windows` decides:
+    `school_group`'s, or the general schools'. Entries the data tags as
+    exceptions -- Schleswig-Holstein's islands, one Gymnasium in
+    Basel-Landschaft -- are left out where a regular window overlaps them.
+    """
+    return _school_windows(country, region, start, end, language, school_group)[0]
+
+
+def school_groups(
+    country: str, region: str | None, year: int, language: str = "EN"
+) -> dict[str, Any]:
+    """The school types whose holidays differ in a region, for a family to choose from.
+
+    Read from the school holidays of `year` and the next, so only groups the
+    data actually uses are offered. Names are in `language`, falling back to
+    English, then to the code. `default` is used when the profile names none.
+    An empty list means every school in the region has the same holidays.
+    """
+    language = language_code(language)
+    region = oh.resolve_region(country, region)
+    _, codes, default = _school_windows(country, region, f"{year}-01-01", f"{year + 1}-12-31")
+    names: dict[str, dict] = {}
+    if codes:
+        names = {g["code"]: g for g in oh.groups(country)}
+
+    def name(code: str) -> str:
+        texts = {n.get("language"): n.get("text") for n in names.get(code, {}).get("name", [])}
+        return texts.get(language) or texts.get("EN") or code
+
+    ordered = sorted(codes, key=lambda c: (c != default, c))
+    return {
+        "country": country,
+        "region": region,
+        "default": default,
+        "groups": [{"code": c, "name": name(c), "default": c == default} for c in ordered],
+        "source": SOURCE,
+    }
 
 
 def described_windows(
@@ -114,8 +178,14 @@ def described_windows(
     end: str,
     full_holidays: set[str],
     language: str = "EN",
+    school_group: str | None = None,
 ) -> list[dict]:
     """School holidays between `start` and `end`, with effective dates and size."""
+    windows = school_windows(country, region, start, end, language, school_group)
+    return _described(windows, full_holidays)
+
+
+def _described(windows: list[dict], full_holidays: set[str]) -> list[dict]:
     return [
         checks.describe_window(
             w["name"],
@@ -124,7 +194,7 @@ def described_windows(
             full_holidays,
             w["groups"],
         )
-        for w in school_windows(country, region, start, end, language)
+        for w in windows
     ]
 
 
@@ -148,7 +218,9 @@ def _validate(ledger: Ledger) -> list[dict]:
     first = min(min(t.start_date, t.end_date) for t in ledger.trips).year
     last = max(max(t.start_date, t.end_date) for t in ledger.trips).year
     full, half = holiday_sets(profile.country, region, *padded(first, last), profile)
-    windows = school_windows(profile.country, region, f"{first}-01-01", f"{last}-12-31")
+    windows = school_windows(
+        profile.country, region, f"{first}-01-01", f"{last}-12-31", school_group=profile.school_group
+    )
     return checks.validate_ledger(ledger, full, windows, half)
 
 
@@ -161,12 +233,15 @@ def holiday_windows(
     region: str | None = None,
     home: str | None = None,
     language: str = "EN",
+    school_group: str | None = None,
 ) -> dict[str, Any]:
     """School windows (official and effective), closures, and public holidays for a year.
 
     Names are in `language` where OpenHolidays has them. Public holidays carry
     `local` (applies to only part of the region), `observed` (whether `home`
-    keeps it; null without a home) and `half_day`.
+    keeps it; null without a home) and `half_day`. School windows are those of
+    `school_group` where the region's dates differ by school type: `school_groups`
+    lists the year's groups and `school_group` the one used.
     """
     language = language_code(language)
     region = oh.resolve_region(country, region)
@@ -187,7 +262,8 @@ def holiday_windows(
         return locality is not False and oh.covers(entry, locality)
 
     free = oh.holiday_dates(around, region, True if locality is None else locality)
-    described = described_windows(country, region, start, end, free, language)
+    windows, codes, used = _school_windows(country, region, start, end, language, school_group)
+    described = _described(windows, free)
     return {
         "country": country,
         "region": region,
@@ -195,6 +271,8 @@ def holiday_windows(
         "language": language,
         "school_windows": [w for w in described if not w["closure"]],
         "school_closures": [w for w in described if w["closure"]],
+        "school_groups": codes,
+        "school_group": used,
         "public_holidays": [
             {
                 "date": e["startDate"],
@@ -235,7 +313,14 @@ def bridge_days(
     profile = _profile(ledger)
     region = oh.resolve_region(country, region)
     full, half = holiday_sets(country, region, *padded(year, year), profile)
-    windows = described_windows(country, region, f"{year}-01-01", f"{year}-12-31", full)
+    windows = described_windows(
+        country,
+        region,
+        f"{year}-01-01",
+        f"{year}-12-31",
+        full,
+        school_group=profile.school_group if profile else None,
+    )
     options = bridges.bridge_days(
         year,
         full,
@@ -302,7 +387,13 @@ def summarise_plan(ledger: dict, today: str | None = None, language: str = "EN")
     first, last = min(years), max(years)
     full, half = holiday_sets(profile.country, region, *padded(first, last), profile)
     windows = described_windows(
-        profile.country, region, f"{first}-01-01", f"{last}-12-31", full, language
+        profile.country,
+        region,
+        f"{first}-01-01",
+        f"{last}-12-31",
+        full,
+        language,
+        profile.school_group,
     )
     return summary.summarise(parsed, full, windows, as_of, half)
 

@@ -89,6 +89,10 @@ Prompts: *Set up my family profile*, *Plan my year*, *Plan this holiday window*,
   are stretched over adjacent weekends and public holidays before trips are checked against them.
   School holidays of two school days or fewer, like All Souls' Day in Austria, are listed
   separately as closures.
+- **One school type's holidays.** Where a region's dates differ by school type (general and
+  vocational schools in Mecklenburg-Vorpommern, primary and secondary in Zürich), the profile's
+  `school_group` picks one; without it, the general schools'. `get_holiday_windows` lists the
+  region's groups.
 - **Half-day holidays cost half a day.** Zürich's Sechseläuten afternoon is a half day off,
   not a full one.
 - **Regions accept ISO codes.** OpenHolidays uses its own codes where they differ (Vienna is
@@ -107,8 +111,8 @@ Prompts: *Set up my family profile*, *Plan my year*, *Plan this holiday window*,
 - [ ] Drive-time filtering (OpenRouteService or self-hosted OSRM)
 - [ ] Remote deployment over Streamable HTTP
 - [ ] Publish to the MCP registry
-- [ ] School holiday windows by school type, where the data supports it (Zürich splits
-  primary, secondary and vocational; windows already list the types they apply to)
+- [ ] School holidays that differ by municipality (Appenzell Innerrhoden, Graubünden), chosen by
+  the profile's `home`
 
 ## Development
 

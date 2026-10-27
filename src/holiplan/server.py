@@ -65,7 +65,12 @@ def _tool(fn: Callable[..., Any]) -> Callable[..., Any]:
 
 @_tool
 def get_holiday_windows(
-    country: str, year: int, region: str | None = None, home: str | None = None, language: str = "EN"
+    country: str,
+    year: int,
+    region: str | None = None,
+    home: str | None = None,
+    language: str = "EN",
+    school_group: str | None = None,
 ) -> dict[str, Any]:
     """School holiday windows and public holidays for a region and year.
 
@@ -80,8 +85,14 @@ def get_holiday_windows(
     part of the region; `observed` says whether the home keeps them, and is null
     when there is no home to check -- then ask the family. Names come in
     `language` ("EN", "DE", ...) where OpenHolidays has them.
+
+    Some regions have different holidays per school type (Mecklenburg-
+    Vorpommern: general and vocational schools). Then `school_groups` lists
+    the group codes and `school_group` names the one shown: the profile's
+    `school_group` if you pass it, otherwise the general schools. If the list
+    has more than one, ask which the children attend and record it in the profile.
     """
-    return service.holiday_windows(country, year, region, home, language)
+    return service.holiday_windows(country, year, region, home, language, school_group)
 
 
 @_tool
@@ -219,7 +230,8 @@ def set_up_profile() -> str:
         "(resource holiplan://ledger/starter) or my existing ledger file, and ask me "
         "one question at a time: our country and region (check the region with "
         "get_holiday_windows -- it accepts OpenHolidays or ISO codes); our home town, "
-        "since some holidays only apply to certain towns; each child's alias, birth "
+        "since some holidays only apply to certain towns; which school type the "
+        "children attend, if get_holiday_windows lists more than one school group; each child's alias, birth "
         "year and interests (never their real names); which weekdays I work and any "
         "half days, like 24 and 31 December; my leave allowance, carryover and when "
         "carryover expires, for this year and next; the longest drive we'll do in one "
@@ -234,7 +246,7 @@ def plan_my_year(year: int | None = None) -> str:
     year = year or date.today().year + 1
     return (
         f"Help me plan our family holidays for {year}. Read my ledger, then call "
-        "get_holiday_windows for my region with my home town. For each school "
+        "get_holiday_windows for my region with my home town and school group. For each school "
         "holiday window, give me the effective dates and what a full week away "
         "would cost in leave, and call find_bridge_days for the best-value days "
         "outside them. Then ask me one question at a time about each window -- "
