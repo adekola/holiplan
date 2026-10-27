@@ -127,6 +127,37 @@ def school_type_windows(
     ], used
 
 
+def merge_local_windows(windows: list[dict]) -> list[dict]:
+    """One window per holiday where its dates differ by part of the region.
+
+    `windows` are {"name", "start", "end", "groups"} plus an optional "local"
+    flag: the window applies to only some municipalities or districts
+    (Appenzell Innerrhoden's autumn holidays end a week later in Oberegg).
+    Local windows of the same name that overlap become one, from the earliest
+    start to the latest end, so a family whose town isn't known sees every day
+    that may be off rather than two competing windows. Returns the windows
+    sorted by date, without "local".
+    """
+    merged: list[dict] = []
+    for w in sorted(windows, key=lambda w: (w["start"], w["end"])):
+        same = next(
+            (
+                m
+                for m in reversed(merged)
+                if m.get("local") and w.get("local") and m["name"] == w["name"]
+                and w["start"] <= m["end"]
+            ),
+            None,
+        )
+        if same is None:
+            merged.append(dict(w))
+            continue
+        same["end"] = max(same["end"], w["end"])
+        if same["groups"]:  # an empty list already means every school
+            same["groups"] = sorted(set(same["groups"]) | set(w["groups"])) if w["groups"] else []
+    return [{k: v for k, v in m.items() if k != "local"} for m in merged]
+
+
 @dataclass
 class Issue:
     """One problem with the plan.

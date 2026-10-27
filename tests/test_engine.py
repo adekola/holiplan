@@ -20,6 +20,7 @@ from holiplan.engine.checks import (  # noqa: E402
     default_school_group,
     describe_window,
     effective_window,
+    merge_local_windows,
     school_type_windows,
     validate_ledger,
 )
@@ -529,6 +530,40 @@ class SchoolTypeTests(unittest.TestCase):
                 ("Island day", "2027-11-12", "2027-11-12"),
             ],
         )
+
+    def test_overlapping_local_windows_of_one_name_become_one(self):
+        # Appenzell Innerrhoden: Oberegg's autumn holidays run a week longer.
+        windows = merge_local_windows(
+            [
+                {**window("Autumn", "2027-10-02", "2027-10-24"), "local": True},
+                {**window("Autumn", "2027-10-02", "2027-10-17"), "local": True},
+                {**window("Sports", "2027-02-05", "2027-02-14"), "local": True},
+                {**window("Sports", "2027-01-30", "2027-02-07"), "local": True},
+                window("Spring", "2027-04-10", "2027-04-25"),
+            ]
+        )
+        self.assertEqual(
+            self.dates(windows),
+            [
+                ("Sports", "2027-01-30", "2027-02-14"),
+                ("Spring", "2027-04-10", "2027-04-25"),
+                ("Autumn", "2027-10-02", "2027-10-24"),
+            ],
+        )
+        self.assertNotIn("local", windows[0])
+
+    def test_regional_and_separate_windows_are_left_alone(self):
+        windows = merge_local_windows(
+            [
+                # Mecklenburg-Vorpommern's two Christmas windows don't overlap.
+                {**window("Christmas", "2026-12-21", "2027-01-02"), "local": True},
+                {**window("Christmas", "2027-12-22", "2028-01-04"), "local": True},
+                # A regional window is never merged, even when it overlaps.
+                window("Summer", "2027-07-03", "2027-08-14"),
+                {**window("Summer", "2027-07-10", "2027-08-21"), "local": True},
+            ]
+        )
+        self.assertEqual(len(windows), 4)
 
     def test_the_profile_keeps_its_school_type(self):
         data = {"profile": {"country": "DE", "region": "DE-MV", "school_group": "DE-MV-BBS"}}

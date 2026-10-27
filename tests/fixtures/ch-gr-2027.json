@@ -1,0 +1,7586 @@
+{
+ "source": "OpenHolidays (https://openholidaysapi.org), CC BY 4.0, recorded 2026-10-27",
+ "public": [
+  {
+   "id": "e550a49b-c824-41c9-ac68-02996c9760b8",
+   "startDate": "2026-12-25",
+   "endDate": "2026-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "f8710c7f-3e88-46f9-bcd7-ffb4451e712a",
+   "startDate": "2026-12-26",
+   "endDate": "2026-12-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "St Stephen's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-RF-MA",
+     "shortName": "AG-RF-MA"
+    },
+    {
+     "code": "CH-AG-ZZ",
+     "shortName": "AG-ZZ"
+    },
+    {
+     "code": "CH-AG-LB",
+     "shortName": "AG-LB"
+    },
+    {
+     "code": "CH-AG-RF-WA",
+     "shortName": "AG-RF-WA"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO",
+     "shortName": "SO"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-AG-ZF",
+     "shortName": "AG-ZF"
+    },
+    {
+     "code": "CH-AR",
+     "shortName": "AR"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-AG-RF-RF",
+     "shortName": "AG-RF-RF"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-AA",
+     "shortName": "AG-AA"
+    },
+    {
+     "code": "CH-AG-KU",
+     "shortName": "AG-KU"
+    },
+    {
+     "code": "CH-AG-BA",
+     "shortName": "AG-BA"
+    },
+    {
+     "code": "CH-AG-RF-KA",
+     "shortName": "AG-RF-KA"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-AG-RF-MO",
+     "shortName": "AG-RF-MO"
+    },
+    {
+     "code": "CH-AG-RF-ZU",
+     "shortName": "AG-RF-ZU"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-AG-RF-OL",
+     "shortName": "AG-RF-OL"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BR",
+     "shortName": "AG-BR"
+    },
+    {
+     "code": "CH-AG-BG",
+     "shortName": "AG-BG"
+    },
+    {
+     "code": "CH-AG-RF-ZE",
+     "shortName": "AG-RF-ZE"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "a4b8a366-10fc-416d-9159-d16437f42b03",
+   "startDate": "2027-01-01",
+   "endDate": "2027-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "289e0c15-5618-4530-9402-afc1bcd604f9",
+   "startDate": "2027-03-26",
+   "endDate": "2027-03-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Good Friday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO",
+     "shortName": "SO"
+    },
+    {
+     "code": "CH-GE",
+     "shortName": "GE"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-AR",
+     "shortName": "AR"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-NE",
+     "shortName": "NE"
+    },
+    {
+     "code": "CH-VD",
+     "shortName": "VD"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG",
+     "shortName": "AG"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    }
+   ]
+  },
+  {
+   "id": "e30ca15f-d5ee-425a-b53e-e554b54b3d92",
+   "startDate": "2027-03-29",
+   "endDate": "2027-03-29",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Monday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-RF-MA",
+     "shortName": "AG-RF-MA"
+    },
+    {
+     "code": "CH-AG-LB",
+     "shortName": "AG-LB"
+    },
+    {
+     "code": "CH-AG-RF-WA",
+     "shortName": "AG-RF-WA"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO",
+     "shortName": "SO"
+    },
+    {
+     "code": "CH-GE",
+     "shortName": "GE"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-AG-ZF",
+     "shortName": "AG-ZF"
+    },
+    {
+     "code": "CH-AR",
+     "shortName": "AR"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-AG-RF-RF",
+     "shortName": "AG-RF-RF"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-AA",
+     "shortName": "AG-AA"
+    },
+    {
+     "code": "CH-AG-KU",
+     "shortName": "AG-KU"
+    },
+    {
+     "code": "CH-AG-BA",
+     "shortName": "AG-BA"
+    },
+    {
+     "code": "CH-AG-RF-KA",
+     "shortName": "AG-RF-KA"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-NE",
+     "shortName": "NE"
+    },
+    {
+     "code": "CH-AG-RF-MO",
+     "shortName": "AG-RF-MO"
+    },
+    {
+     "code": "CH-VD",
+     "shortName": "VD"
+    },
+    {
+     "code": "CH-AG-RF-ZU",
+     "shortName": "AG-RF-ZU"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-AG-RF-OL",
+     "shortName": "AG-RF-OL"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BR",
+     "shortName": "AG-BR"
+    },
+    {
+     "code": "CH-AG-RF-ZE",
+     "shortName": "AG-RF-ZE"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "4989fcaf-ef41-4a05-b5d4-494d84202f94",
+   "startDate": "2027-05-06",
+   "endDate": "2027-05-06",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Ascension Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "f7e2d460-e4b5-440d-976a-3675c8be7882",
+   "startDate": "2027-05-17",
+   "endDate": "2027-05-17",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Pentecost Monday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-RF-MA",
+     "shortName": "AG-RF-MA"
+    },
+    {
+     "code": "CH-AG-LB",
+     "shortName": "AG-LB"
+    },
+    {
+     "code": "CH-AG-RF-WA",
+     "shortName": "AG-RF-WA"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO",
+     "shortName": "SO"
+    },
+    {
+     "code": "CH-GE",
+     "shortName": "GE"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-AG-ZF",
+     "shortName": "AG-ZF"
+    },
+    {
+     "code": "CH-AR",
+     "shortName": "AR"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-AG-RF-RF",
+     "shortName": "AG-RF-RF"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-AA",
+     "shortName": "AG-AA"
+    },
+    {
+     "code": "CH-AG-KU",
+     "shortName": "AG-KU"
+    },
+    {
+     "code": "CH-AG-BA",
+     "shortName": "AG-BA"
+    },
+    {
+     "code": "CH-AG-RF-KA",
+     "shortName": "AG-RF-KA"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-NE",
+     "shortName": "NE"
+    },
+    {
+     "code": "CH-AG-RF-MO",
+     "shortName": "AG-RF-MO"
+    },
+    {
+     "code": "CH-VD",
+     "shortName": "VD"
+    },
+    {
+     "code": "CH-AG-RF-ZU",
+     "shortName": "AG-RF-ZU"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-AG-RF-OL",
+     "shortName": "AG-RF-OL"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BR",
+     "shortName": "AG-BR"
+    },
+    {
+     "code": "CH-AG-RF-ZE",
+     "shortName": "AG-RF-ZE"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "38c00091-7962-4d41-9670-84ab0e672d88",
+   "startDate": "2027-08-01",
+   "endDate": "2027-08-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Independence Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "60688e7a-ecba-4477-bdc4-08c308c57a2f",
+   "startDate": "2027-09-19",
+   "endDate": "2027-09-19",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Federal Day of Thanksgiving, Repentance and Prayer"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-NE",
+     "shortName": "NE"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    }
+   ]
+  },
+  {
+   "id": "292bcdc5-2726-4568-bf8e-241748f6053f",
+   "startDate": "2027-11-01",
+   "endDate": "2027-11-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "All Saints' Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-SO-DE",
+     "shortName": "SO-DE"
+    },
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-SO-LB",
+     "shortName": "SO-LB"
+    },
+    {
+     "code": "CH-AG-ZZ",
+     "shortName": "AG-ZZ"
+    },
+    {
+     "code": "CH-SO-GA",
+     "shortName": "SO-GA"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO-SO",
+     "shortName": "SO-SO"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SO-OL",
+     "shortName": "SO-OL"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-AG-MU",
+     "shortName": "AG-MU"
+    },
+    {
+     "code": "CH-AG-RF",
+     "shortName": "AG-RF"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SO-WA",
+     "shortName": "SO-WA"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-SO-TS",
+     "shortName": "SO-TS"
+    },
+    {
+     "code": "CH-AG-LA",
+     "shortName": "AG-LA"
+    },
+    {
+     "code": "CH-SO-TH",
+     "shortName": "SO-TH"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BG",
+     "shortName": "AG-BG"
+    },
+    {
+     "code": "CH-SO-GG",
+     "shortName": "SO-GG"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "e36d157e-7f01-4413-91a8-804eb68cd484",
+   "startDate": "2027-12-25",
+   "endDate": "2027-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "097d9fae-ff21-4a5e-af0c-e3a7637fdb9d",
+   "startDate": "2027-12-26",
+   "endDate": "2027-12-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "St Stephen's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-RF-MA",
+     "shortName": "AG-RF-MA"
+    },
+    {
+     "code": "CH-AG-ZZ",
+     "shortName": "AG-ZZ"
+    },
+    {
+     "code": "CH-AG-LB",
+     "shortName": "AG-LB"
+    },
+    {
+     "code": "CH-AG-RF-WA",
+     "shortName": "AG-RF-WA"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO",
+     "shortName": "SO"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-AG-ZF",
+     "shortName": "AG-ZF"
+    },
+    {
+     "code": "CH-AR",
+     "shortName": "AR"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-AG-RF-RF",
+     "shortName": "AG-RF-RF"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-AA",
+     "shortName": "AG-AA"
+    },
+    {
+     "code": "CH-AG-KU",
+     "shortName": "AG-KU"
+    },
+    {
+     "code": "CH-AG-BA",
+     "shortName": "AG-BA"
+    },
+    {
+     "code": "CH-AG-RF-KA",
+     "shortName": "AG-RF-KA"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-AG-RF-MO",
+     "shortName": "AG-RF-MO"
+    },
+    {
+     "code": "CH-AG-RF-ZU",
+     "shortName": "AG-RF-ZU"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-AG-RF-OL",
+     "shortName": "AG-RF-OL"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BR",
+     "shortName": "AG-BR"
+    },
+    {
+     "code": "CH-AG-BG",
+     "shortName": "AG-BG"
+    },
+    {
+     "code": "CH-AG-RF-ZE",
+     "shortName": "AG-RF-ZE"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "207a6205-201a-442e-bd13-488ff1366fc7",
+   "startDate": "2028-01-01",
+   "endDate": "2028-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  }
+ ],
+ "school": [
+  {
+   "id": "6785b84b-9431-48b1-8a49-1e5a5de9547f",
+   "startDate": "2026-12-23",
+   "endDate": "2027-01-05",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-GR-ML",
+     "shortName": "GR-ML"
+    },
+    {
+     "code": "CH-GR-EB",
+     "shortName": "GR-EB"
+    },
+    {
+     "code": "CH-GR-LQ",
+     "shortName": "GR-LQ"
+    },
+    {
+     "code": "CH-GR-SS",
+     "shortName": "GR-SS"
+    },
+    {
+     "code": "CH-GR-AB",
+     "shortName": "GR-AB"
+    },
+    {
+     "code": "CH-GR-BN",
+     "shortName": "GR-BN"
+    },
+    {
+     "code": "CH-GR-IB",
+     "shortName": "GR-IB"
+    },
+    {
+     "code": "CH-GR-PS",
+     "shortName": "GR-PS"
+    },
+    {
+     "code": "CH-GR-VM",
+     "shortName": "GR-VM"
+    },
+    {
+     "code": "CH-GR-PD",
+     "shortName": "GR-PD"
+    }
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ]
+  },
+  {
+   "id": "6368307e-c48a-429d-b846-efd5ac75fdd0",
+   "startDate": "2026-12-24",
+   "endDate": "2027-01-06",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-GR-MS",
+     "shortName": "GR-MS"
+    }
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ]
+  },
+  {
+   "id": "aa7ccc2b-2ee5-48d0-a3dc-03b2cac0d27f",
+   "startDate": "2027-08-16",
+   "endDate": "2027-08-16",
+   "type": "BackToSchool",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Start of the school year"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-GR-ML",
+     "shortName": "GR-ML"
+    },
+    {
+     "code": "CH-GR-EB",
+     "shortName": "GR-EB"
+    },
+    {
+     "code": "CH-GR-LQ",
+     "shortName": "GR-LQ"
+    },
+    {
+     "code": "CH-GR-SS",
+     "shortName": "GR-SS"
+    },
+    {
+     "code": "CH-GR-AB",
+     "shortName": "GR-AB"
+    },
+    {
+     "code": "CH-GR-BN",
+     "shortName": "GR-BN"
+    },
+    {
+     "code": "CH-GR-IB",
+     "shortName": "GR-IB"
+    },
+    {
+     "code": "CH-GR-PS",
+     "shortName": "GR-PS"
+    },
+    {
+     "code": "CH-GR-VM",
+     "shortName": "GR-VM"
+    },
+    {
+     "code": "CH-GR-PD",
+     "shortName": "GR-PD"
+    }
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ]
+  },
+  {
+   "id": "68256f70-c956-4084-bff0-87f751fb6f7c",
+   "startDate": "2027-10-09",
+   "endDate": "2027-10-24",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-GR-ML",
+     "shortName": "GR-ML"
+    },
+    {
+     "code": "CH-GR-EB",
+     "shortName": "GR-EB"
+    },
+    {
+     "code": "CH-GR-LQ",
+     "shortName": "GR-LQ"
+    },
+    {
+     "code": "CH-GR-SS",
+     "shortName": "GR-SS"
+    },
+    {
+     "code": "CH-GR-AB",
+     "shortName": "GR-AB"
+    },
+    {
+     "code": "CH-GR-BN",
+     "shortName": "GR-BN"
+    },
+    {
+     "code": "CH-GR-IB",
+     "shortName": "GR-IB"
+    },
+    {
+     "code": "CH-GR-PS",
+     "shortName": "GR-PS"
+    },
+    {
+     "code": "CH-GR-VM",
+     "shortName": "GR-VM"
+    },
+    {
+     "code": "CH-GR-PD",
+     "shortName": "GR-PD"
+    }
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ]
+  },
+  {
+   "id": "342f9907-d5e3-4d1a-9833-5353384f06c0",
+   "startDate": "2027-12-23",
+   "endDate": "2028-01-05",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-GR-ML",
+     "shortName": "GR-ML"
+    },
+    {
+     "code": "CH-GR-EB",
+     "shortName": "GR-EB"
+    },
+    {
+     "code": "CH-GR-LQ",
+     "shortName": "GR-LQ"
+    },
+    {
+     "code": "CH-GR-SS",
+     "shortName": "GR-SS"
+    },
+    {
+     "code": "CH-GR-AB",
+     "shortName": "GR-AB"
+    },
+    {
+     "code": "CH-GR-BN",
+     "shortName": "GR-BN"
+    },
+    {
+     "code": "CH-GR-IB",
+     "shortName": "GR-IB"
+    },
+    {
+     "code": "CH-GR-PS",
+     "shortName": "GR-PS"
+    },
+    {
+     "code": "CH-GR-VM",
+     "shortName": "GR-VM"
+    },
+    {
+     "code": "CH-GR-PD",
+     "shortName": "GR-PD"
+    }
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ]
+  },
+  {
+   "id": "1999e902-648e-4b50-b268-b5fdbaf9df85",
+   "startDate": "2028-08-14",
+   "endDate": "2028-08-14",
+   "type": "BackToSchool",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Start of the school year"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-GR-ML",
+     "shortName": "GR-ML"
+    },
+    {
+     "code": "CH-GR-EB",
+     "shortName": "GR-EB"
+    },
+    {
+     "code": "CH-GR-LQ",
+     "shortName": "GR-LQ"
+    },
+    {
+     "code": "CH-GR-SS",
+     "shortName": "GR-SS"
+    },
+    {
+     "code": "CH-GR-AB",
+     "shortName": "GR-AB"
+    },
+    {
+     "code": "CH-GR-BN",
+     "shortName": "GR-BN"
+    },
+    {
+     "code": "CH-GR-IB",
+     "shortName": "GR-IB"
+    },
+    {
+     "code": "CH-GR-PS",
+     "shortName": "GR-PS"
+    },
+    {
+     "code": "CH-GR-VM",
+     "shortName": "GR-VM"
+    },
+    {
+     "code": "CH-GR-PD",
+     "shortName": "GR-PD"
+    }
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ]
+  },
+  {
+   "id": "361c412f-9f36-4a16-85fd-26770b7c7182",
+   "startDate": "2028-10-07",
+   "endDate": "2028-10-22",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-GR-ML",
+     "shortName": "GR-ML"
+    },
+    {
+     "code": "CH-GR-EB",
+     "shortName": "GR-EB"
+    },
+    {
+     "code": "CH-GR-LQ",
+     "shortName": "GR-LQ"
+    },
+    {
+     "code": "CH-GR-SS",
+     "shortName": "GR-SS"
+    },
+    {
+     "code": "CH-GR-AB",
+     "shortName": "GR-AB"
+    },
+    {
+     "code": "CH-GR-BN",
+     "shortName": "GR-BN"
+    },
+    {
+     "code": "CH-GR-IB",
+     "shortName": "GR-IB"
+    },
+    {
+     "code": "CH-GR-PS",
+     "shortName": "GR-PS"
+    },
+    {
+     "code": "CH-GR-VM",
+     "shortName": "GR-VM"
+    },
+    {
+     "code": "CH-GR-PD",
+     "shortName": "GR-PD"
+    }
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ]
+  },
+  {
+   "id": "97a99f97-e93b-49bf-a31c-9f5404b6f23f",
+   "startDate": "2028-12-23",
+   "endDate": "2029-01-07",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-GR-ML",
+     "shortName": "GR-ML"
+    },
+    {
+     "code": "CH-GR-EB",
+     "shortName": "GR-EB"
+    },
+    {
+     "code": "CH-GR-LQ",
+     "shortName": "GR-LQ"
+    },
+    {
+     "code": "CH-GR-SS",
+     "shortName": "GR-SS"
+    },
+    {
+     "code": "CH-GR-AB",
+     "shortName": "GR-AB"
+    },
+    {
+     "code": "CH-GR-BN",
+     "shortName": "GR-BN"
+    },
+    {
+     "code": "CH-GR-IB",
+     "shortName": "GR-IB"
+    },
+    {
+     "code": "CH-GR-PS",
+     "shortName": "GR-PS"
+    },
+    {
+     "code": "CH-GR-VM",
+     "shortName": "GR-VM"
+    },
+    {
+     "code": "CH-GR-PD",
+     "shortName": "GR-PD"
+    }
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ]
+  }
+ ],
+ "subdivisions": [
+  {
+   "code": "CH-AG",
+   "isoCode": "CH-AG",
+   "shortName": "AG",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Aargau"
+    },
+    {
+     "language": "FR",
+     "text": "Argovie"
+    },
+    {
+     "language": "IT",
+     "text": "Argovia"
+    },
+    {
+     "language": "RM",
+     "text": "Argovia"
+    },
+    {
+     "language": "EN",
+     "text": "Aargau"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-AI",
+   "isoCode": "CH-AI",
+   "shortName": "AI",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Appenzell Innerrhoden"
+    },
+    {
+     "language": "FR",
+     "text": "Appenzell Rhodes-Intérieures"
+    },
+    {
+     "language": "IT",
+     "text": "Appenzello Interno"
+    },
+    {
+     "language": "RM",
+     "text": "Appenzell Dadens"
+    },
+    {
+     "language": "EN",
+     "text": "Appenzell Innerrhoden"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "CH-AI-VS",
+     "shortName": "AI-VS"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-AR",
+   "isoCode": "CH-AR",
+   "shortName": "AR",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Appenzell Ausserrhoden"
+    },
+    {
+     "language": "FR",
+     "text": "Appenzell Rhodes-Extérieures"
+    },
+    {
+     "language": "IT",
+     "text": "Appenzello Esterno"
+    },
+    {
+     "language": "RM",
+     "text": "Appenzell Dadora"
+    },
+    {
+     "language": "EN",
+     "text": "Appenzell Ausserrhoden"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "CH-AR-VS",
+     "shortName": "AR-VS"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-BE",
+   "isoCode": "CH-BE",
+   "shortName": "BE",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Bern"
+    },
+    {
+     "language": "FR",
+     "text": "Berne"
+    },
+    {
+     "language": "IT",
+     "text": "Berna"
+    },
+    {
+     "language": "RM",
+     "text": "Berna"
+    },
+    {
+     "language": "EN",
+     "text": "Bern"
+    }
+   ],
+   "officialLanguages": [
+    "DE",
+    "FR"
+   ],
+   "groups": [
+    {
+     "code": "CH-BE-EO",
+     "shortName": "BE-EO"
+    },
+    {
+     "code": "CH-BE-VS",
+     "shortName": "BE-VS"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-BL",
+   "isoCode": "CH-BL",
+   "shortName": "BL",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Basel-Landschaft"
+    },
+    {
+     "language": "FR",
+     "text": "Bâle-Campagne"
+    },
+    {
+     "language": "IT",
+     "text": "Basilea Campagna"
+    },
+    {
+     "language": "RM",
+     "text": "Basilea-Champagna"
+    },
+    {
+     "language": "EN",
+     "text": "Basel-Landschaft"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-BS",
+   "isoCode": "CH-BS",
+   "shortName": "BS",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Basel-Stadt"
+    },
+    {
+     "language": "FR",
+     "text": "Bâle-Ville"
+    },
+    {
+     "language": "IT",
+     "text": "Basilea Città"
+    },
+    {
+     "language": "RM",
+     "text": "Basilea-Citad"
+    },
+    {
+     "language": "EN",
+     "text": "Basel-Stadt"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-FR",
+   "isoCode": "CH-FR",
+   "shortName": "FR",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Fribourg"
+    },
+    {
+     "language": "DE",
+     "text": "Freiburg"
+    },
+    {
+     "language": "IT",
+     "text": "Friburgo"
+    },
+    {
+     "language": "RM",
+     "text": "Friburg"
+    },
+    {
+     "language": "EN",
+     "text": "Fribourg"
+    }
+   ],
+   "officialLanguages": [
+    "FR",
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-GE",
+   "isoCode": "CH-GE",
+   "shortName": "GE",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Genève"
+    },
+    {
+     "language": "DE",
+     "text": "Genf"
+    },
+    {
+     "language": "IT",
+     "text": "Ginevra"
+    },
+    {
+     "language": "RM",
+     "text": "Genevra"
+    },
+    {
+     "language": "EN",
+     "text": "Geneva"
+    }
+   ],
+   "officialLanguages": [
+    "FR"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-GL",
+   "isoCode": "CH-GL",
+   "shortName": "GL",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Glarus"
+    },
+    {
+     "language": "FR",
+     "text": "Glaris"
+    },
+    {
+     "language": "IT",
+     "text": "Glarona"
+    },
+    {
+     "language": "RM",
+     "text": "Glaruna"
+    },
+    {
+     "language": "EN",
+     "text": "Glarus"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-GR",
+   "isoCode": "CH-GR",
+   "shortName": "GR",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Graubünden"
+    },
+    {
+     "language": "IT",
+     "text": "Grigioni"
+    },
+    {
+     "language": "RM",
+     "text": "Grischun"
+    },
+    {
+     "language": "FR",
+     "text": "Grisons"
+    },
+    {
+     "language": "EN",
+     "text": "Grisons"
+    }
+   ],
+   "officialLanguages": [
+    "DE",
+    "RM",
+    "IT"
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ],
+   "children": [
+    {
+     "code": "CH-GR-ML",
+     "isoCode": "",
+     "shortName": "GR-ML",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Maloja"
+      },
+      {
+       "language": "RM",
+       "text": "Malögia"
+      },
+      {
+       "language": "IT",
+       "text": "Maloggia"
+      }
+     ],
+     "officialLanguages": [
+      "DE",
+      "RM",
+      "IT"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-ML-BR",
+       "isoCode": "",
+       "shortName": "GR-ML-BR",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Bregaglia"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-BE",
+       "isoCode": "",
+       "shortName": "GR-ML-BE",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Bever"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-CE",
+       "isoCode": "",
+       "shortName": "GR-ML-CE",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Celerina/Schlarigna"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-MA",
+       "isoCode": "",
+       "shortName": "GR-ML-MA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Madulain"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-PC",
+       "isoCode": "",
+       "shortName": "GR-ML-PC",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "La Punt Chamues-ch"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-PO",
+       "isoCode": "",
+       "shortName": "GR-ML-PO",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Pontresina"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-SA",
+       "isoCode": "",
+       "shortName": "GR-ML-SA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Samedan"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-SC",
+       "isoCode": "",
+       "shortName": "GR-ML-SC",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "S-chanf"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-SI",
+       "isoCode": "",
+       "shortName": "GR-ML-SI",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Sils im Engadin/Segl"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-SL",
+       "isoCode": "",
+       "shortName": "GR-ML-SL",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Silvaplana"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-SM",
+       "isoCode": "",
+       "shortName": "GR-ML-SM",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "St. Moritz"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-ML-ZU",
+       "isoCode": "",
+       "shortName": "GR-ML-ZU",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Zuoz"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      }
+     ]
+    },
+    {
+     "code": "CH-GR-EB",
+     "isoCode": "",
+     "shortName": "GR-EB",
+     "category": [
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "RM",
+       "text": "Engiadina Bassa/Val Müstair"
+      },
+      {
+       "language": "DE",
+       "text": "Unterengadin/Münstertal"
+      }
+     ],
+     "officialLanguages": [
+      "RM",
+      "DE"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-EB-ZE",
+       "isoCode": "",
+       "shortName": "GR-EB-ZE",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Zernez"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-EB-VM",
+       "isoCode": "",
+       "shortName": "GR-EB-VM",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Val Müstair"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-EB-VA",
+       "isoCode": "",
+       "shortName": "GR-EB-VA",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Valsot"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-EB-SC",
+       "isoCode": "",
+       "shortName": "GR-EB-SC",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Scuol"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-EB-SA",
+       "isoCode": "",
+       "shortName": "GR-EB-SA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Samnaun"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      }
+     ]
+    },
+    {
+     "code": "CH-GR-LQ",
+     "isoCode": "",
+     "shortName": "GR-LQ",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Landquart"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-LQ-ZI",
+       "isoCode": "",
+       "shortName": "GR-LQ-ZI",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Zizers"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-LQ-FL",
+       "isoCode": "",
+       "shortName": "GR-LQ-FL",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Fläsch"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-LQ-JE",
+       "isoCode": "",
+       "shortName": "GR-LQ-JE",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Jenins"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-LQ-LA",
+       "isoCode": "",
+       "shortName": "GR-LQ-LA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Landquart"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-LQ-MF",
+       "isoCode": "",
+       "shortName": "GR-LQ-MF",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Maienfeld"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-LQ-ML",
+       "isoCode": "",
+       "shortName": "GR-LQ-ML",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Malans"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-LQ-TR",
+       "isoCode": "",
+       "shortName": "GR-LQ-TR",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Trimmis"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-LQ-UN",
+       "isoCode": "",
+       "shortName": "GR-LQ-UN",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Untervaz"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      }
+     ]
+    },
+    {
+     "code": "CH-GR-MS",
+     "isoCode": "",
+     "shortName": "GR-MS",
+     "category": [
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "IT",
+       "text": "Moesa"
+      },
+      {
+       "language": "DE",
+       "text": "Moesa"
+      },
+      {
+       "language": "RM",
+       "text": "Moesa"
+      }
+     ],
+     "officialLanguages": [
+      "IT"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-MS-SM",
+       "isoCode": "",
+       "shortName": "GR-MS-SM",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Santa Maria in Calanca"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-RS",
+       "isoCode": "",
+       "shortName": "GR-MS-RS",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Rossa"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-ME",
+       "isoCode": "",
+       "shortName": "GR-MS-ME",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Mesocco"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-LO",
+       "isoCode": "",
+       "shortName": "GR-MS-LO",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Lostallo"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-BU",
+       "isoCode": "",
+       "shortName": "GR-MS-BU",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Buseno"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-GR",
+       "isoCode": "",
+       "shortName": "GR-MS-GR",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Grono"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-CS",
+       "isoCode": "",
+       "shortName": "GR-MS-CS",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Castaneda"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-CM",
+       "isoCode": "",
+       "shortName": "GR-MS-CM",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Cama"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-CL",
+       "isoCode": "",
+       "shortName": "GR-MS-CL",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Calanca"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-RV",
+       "isoCode": "",
+       "shortName": "GR-MS-RV",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Roveredo (GR)"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-SV",
+       "isoCode": "",
+       "shortName": "GR-MS-SV",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "San Vittore"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-MS-SO",
+       "isoCode": "",
+       "shortName": "GR-MS-SO",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Soazza"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      }
+     ]
+    },
+    {
+     "code": "CH-GR-SS",
+     "isoCode": "",
+     "shortName": "GR-SS",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Surselva"
+      }
+     ],
+     "officialLanguages": [
+      "RM",
+      "DE"
+     ]
+    },
+    {
+     "code": "CH-GR-AB",
+     "isoCode": "",
+     "shortName": "GR-AB",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Albula"
+      },
+      {
+       "language": "RM",
+       "text": "Alvra"
+      },
+      {
+       "language": "IT",
+       "text": "Albula"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-AB-BF",
+       "isoCode": "",
+       "shortName": "GR-AB-BF",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Bergün Filisur"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-AB-AA",
+       "isoCode": "",
+       "shortName": "GR-AB-AA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Albula/Alvra"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-AB-LL",
+       "isoCode": "",
+       "shortName": "GR-AB-LL",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Lantsch/Lenz"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-AB-SM",
+       "isoCode": "",
+       "shortName": "GR-AB-SM",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Schmitten"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-AB-SU",
+       "isoCode": "",
+       "shortName": "GR-AB-SU",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Surses"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-AB-VA",
+       "isoCode": "",
+       "shortName": "GR-AB-VA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Vaz/Obervaz"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      }
+     ]
+    },
+    {
+     "code": "CH-GR-BN",
+     "isoCode": "",
+     "shortName": "GR-BN",
+     "category": [
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "IT",
+       "text": "Bernina"
+      }
+     ],
+     "officialLanguages": [
+      "IT"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-BN-BR",
+       "isoCode": "",
+       "shortName": "GR-BN-BR",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Brusio"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      },
+      {
+       "code": "CH-GR-BN-PO",
+       "isoCode": "",
+       "shortName": "GR-BN-PO",
+       "category": [
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "IT",
+         "text": "Poschiavo"
+        }
+       ],
+       "officialLanguages": [
+        "IT"
+       ]
+      }
+     ]
+    },
+    {
+     "code": "CH-GR-IB",
+     "isoCode": "",
+     "shortName": "GR-IB",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Imboden"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-IB-TA",
+       "isoCode": "",
+       "shortName": "GR-IB-TA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Tamins"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-IB-FL",
+       "isoCode": "",
+       "shortName": "GR-IB-FL",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Flims"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-IB-FE",
+       "isoCode": "",
+       "shortName": "GR-IB-FE",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Felsberg"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-IB-DE",
+       "isoCode": "",
+       "shortName": "GR-IB-DE",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Domat/Ems"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-IB-BO",
+       "isoCode": "",
+       "shortName": "GR-IB-BO",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Bonaduz"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-IB-RH",
+       "isoCode": "",
+       "shortName": "GR-IB-RH",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Rhäzüns"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-IB-TR",
+       "isoCode": "",
+       "shortName": "GR-IB-TR",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Trin"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      }
+     ]
+    },
+    {
+     "code": "CH-GR-PS",
+     "isoCode": "",
+     "shortName": "GR-PS",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Plessur"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-PS-TP",
+       "isoCode": "",
+       "shortName": "GR-PS-TP",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Tschiertschen-Praden"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PS-CR",
+       "isoCode": "",
+       "shortName": "GR-PS-CR",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Chur"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PS-AR",
+       "isoCode": "",
+       "shortName": "GR-PS-AR",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Arosa"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PS-CW",
+       "isoCode": "",
+       "shortName": "GR-PS-CW",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Churwalden"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      }
+     ]
+    },
+    {
+     "code": "CH-GR-VM",
+     "isoCode": "",
+     "shortName": "GR-VM",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Viamala"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-VM-FE",
+       "isoCode": "",
+       "shortName": "GR-VM-FE",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Ferrera"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-AN",
+       "isoCode": "",
+       "shortName": "GR-VM-AN",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Andeer"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-AV",
+       "isoCode": "",
+       "shortName": "GR-VM-AV",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Avers"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-CA",
+       "isoCode": "",
+       "shortName": "GR-VM-CA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Cazis"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-DO",
+       "isoCode": "",
+       "shortName": "GR-VM-DO",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Domleschg"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-FL",
+       "isoCode": "",
+       "shortName": "GR-VM-FL",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Flerden"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-FU",
+       "isoCode": "",
+       "shortName": "GR-VM-FU",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Fürstenau"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-MA",
+       "isoCode": "",
+       "shortName": "GR-VM-MA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Masein"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-MU",
+       "isoCode": "",
+       "shortName": "GR-VM-MU",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Muntogna da Schons"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-RG",
+       "isoCode": "",
+       "shortName": "GR-VM-RG",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Rongellen"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-RH",
+       "isoCode": "",
+       "shortName": "GR-VM-RH",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Rheinwald"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-RT",
+       "isoCode": "",
+       "shortName": "GR-VM-RT",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Rothenbrunnen"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-SA",
+       "isoCode": "",
+       "shortName": "GR-VM-SA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Scharans"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-SI",
+       "isoCode": "",
+       "shortName": "GR-VM-SI",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Sils im Domleschg"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-SU",
+       "isoCode": "",
+       "shortName": "GR-VM-SU",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Sufers"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-TH",
+       "isoCode": "",
+       "shortName": "GR-VM-TH",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Thusis"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-TS",
+       "isoCode": "",
+       "shortName": "GR-VM-TS",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Tschappina"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-UR",
+       "isoCode": "",
+       "shortName": "GR-VM-UR",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Urmein"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-VM-ZR",
+       "isoCode": "",
+       "shortName": "GR-VM-ZR",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Zillis-Reischen"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      }
+     ]
+    },
+    {
+     "code": "CH-GR-PD",
+     "isoCode": "",
+     "shortName": "GR-PD",
+     "category": [
+      {
+       "language": "RM",
+       "text": "regiun"
+      },
+      {
+       "language": "DE",
+       "text": "Region"
+      },
+      {
+       "language": "IT",
+       "text": "regione"
+      },
+      {
+       "language": "FR",
+       "text": "région"
+      },
+      {
+       "language": "EN",
+       "text": "region"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Prättigau / Davos"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ],
+     "children": [
+      {
+       "code": "CH-GR-SS-VA",
+       "isoCode": "",
+       "shortName": "GR-SS-VA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Vals"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-JE",
+       "isoCode": "",
+       "shortName": "GR-PD-JE",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Jenaz"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-GR",
+       "isoCode": "",
+       "shortName": "GR-PD-GR",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Grüsch"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-FU",
+       "isoCode": "",
+       "shortName": "GR-PD-FU",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Furna"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-FI",
+       "isoCode": "",
+       "shortName": "GR-PD-FI",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Fideris"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-DA",
+       "isoCode": "",
+       "shortName": "GR-PD-DA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Davos"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-TR",
+       "isoCode": "",
+       "shortName": "GR-SS-TR",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Trun"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-SU",
+       "isoCode": "",
+       "shortName": "GR-SS-SU",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Sumvitg"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-SL",
+       "isoCode": "",
+       "shortName": "GR-SS-SL",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Schluein"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-SG",
+       "isoCode": "",
+       "shortName": "GR-SS-SG",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Sagogn"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-CO",
+       "isoCode": "",
+       "shortName": "GR-PD-CO",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Conters im Prättigau"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-SF",
+       "isoCode": "",
+       "shortName": "GR-SS-SF",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Safiental"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-OB",
+       "isoCode": "",
+       "shortName": "GR-SS-OB",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Obersaxen Mundaun"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-ME",
+       "isoCode": "",
+       "shortName": "GR-SS-ME",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Medel (Lucmagn)"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-LU",
+       "isoCode": "",
+       "shortName": "GR-SS-LU",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Lumnezia"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-LA",
+       "isoCode": "",
+       "shortName": "GR-SS-LA",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Laax"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-TU",
+       "isoCode": "",
+       "shortName": "GR-SS-TU",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Tujetsch"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-IL",
+       "isoCode": "",
+       "shortName": "GR-SS-IL",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Ilanz/Glion"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-FA",
+       "isoCode": "",
+       "shortName": "GR-SS-FA",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Falera"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-DI",
+       "isoCode": "",
+       "shortName": "GR-SS-DI",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Disentis/Mustér"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-SS-BR",
+       "isoCode": "",
+       "shortName": "GR-SS-BR",
+       "category": [
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "RM",
+         "text": "Breil/Brigels"
+        }
+       ],
+       "officialLanguages": [
+        "RM"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-SI",
+       "isoCode": "",
+       "shortName": "GR-PD-SI",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Schiers"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-SE",
+       "isoCode": "",
+       "shortName": "GR-PD-SE",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Seewis im Prättigau"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-LU",
+       "isoCode": "",
+       "shortName": "GR-PD-LU",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Luzein"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-KU",
+       "isoCode": "",
+       "shortName": "GR-PD-KU",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Küblis"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      },
+      {
+       "code": "CH-GR-PD-KL",
+       "isoCode": "",
+       "shortName": "GR-PD-KL",
+       "category": [
+        {
+         "language": "DE",
+         "text": "Gemeinde"
+        },
+        {
+         "language": "RM",
+         "text": "vischnanca"
+        },
+        {
+         "language": "FR",
+         "text": "commune"
+        },
+        {
+         "language": "IT",
+         "text": "comune"
+        },
+        {
+         "language": "EN",
+         "text": "municipality"
+        }
+       ],
+       "name": [
+        {
+         "language": "DE",
+         "text": "Klosters"
+        }
+       ],
+       "officialLanguages": [
+        "DE"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "CH-JU",
+   "isoCode": "CH-JU",
+   "shortName": "JU",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Jura"
+    },
+    {
+     "language": "DE",
+     "text": "Jura"
+    },
+    {
+     "language": "IT",
+     "text": "Giura"
+    },
+    {
+     "language": "RM",
+     "text": "Giura"
+    },
+    {
+     "language": "EN",
+     "text": "Jura"
+    }
+   ],
+   "officialLanguages": [
+    "FR"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-LU",
+   "isoCode": "CH-LU",
+   "shortName": "LU",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Luzern"
+    },
+    {
+     "language": "FR",
+     "text": "Lucerne"
+    },
+    {
+     "language": "IT",
+     "text": "Lucerna"
+    },
+    {
+     "language": "RM",
+     "text": "Lucerna"
+    },
+    {
+     "language": "EN",
+     "text": "Lucerne"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-NE",
+   "isoCode": "CH-NE",
+   "shortName": "NE",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Neuchâtel"
+    },
+    {
+     "language": "DE",
+     "text": "Neuenburg"
+    },
+    {
+     "language": "IT",
+     "text": "Neuchâtel"
+    },
+    {
+     "language": "RM",
+     "text": "Neuschatel"
+    },
+    {
+     "language": "EN",
+     "text": "Neuchâtel"
+    }
+   ],
+   "officialLanguages": [
+    "FR"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-NW",
+   "isoCode": "CH-NW",
+   "shortName": "NW",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Nidwalden"
+    },
+    {
+     "language": "FR",
+     "text": "Nidwald"
+    },
+    {
+     "language": "IT",
+     "text": "Nidvaldo"
+    },
+    {
+     "language": "RM",
+     "text": "Sutsilvania"
+    },
+    {
+     "language": "EN",
+     "text": "Nidwalden"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-OW",
+   "isoCode": "CH-OW",
+   "shortName": "OW",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Obwalden"
+    },
+    {
+     "language": "FR",
+     "text": "Obwald"
+    },
+    {
+     "language": "IT",
+     "text": "Obvaldo"
+    },
+    {
+     "language": "RM",
+     "text": "Sursilvania"
+    },
+    {
+     "language": "EN",
+     "text": "Obwalden"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-SG",
+   "isoCode": "CH-SG",
+   "shortName": "SG",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "St. Gallen"
+    },
+    {
+     "language": "FR",
+     "text": "Saint-Gall"
+    },
+    {
+     "language": "IT",
+     "text": "San Gallo"
+    },
+    {
+     "language": "RM",
+     "text": "Son Gagl"
+    },
+    {
+     "language": "EN",
+     "text": "St. Gallen"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-SH",
+   "isoCode": "CH-SH",
+   "shortName": "SH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Schaffhausen"
+    },
+    {
+     "language": "FR",
+     "text": "Schaffhouse"
+    },
+    {
+     "language": "IT",
+     "text": "Sciaffusa"
+    },
+    {
+     "language": "RM",
+     "text": "Schaffusa"
+    },
+    {
+     "language": "EN",
+     "text": "Schaffhausen"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-SO",
+   "isoCode": "CH-SO",
+   "shortName": "SO",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Solothurn"
+    },
+    {
+     "language": "FR",
+     "text": "Soleure"
+    },
+    {
+     "language": "IT",
+     "text": "Soletta"
+    },
+    {
+     "language": "RM",
+     "text": "Soloturn"
+    },
+    {
+     "language": "EN",
+     "text": "Solothurn"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "CH-SO-BS",
+     "shortName": "SO-BS"
+    },
+    {
+     "code": "CH-SO-MS",
+     "shortName": "SO-MS"
+    },
+    {
+     "code": "CH-SO-VS",
+     "shortName": "SO-VS"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-SZ",
+   "isoCode": "CH-SZ",
+   "shortName": "SZ",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Schwyz"
+    },
+    {
+     "language": "FR",
+     "text": "Schwytz"
+    },
+    {
+     "language": "IT",
+     "text": "Svitto"
+    },
+    {
+     "language": "RM",
+     "text": "Sviz"
+    },
+    {
+     "language": "EN",
+     "text": "Schwyz"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-TG",
+   "isoCode": "CH-TG",
+   "shortName": "TG",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Thurgau"
+    },
+    {
+     "language": "FR",
+     "text": "Thurgovie"
+    },
+    {
+     "language": "IT",
+     "text": "Turgovia"
+    },
+    {
+     "language": "RM",
+     "text": "Turgovia"
+    },
+    {
+     "language": "EN",
+     "text": "Thurgau"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-TI",
+   "isoCode": "CH-TI",
+   "shortName": "TI",
+   "category": [
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "IT",
+     "text": "Ticino"
+    },
+    {
+     "language": "DE",
+     "text": "Tessin"
+    },
+    {
+     "language": "FR",
+     "text": "Tessin"
+    },
+    {
+     "language": "RM",
+     "text": "Tessin"
+    },
+    {
+     "language": "EN",
+     "text": "Ticino"
+    }
+   ],
+   "officialLanguages": [
+    "IT"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-UR",
+   "isoCode": "CH-UR",
+   "shortName": "UR",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Uri"
+    },
+    {
+     "language": "FR",
+     "text": "Uri"
+    },
+    {
+     "language": "IT",
+     "text": "Uri"
+    },
+    {
+     "language": "RM",
+     "text": "Uri"
+    },
+    {
+     "language": "EN",
+     "text": "Uri"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-VD",
+   "isoCode": "CH-VD",
+   "shortName": "VD",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Vaud"
+    },
+    {
+     "language": "DE",
+     "text": "Waadt"
+    },
+    {
+     "language": "IT",
+     "text": "Vaud"
+    },
+    {
+     "language": "RM",
+     "text": "Vad"
+    },
+    {
+     "language": "EN",
+     "text": "Vaud"
+    }
+   ],
+   "officialLanguages": [
+    "FR"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-VS",
+   "isoCode": "CH-VS",
+   "shortName": "VS",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Valais"
+    },
+    {
+     "language": "DE",
+     "text": "Wallis"
+    },
+    {
+     "language": "IT",
+     "text": "Vallese"
+    },
+    {
+     "language": "RM",
+     "text": "Vallais"
+    },
+    {
+     "language": "EN",
+     "text": "Valais"
+    }
+   ],
+   "officialLanguages": [
+    "FR",
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-ZG",
+   "isoCode": "CH-ZG",
+   "shortName": "ZG",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Zug"
+    },
+    {
+     "language": "FR",
+     "text": "Zoug"
+    },
+    {
+     "language": "IT",
+     "text": "Zugo"
+    },
+    {
+     "language": "RM",
+     "text": "Zug"
+    },
+    {
+     "language": "EN",
+     "text": "Zug"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-ZH",
+   "isoCode": "CH-ZH",
+   "shortName": "ZH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Zürich"
+    },
+    {
+     "language": "FR",
+     "text": "Zurich"
+    },
+    {
+     "language": "IT",
+     "text": "Zurigo"
+    },
+    {
+     "language": "RM",
+     "text": "Turitg"
+    },
+    {
+     "language": "EN",
+     "text": "Zürich"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "CH-ZH-VS",
+     "shortName": "ZH-VS"
+    },
+    {
+     "code": "CH-ZH-BS",
+     "shortName": "ZH-BS"
+    },
+    {
+     "code": "CH-ZH-MS",
+     "shortName": "ZH-MS"
+    }
+   ],
+   "children": []
+  }
+ ],
+ "groups": [
+  {
+   "code": "CH-GR-VS",
+   "shortName": "GR-VS",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Schulart"
+    },
+    {
+     "language": "FR",
+     "text": "type d'école"
+    },
+    {
+     "language": "IT",
+     "text": "tipo di scuola"
+    },
+    {
+     "language": "EN",
+     "text": "school type"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Volksschulen"
+    },
+    {
+     "language": "FR",
+     "text": "Écoles primaires"
+    },
+    {
+     "language": "IT",
+     "text": "Scuole elementari"
+    },
+    {
+     "language": "EN",
+     "text": "Primary Schools"
+    }
+   ],
+   "subdivisions": [
+    {
+     "code": "CH-GR-ML-PO",
+     "shortName": "GR-ML-PO"
+    },
+    {
+     "code": "CH-GR-AB-LL",
+     "shortName": "GR-AB-LL"
+    },
+    {
+     "code": "CH-GR-PS-AR",
+     "shortName": "GR-PS-AR"
+    },
+    {
+     "code": "CH-GR-AB-BF",
+     "shortName": "GR-AB-BF"
+    },
+    {
+     "code": "CH-GR-VM-AV",
+     "shortName": "GR-VM-AV"
+    },
+    {
+     "code": "CH-GR-LQ-LA",
+     "shortName": "GR-LQ-LA"
+    },
+    {
+     "code": "CH-GR-BN-BR",
+     "shortName": "GR-BN-BR"
+    },
+    {
+     "code": "CH-GR-ML-CE",
+     "shortName": "GR-ML-CE"
+    },
+    {
+     "code": "CH-GR-AB-SU",
+     "shortName": "GR-AB-SU"
+    },
+    {
+     "code": "CH-GR-PD-FI",
+     "shortName": "GR-PD-FI"
+    },
+    {
+     "code": "CH-GR-PD-DA",
+     "shortName": "GR-PD-DA"
+    },
+    {
+     "code": "CH-GR-BN-PO",
+     "shortName": "GR-BN-PO"
+    },
+    {
+     "code": "CH-GR-SS-SG",
+     "shortName": "GR-SS-SG"
+    },
+    {
+     "code": "CH-GR-EB-VM",
+     "shortName": "GR-EB-VM"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-GR-IB-DE",
+     "shortName": "GR-IB-DE"
+    },
+    {
+     "code": "CH-GR-PS-CR",
+     "shortName": "GR-PS-CR"
+    },
+    {
+     "code": "CH-GR-PD-FU",
+     "shortName": "GR-PD-FU"
+    },
+    {
+     "code": "CH-GR-SS-VA",
+     "shortName": "GR-SS-VA"
+    },
+    {
+     "code": "CH-GR-VM-SU",
+     "shortName": "GR-VM-SU"
+    },
+    {
+     "code": "CH-GR-LQ-JE",
+     "shortName": "GR-LQ-JE"
+    },
+    {
+     "code": "CH-GR-VM-ZR",
+     "shortName": "GR-VM-ZR"
+    },
+    {
+     "code": "CH-GR-EB-VA",
+     "shortName": "GR-EB-VA"
+    },
+    {
+     "code": "CH-GR-PD-GR",
+     "shortName": "GR-PD-GR"
+    },
+    {
+     "code": "CH-GR-ML",
+     "shortName": "GR-ML"
+    },
+    {
+     "code": "CH-GR-PS-TP",
+     "shortName": "GR-PS-TP"
+    },
+    {
+     "code": "CH-GR-MS-LO",
+     "shortName": "GR-MS-LO"
+    },
+    {
+     "code": "CH-GR-LQ-ZI",
+     "shortName": "GR-LQ-ZI"
+    },
+    {
+     "code": "CH-GR-LQ-MF",
+     "shortName": "GR-LQ-MF"
+    },
+    {
+     "code": "CH-GR-VM-FU",
+     "shortName": "GR-VM-FU"
+    },
+    {
+     "code": "CH-GR-VM-TS",
+     "shortName": "GR-VM-TS"
+    },
+    {
+     "code": "CH-GR-MS-RV",
+     "shortName": "GR-MS-RV"
+    },
+    {
+     "code": "CH-GR-VM-SI",
+     "shortName": "GR-VM-SI"
+    },
+    {
+     "code": "CH-GR-SS-IL",
+     "shortName": "GR-SS-IL"
+    },
+    {
+     "code": "CH-GR-SS-LA",
+     "shortName": "GR-SS-LA"
+    },
+    {
+     "code": "CH-GR-PD-SI",
+     "shortName": "GR-PD-SI"
+    },
+    {
+     "code": "CH-GR-SS-FA",
+     "shortName": "GR-SS-FA"
+    },
+    {
+     "code": "CH-GR-PD-KU",
+     "shortName": "GR-PD-KU"
+    },
+    {
+     "code": "CH-GR-ML-SI",
+     "shortName": "GR-ML-SI"
+    },
+    {
+     "code": "CH-GR-VM-FE",
+     "shortName": "GR-VM-FE"
+    },
+    {
+     "code": "CH-GR-ML-SC",
+     "shortName": "GR-ML-SC"
+    },
+    {
+     "code": "CH-GR-PD-JE",
+     "shortName": "GR-PD-JE"
+    },
+    {
+     "code": "CH-GR-AB-SM",
+     "shortName": "GR-AB-SM"
+    },
+    {
+     "code": "CH-GR-ML-SA",
+     "shortName": "GR-ML-SA"
+    },
+    {
+     "code": "CH-GR-PD-LU",
+     "shortName": "GR-PD-LU"
+    },
+    {
+     "code": "CH-GR-EB",
+     "shortName": "GR-EB"
+    },
+    {
+     "code": "CH-GR-VM-SA",
+     "shortName": "GR-VM-SA"
+    },
+    {
+     "code": "CH-GR-LQ",
+     "shortName": "GR-LQ"
+    },
+    {
+     "code": "CH-GR-MS-SM",
+     "shortName": "GR-MS-SM"
+    },
+    {
+     "code": "CH-GR-AB-AA",
+     "shortName": "GR-AB-AA"
+    },
+    {
+     "code": "CH-GR-SS-TR",
+     "shortName": "GR-SS-TR"
+    },
+    {
+     "code": "CH-GR-PD-SE",
+     "shortName": "GR-PD-SE"
+    },
+    {
+     "code": "CH-GR-VM-FL",
+     "shortName": "GR-VM-FL"
+    },
+    {
+     "code": "CH-GR-MS-GR",
+     "shortName": "GR-MS-GR"
+    },
+    {
+     "code": "CH-GR-MS-CS",
+     "shortName": "GR-MS-CS"
+    },
+    {
+     "code": "CH-GR-SS-OB",
+     "shortName": "GR-SS-OB"
+    },
+    {
+     "code": "CH-GR-VM-RT",
+     "shortName": "GR-VM-RT"
+    },
+    {
+     "code": "CH-GR-VM-UR",
+     "shortName": "GR-VM-UR"
+    },
+    {
+     "code": "CH-GR-IB-FL",
+     "shortName": "GR-IB-FL"
+    },
+    {
+     "code": "CH-GR-ML-MA",
+     "shortName": "GR-ML-MA"
+    },
+    {
+     "code": "CH-GR-MS-SV",
+     "shortName": "GR-MS-SV"
+    },
+    {
+     "code": "CH-GR-SS-SU",
+     "shortName": "GR-SS-SU"
+    },
+    {
+     "code": "CH-GR-SS-SL",
+     "shortName": "GR-SS-SL"
+    },
+    {
+     "code": "CH-GR-PD-KL",
+     "shortName": "GR-PD-KL"
+    },
+    {
+     "code": "CH-GR-SS-LU",
+     "shortName": "GR-SS-LU"
+    },
+    {
+     "code": "CH-GR-MS",
+     "shortName": "GR-MS"
+    },
+    {
+     "code": "CH-GR-EB-SA",
+     "shortName": "GR-EB-SA"
+    },
+    {
+     "code": "CH-GR-IB-TA",
+     "shortName": "GR-IB-TA"
+    },
+    {
+     "code": "CH-GR-IB-TR",
+     "shortName": "GR-IB-TR"
+    },
+    {
+     "code": "CH-GR-SS",
+     "shortName": "GR-SS"
+    },
+    {
+     "code": "CH-GR-SS-BR",
+     "shortName": "GR-SS-BR"
+    },
+    {
+     "code": "CH-GR-ML-ZU",
+     "shortName": "GR-ML-ZU"
+    },
+    {
+     "code": "CH-GR-LQ-ML",
+     "shortName": "GR-LQ-ML"
+    },
+    {
+     "code": "CH-GR-MS-BU",
+     "shortName": "GR-MS-BU"
+    },
+    {
+     "code": "CH-GR-SS-TU",
+     "shortName": "GR-SS-TU"
+    },
+    {
+     "code": "CH-GR-ML-BR",
+     "shortName": "GR-ML-BR"
+    },
+    {
+     "code": "CH-GR-IB-FE",
+     "shortName": "GR-IB-FE"
+    },
+    {
+     "code": "CH-GR-SS-SF",
+     "shortName": "GR-SS-SF"
+    },
+    {
+     "code": "CH-GR-VM-RG",
+     "shortName": "GR-VM-RG"
+    },
+    {
+     "code": "CH-GR-MS-RS",
+     "shortName": "GR-MS-RS"
+    },
+    {
+     "code": "CH-GR-MS-CL",
+     "shortName": "GR-MS-CL"
+    },
+    {
+     "code": "CH-GR-IB-BO",
+     "shortName": "GR-IB-BO"
+    },
+    {
+     "code": "CH-GR-VM-MU",
+     "shortName": "GR-VM-MU"
+    },
+    {
+     "code": "CH-GR-EB-SC",
+     "shortName": "GR-EB-SC"
+    },
+    {
+     "code": "CH-GR-LQ-UN",
+     "shortName": "GR-LQ-UN"
+    },
+    {
+     "code": "CH-GR-AB",
+     "shortName": "GR-AB"
+    },
+    {
+     "code": "CH-GR-BN",
+     "shortName": "GR-BN"
+    },
+    {
+     "code": "CH-GR-ML-BE",
+     "shortName": "GR-ML-BE"
+    },
+    {
+     "code": "CH-GR-ML-SM",
+     "shortName": "GR-ML-SM"
+    },
+    {
+     "code": "CH-GR-LQ-FL",
+     "shortName": "GR-LQ-FL"
+    },
+    {
+     "code": "CH-GR-VM-MA",
+     "shortName": "GR-VM-MA"
+    },
+    {
+     "code": "CH-GR-MS-ME",
+     "shortName": "GR-MS-ME"
+    },
+    {
+     "code": "CH-GR-ML-SL",
+     "shortName": "GR-ML-SL"
+    },
+    {
+     "code": "CH-GR-IB",
+     "shortName": "GR-IB"
+    },
+    {
+     "code": "CH-GR-EB-ZE",
+     "shortName": "GR-EB-ZE"
+    },
+    {
+     "code": "CH-GR-IB-RH",
+     "shortName": "GR-IB-RH"
+    },
+    {
+     "code": "CH-GR-PS",
+     "shortName": "GR-PS"
+    },
+    {
+     "code": "CH-GR-VM-DO",
+     "shortName": "GR-VM-DO"
+    },
+    {
+     "code": "CH-GR-LQ-TR",
+     "shortName": "GR-LQ-TR"
+    },
+    {
+     "code": "CH-GR-PD-CO",
+     "shortName": "GR-PD-CO"
+    },
+    {
+     "code": "CH-GR-SS-ME",
+     "shortName": "GR-SS-ME"
+    },
+    {
+     "code": "CH-GR-MS-CM",
+     "shortName": "GR-MS-CM"
+    },
+    {
+     "code": "CH-GR-VM-TH",
+     "shortName": "GR-VM-TH"
+    },
+    {
+     "code": "CH-GR-VM-AN",
+     "shortName": "GR-VM-AN"
+    },
+    {
+     "code": "CH-GR-SS-DI",
+     "shortName": "GR-SS-DI"
+    },
+    {
+     "code": "CH-GR-MS-SO",
+     "shortName": "GR-MS-SO"
+    },
+    {
+     "code": "CH-GR-ML-PC",
+     "shortName": "GR-ML-PC"
+    },
+    {
+     "code": "CH-GR-PS-CW",
+     "shortName": "GR-PS-CW"
+    },
+    {
+     "code": "CH-GR-AB-VA",
+     "shortName": "GR-AB-VA"
+    },
+    {
+     "code": "CH-GR-VM-CA",
+     "shortName": "GR-VM-CA"
+    },
+    {
+     "code": "CH-GR-VM",
+     "shortName": "GR-VM"
+    },
+    {
+     "code": "CH-GR-VM-RH",
+     "shortName": "GR-VM-RH"
+    },
+    {
+     "code": "CH-GR-PD",
+     "shortName": "GR-PD"
+    }
+   ]
+  }
+ ]
+}

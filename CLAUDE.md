@@ -52,7 +52,7 @@ Two layers with a hard boundary:
   `holiday_sets` returns `(full, half)` holiday sets filtered by the profile's local-holiday
   settings; `padded` widens a year range by a month either side, because windows stretch over
   holidays just past them (Christmas into January); `school_windows` merges the per-school-type
-  repeats the data contains; `described_windows` adds effective dates and sizes; `_validate`
+  repeats the data contains and keeps the windows of the profile's `home` and school type; `described_windows` adds effective dates and sizes; `_validate`
   backs `check_ledger` and `upsert_trip`, and falls back to date-only checks without a profile.
   Names follow an optional `language` ("EN", "DE"); the engine never sees them.
 - **`src/holiplan/server.py`**: the MCP surface only: one-line tools that call `service`, plus
@@ -106,8 +106,14 @@ that would make an older ledger read differently needs `SCHEMA_VERSION` bumped a
 - **Entries tagged `"Exception"`** are alternative dates for part of a region (Schleswig-Holstein's
   islands, one Gymnasium in Basel-Landschaft), listed with no groups beside the regular entry of
   the same name. They are dropped where a regular window of that name overlaps them.
-- **Some school holidays differ by municipality** (Appenzell Innerrhoden, Graubünden): the entries
-  list subdivisions below the region. These are not filtered yet, so both show.
+- **Some school holidays differ by municipality** (Appenzell Innerrhoden: Oberegg; Graubünden:
+  Moesa): the entries list subdivisions below the region (Graubünden lists every entry per
+  district, none for the canton). Where `home_locality` resolves the profile's `home`,
+  `_school_windows` keeps only local entries that `reaches` it (covers it, or lists a place
+  inside it); otherwise `checks.merge_local_windows` makes overlapping same-named local
+  windows one, earliest start to latest end. Unlike public holidays, an unknown home keeps
+  them all: dropping them would leave Appenzell without summer holidays. `local_holidays`
+  doesn't apply to school windows.
 - **Single-day school closures** exist as short school-holiday entries (All Souls' Day in Austria).
   `describe_window` marks anything with `CLOSURE_MAX_SCHOOL_DAYS` (2) or fewer school days as a
   closure; `get_holiday_windows` lists those separately. Checks treat closures like any window.
@@ -159,7 +165,8 @@ expectation, unless the calendar reasoning itself was wrong.
 - `test_holidays.py`: region resolution, local and half-day filtering, and the HTTP layer via
   httpx's `MockTransport` (caching, outages, stale cache).
 - `test_server.py`: the tools, with the three OpenHolidays calls patched (`StubbedHolidays`).
-- `test_golden_dach.py`: Vienna and Zürich plans against real OpenHolidays responses recorded in
+- `test_golden_dach.py`: Vienna, Zürich, Mecklenburg-Vorpommern, Schleswig-Holstein, Appenzell
+  Innerrhoden and Graubünden against real OpenHolidays responses recorded in
   `tests/fixtures/` and replayed offline. If you re-record them, re-check every expectation.
 - `test_models.py`: migrations and parse errors. `test_contract.py`: schema versus models,
   resources, prompts and the tool list.

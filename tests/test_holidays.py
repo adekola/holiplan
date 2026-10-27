@@ -18,7 +18,14 @@ from unittest import mock  # noqa: E402
 import httpx  # noqa: E402
 
 from holiplan import holidays  # noqa: E402
-from holiplan.holidays import covers, holiday_dates, is_local, locate, resolve_region  # noqa: E402
+from holiplan.holidays import (  # noqa: E402
+    covers,
+    holiday_dates,
+    is_local,
+    locate,
+    reaches,
+    resolve_region,
+)
 
 
 def _entry(day: str, name: str, nationwide: bool, subdivisions: list[str] = ()) -> dict:
@@ -141,6 +148,25 @@ class CoversTests(unittest.TestCase):
     def test_town_holiday_covers_only_that_town(self):
         self.assertTrue(covers(_by_name("High Festival of Peace"), "DE-BY-AU"))
         self.assertFalse(covers(_by_name("High Festival of Peace"), "DE-BY"))
+
+
+class ReachesTests(unittest.TestCase):
+    # Graubünden lists some school holidays per district, others per municipality.
+    SAMEDAN = {"nationwide": False, "subdivisions": [{"code": "CH-GR-ML-SA"}]}
+    MALOJA = {"nationwide": False, "subdivisions": [{"code": "CH-GR-ML"}]}
+
+    def test_a_holiday_for_a_district_reaches_its_towns(self):
+        self.assertTrue(reaches(self.MALOJA, "CH-GR-ML-SA"))
+
+    def test_a_holiday_for_a_town_reaches_its_district_but_doesnt_cover_it(self):
+        self.assertTrue(reaches(self.SAMEDAN, "CH-GR-ML"))
+        self.assertFalse(covers(self.SAMEDAN, "CH-GR-ML"))
+
+    def test_other_places_are_not_reached(self):
+        self.assertFalse(reaches(self.SAMEDAN, "CH-GR-ML-PO"))
+        self.assertFalse(reaches(self.MALOJA, "CH-GR-MS"))
+        # Not fooled by a shared prefix: CH-GR-M is no parent of CH-GR-ML.
+        self.assertFalse(reaches(self.MALOJA, "CH-GR-M"))
 
 
 class LocateTests(unittest.TestCase):

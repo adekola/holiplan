@@ -111,7 +111,7 @@ Prompts: *Set up my family profile*, *Plan my year*, *Plan this holiday window*,
 - [ ] Drive-time filtering (OpenRouteService or self-hosted OSRM)
 - [ ] Remote deployment over Streamable HTTP
 - [ ] Publish to the MCP registry
-- [ ] School holidays that differ by municipality (Appenzell Innerrhoden, Graubünden), chosen by
+- [x] School holidays that differ by municipality (Appenzell Innerrhoden, Graubünden), chosen by
   the profile's `home`
 
 ## Development

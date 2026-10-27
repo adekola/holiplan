@@ -1,0 +1,3412 @@
+{
+ "source": "OpenHolidays (https://openholidaysapi.org), CC BY 4.0, recorded 2026-10-27",
+ "public": [
+  {
+   "id": "2de038b4-d591-4e14-be19-4bd8926f1f93",
+   "startDate": "2026-12-08",
+   "endDate": "2026-12-08",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Immaculate Conception"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-RF-OB",
+     "shortName": "AG-RF-OB"
+    },
+    {
+     "code": "CH-AG-RF-SU",
+     "shortName": "AG-RF-SU"
+    },
+    {
+     "code": "CH-AG-RF-ST",
+     "shortName": "AG-RF-ST"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-AG-MU",
+     "shortName": "AG-MU"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-AG-RF-WE",
+     "shortName": "AG-RF-WE"
+    },
+    {
+     "code": "CH-AG-RF-MU",
+     "shortName": "AG-RF-MU"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-LA",
+     "shortName": "AG-LA"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "e550a49b-c824-41c9-ac68-02996c9760b8",
+   "startDate": "2026-12-25",
+   "endDate": "2026-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "a4b8a366-10fc-416d-9159-d16437f42b03",
+   "startDate": "2027-01-01",
+   "endDate": "2027-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "289e0c15-5618-4530-9402-afc1bcd604f9",
+   "startDate": "2027-03-26",
+   "endDate": "2027-03-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Good Friday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO",
+     "shortName": "SO"
+    },
+    {
+     "code": "CH-GE",
+     "shortName": "GE"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-AR",
+     "shortName": "AR"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-NE",
+     "shortName": "NE"
+    },
+    {
+     "code": "CH-VD",
+     "shortName": "VD"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG",
+     "shortName": "AG"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    }
+   ]
+  },
+  {
+   "id": "e30ca15f-d5ee-425a-b53e-e554b54b3d92",
+   "startDate": "2027-03-29",
+   "endDate": "2027-03-29",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Easter Monday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-RF-MA",
+     "shortName": "AG-RF-MA"
+    },
+    {
+     "code": "CH-AG-LB",
+     "shortName": "AG-LB"
+    },
+    {
+     "code": "CH-AG-RF-WA",
+     "shortName": "AG-RF-WA"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO",
+     "shortName": "SO"
+    },
+    {
+     "code": "CH-GE",
+     "shortName": "GE"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-AG-ZF",
+     "shortName": "AG-ZF"
+    },
+    {
+     "code": "CH-AR",
+     "shortName": "AR"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-AG-RF-RF",
+     "shortName": "AG-RF-RF"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-AA",
+     "shortName": "AG-AA"
+    },
+    {
+     "code": "CH-AG-KU",
+     "shortName": "AG-KU"
+    },
+    {
+     "code": "CH-AG-BA",
+     "shortName": "AG-BA"
+    },
+    {
+     "code": "CH-AG-RF-KA",
+     "shortName": "AG-RF-KA"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-NE",
+     "shortName": "NE"
+    },
+    {
+     "code": "CH-AG-RF-MO",
+     "shortName": "AG-RF-MO"
+    },
+    {
+     "code": "CH-VD",
+     "shortName": "VD"
+    },
+    {
+     "code": "CH-AG-RF-ZU",
+     "shortName": "AG-RF-ZU"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-AG-RF-OL",
+     "shortName": "AG-RF-OL"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BR",
+     "shortName": "AG-BR"
+    },
+    {
+     "code": "CH-AG-RF-ZE",
+     "shortName": "AG-RF-ZE"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "4989fcaf-ef41-4a05-b5d4-494d84202f94",
+   "startDate": "2027-05-06",
+   "endDate": "2027-05-06",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Ascension Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "f7e2d460-e4b5-440d-976a-3675c8be7882",
+   "startDate": "2027-05-17",
+   "endDate": "2027-05-17",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Pentecost Monday"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-RF-MA",
+     "shortName": "AG-RF-MA"
+    },
+    {
+     "code": "CH-AG-LB",
+     "shortName": "AG-LB"
+    },
+    {
+     "code": "CH-AG-RF-WA",
+     "shortName": "AG-RF-WA"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO",
+     "shortName": "SO"
+    },
+    {
+     "code": "CH-GE",
+     "shortName": "GE"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-AG-ZF",
+     "shortName": "AG-ZF"
+    },
+    {
+     "code": "CH-AR",
+     "shortName": "AR"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-AG-RF-RF",
+     "shortName": "AG-RF-RF"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-AA",
+     "shortName": "AG-AA"
+    },
+    {
+     "code": "CH-AG-KU",
+     "shortName": "AG-KU"
+    },
+    {
+     "code": "CH-AG-BA",
+     "shortName": "AG-BA"
+    },
+    {
+     "code": "CH-AG-RF-KA",
+     "shortName": "AG-RF-KA"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-NE",
+     "shortName": "NE"
+    },
+    {
+     "code": "CH-AG-RF-MO",
+     "shortName": "AG-RF-MO"
+    },
+    {
+     "code": "CH-VD",
+     "shortName": "VD"
+    },
+    {
+     "code": "CH-AG-RF-ZU",
+     "shortName": "AG-RF-ZU"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-AG-RF-OL",
+     "shortName": "AG-RF-OL"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BR",
+     "shortName": "AG-BR"
+    },
+    {
+     "code": "CH-AG-RF-ZE",
+     "shortName": "AG-RF-ZE"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "e2c4ae1f-b516-41bb-ad11-94ae8c975078",
+   "startDate": "2027-05-27",
+   "endDate": "2027-05-27",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Corpus Christi"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-SO-DE",
+     "shortName": "SO-DE"
+    },
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AG-BA-UN",
+     "shortName": "AG-BA-UN"
+    },
+    {
+     "code": "CH-AG-BA-WU",
+     "shortName": "AG-BA-WU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-BA-WE",
+     "shortName": "AG-BA-WE"
+    },
+    {
+     "code": "CH-AG-BA-KU",
+     "shortName": "AG-BA-KU"
+    },
+    {
+     "code": "CH-SO-LB",
+     "shortName": "SO-LB"
+    },
+    {
+     "code": "CH-AG-ZZ",
+     "shortName": "AG-ZZ"
+    },
+    {
+     "code": "CH-SO-GA",
+     "shortName": "SO-GA"
+    },
+    {
+     "code": "CH-AG-BA-BL",
+     "shortName": "AG-BA-BL"
+    },
+    {
+     "code": "CH-AG-BA-SP",
+     "shortName": "AG-BA-SP"
+    },
+    {
+     "code": "CH-AG-RF-OB",
+     "shortName": "AG-RF-OB"
+    },
+    {
+     "code": "CH-AG-BA-WO",
+     "shortName": "AG-BA-WO"
+    },
+    {
+     "code": "CH-AG-BA-EN",
+     "shortName": "AG-BA-EN"
+    },
+    {
+     "code": "CH-AG-BA-EH",
+     "shortName": "AG-BA-EH"
+    },
+    {
+     "code": "CH-AG-RF-SU",
+     "shortName": "AG-RF-SU"
+    },
+    {
+     "code": "CH-AG-BA-OR",
+     "shortName": "AG-BA-OR"
+    },
+    {
+     "code": "CH-AG-RF-ST",
+     "shortName": "AG-RF-ST"
+    },
+    {
+     "code": "CH-SO-SO",
+     "shortName": "SO-SO"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SO-OL",
+     "shortName": "SO-OL"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-AG-BA-GE",
+     "shortName": "AG-BA-GE"
+    },
+    {
+     "code": "CH-AG-MU",
+     "shortName": "AG-MU"
+    },
+    {
+     "code": "CH-AG-BA-BI",
+     "shortName": "AG-BA-BI"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-AG-RF-WE",
+     "shortName": "AG-RF-WE"
+    },
+    {
+     "code": "CH-AG-BA-OS",
+     "shortName": "AG-BA-OS"
+    },
+    {
+     "code": "CH-AG-RF-MU",
+     "shortName": "AG-RF-MU"
+    },
+    {
+     "code": "CH-SO-WA",
+     "shortName": "SO-WA"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-BA-ST",
+     "shortName": "AG-BA-ST"
+    },
+    {
+     "code": "CH-AG-BA-FR",
+     "shortName": "AG-BA-FR"
+    },
+    {
+     "code": "CH-AG-BA-MA",
+     "shortName": "AG-BA-MA"
+    },
+    {
+     "code": "CH-SO-TS",
+     "shortName": "SO-TS"
+    },
+    {
+     "code": "CH-AG-BA-BA",
+     "shortName": "AG-BA-BA"
+    },
+    {
+     "code": "CH-NE",
+     "shortName": "NE"
+    },
+    {
+     "code": "CH-AG-BA-WR",
+     "shortName": "AG-BA-WR"
+    },
+    {
+     "code": "CH-AG-BA-KI",
+     "shortName": "AG-BA-KI"
+    },
+    {
+     "code": "CH-AG-LA",
+     "shortName": "AG-LA"
+    },
+    {
+     "code": "CH-SO-TH",
+     "shortName": "SO-TH"
+    },
+    {
+     "code": "CH-AG-RF-HE",
+     "shortName": "AG-RF-HE"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-AG-BA-NH",
+     "shortName": "AG-BA-NH"
+    },
+    {
+     "code": "CH-AG-BA-ME",
+     "shortName": "AG-BA-ME"
+    },
+    {
+     "code": "CH-AG-BA-RE",
+     "shortName": "AG-BA-RE"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BG",
+     "shortName": "AG-BG"
+    },
+    {
+     "code": "CH-AG-BA-NR",
+     "shortName": "AG-BA-NR"
+    },
+    {
+     "code": "CH-SO-GG",
+     "shortName": "SO-GG"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    },
+    {
+     "code": "CH-AG-BA-FI",
+     "shortName": "AG-BA-FI"
+    }
+   ]
+  },
+  {
+   "id": "38c00091-7962-4d41-9670-84ab0e672d88",
+   "startDate": "2027-08-01",
+   "endDate": "2027-08-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Independence Day"
+    }
+   ],
+   "regionalScope": "National",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "cd8705fa-0735-49e6-a2dd-f988e4f38b21",
+   "startDate": "2027-08-15",
+   "endDate": "2027-08-15",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Assumption Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-SO-DE",
+     "shortName": "SO-DE"
+    },
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-SO-LB",
+     "shortName": "SO-LB"
+    },
+    {
+     "code": "CH-SO-GA",
+     "shortName": "SO-GA"
+    },
+    {
+     "code": "CH-AG-RF-OB",
+     "shortName": "AG-RF-OB"
+    },
+    {
+     "code": "CH-AG-RF-SU",
+     "shortName": "AG-RF-SU"
+    },
+    {
+     "code": "CH-AG-RF-ST",
+     "shortName": "AG-RF-ST"
+    },
+    {
+     "code": "CH-SO-SO",
+     "shortName": "SO-SO"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SO-OL",
+     "shortName": "SO-OL"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-AG-MU",
+     "shortName": "AG-MU"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-AG-RF-WE",
+     "shortName": "AG-RF-WE"
+    },
+    {
+     "code": "CH-AG-RF-MU",
+     "shortName": "AG-RF-MU"
+    },
+    {
+     "code": "CH-SO-WA",
+     "shortName": "SO-WA"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-SO-TS",
+     "shortName": "SO-TS"
+    },
+    {
+     "code": "CH-AG-LA",
+     "shortName": "AG-LA"
+    },
+    {
+     "code": "CH-SO-TH",
+     "shortName": "SO-TH"
+    },
+    {
+     "code": "CH-AG-RF-HE",
+     "shortName": "AG-RF-HE"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BG",
+     "shortName": "AG-BG"
+    },
+    {
+     "code": "CH-SO-GG",
+     "shortName": "SO-GG"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "3de789d0-5e1c-444e-9def-0994c733aa1a",
+   "startDate": "2027-09-22",
+   "endDate": "2027-09-22",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "St. Mauritius Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI-AP",
+     "shortName": "AI-AP"
+    },
+    {
+     "code": "CH-AI-SH",
+     "shortName": "AI-SH"
+    },
+    {
+     "code": "CH-AI-GO",
+     "shortName": "AI-GO"
+    },
+    {
+     "code": "CH-AI-SR",
+     "shortName": "AI-SR"
+    }
+   ]
+  },
+  {
+   "id": "292bcdc5-2726-4568-bf8e-241748f6053f",
+   "startDate": "2027-11-01",
+   "endDate": "2027-11-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "All Saints' Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-SO-DE",
+     "shortName": "SO-DE"
+    },
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-SO-LB",
+     "shortName": "SO-LB"
+    },
+    {
+     "code": "CH-AG-ZZ",
+     "shortName": "AG-ZZ"
+    },
+    {
+     "code": "CH-SO-GA",
+     "shortName": "SO-GA"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO-SO",
+     "shortName": "SO-SO"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SO-OL",
+     "shortName": "SO-OL"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-AG-MU",
+     "shortName": "AG-MU"
+    },
+    {
+     "code": "CH-AG-RF",
+     "shortName": "AG-RF"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SO-WA",
+     "shortName": "SO-WA"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-SO-TS",
+     "shortName": "SO-TS"
+    },
+    {
+     "code": "CH-AG-LA",
+     "shortName": "AG-LA"
+    },
+    {
+     "code": "CH-SO-TH",
+     "shortName": "SO-TH"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-JU",
+     "shortName": "JU"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BG",
+     "shortName": "AG-BG"
+    },
+    {
+     "code": "CH-SO-GG",
+     "shortName": "SO-GG"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "9b872a02-a1eb-4eff-913a-760ae1d45056",
+   "startDate": "2027-12-08",
+   "endDate": "2027-12-08",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Immaculate Conception"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-RF-OB",
+     "shortName": "AG-RF-OB"
+    },
+    {
+     "code": "CH-AG-RF-SU",
+     "shortName": "AG-RF-SU"
+    },
+    {
+     "code": "CH-AG-RF-ST",
+     "shortName": "AG-RF-ST"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-AG-MU",
+     "shortName": "AG-MU"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-AG-RF-WE",
+     "shortName": "AG-RF-WE"
+    },
+    {
+     "code": "CH-AG-RF-MU",
+     "shortName": "AG-RF-MU"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-LA",
+     "shortName": "AG-LA"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "e36d157e-7f01-4413-91a8-804eb68cd484",
+   "startDate": "2027-12-25",
+   "endDate": "2027-12-25",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  },
+  {
+   "id": "097d9fae-ff21-4a5e-af0c-e3a7637fdb9d",
+   "startDate": "2027-12-26",
+   "endDate": "2027-12-26",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "St Stephen's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-LU",
+     "shortName": "LU"
+    },
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-BL",
+     "shortName": "BL"
+    },
+    {
+     "code": "CH-VS",
+     "shortName": "VS"
+    },
+    {
+     "code": "CH-AG-RF-MA",
+     "shortName": "AG-RF-MA"
+    },
+    {
+     "code": "CH-AG-ZZ",
+     "shortName": "AG-ZZ"
+    },
+    {
+     "code": "CH-AG-LB",
+     "shortName": "AG-LB"
+    },
+    {
+     "code": "CH-AG-RF-WA",
+     "shortName": "AG-RF-WA"
+    },
+    {
+     "code": "CH-GR",
+     "shortName": "GR"
+    },
+    {
+     "code": "CH-SO",
+     "shortName": "SO"
+    },
+    {
+     "code": "CH-FR",
+     "shortName": "FR"
+    },
+    {
+     "code": "CH-SZ",
+     "shortName": "SZ"
+    },
+    {
+     "code": "CH-AG-ZF",
+     "shortName": "AG-ZF"
+    },
+    {
+     "code": "CH-AR",
+     "shortName": "AR"
+    },
+    {
+     "code": "CH-NW",
+     "shortName": "NW"
+    },
+    {
+     "code": "CH-GL",
+     "shortName": "GL"
+    },
+    {
+     "code": "CH-ZG",
+     "shortName": "ZG"
+    },
+    {
+     "code": "CH-SH",
+     "shortName": "SH"
+    },
+    {
+     "code": "CH-AG-RF-RF",
+     "shortName": "AG-RF-RF"
+    },
+    {
+     "code": "CH-OW",
+     "shortName": "OW"
+    },
+    {
+     "code": "CH-AG-AA",
+     "shortName": "AG-AA"
+    },
+    {
+     "code": "CH-AG-KU",
+     "shortName": "AG-KU"
+    },
+    {
+     "code": "CH-AG-BA",
+     "shortName": "AG-BA"
+    },
+    {
+     "code": "CH-AG-RF-KA",
+     "shortName": "AG-RF-KA"
+    },
+    {
+     "code": "CH-ZH",
+     "shortName": "ZH"
+    },
+    {
+     "code": "CH-AG-RF-MO",
+     "shortName": "AG-RF-MO"
+    },
+    {
+     "code": "CH-AG-RF-ZU",
+     "shortName": "AG-RF-ZU"
+    },
+    {
+     "code": "CH-SG",
+     "shortName": "SG"
+    },
+    {
+     "code": "CH-TG",
+     "shortName": "TG"
+    },
+    {
+     "code": "CH-BE",
+     "shortName": "BE"
+    },
+    {
+     "code": "CH-AG-RF-OL",
+     "shortName": "AG-RF-OL"
+    },
+    {
+     "code": "CH-UR",
+     "shortName": "UR"
+    },
+    {
+     "code": "CH-AG-BR",
+     "shortName": "AG-BR"
+    },
+    {
+     "code": "CH-AG-BG",
+     "shortName": "AG-BG"
+    },
+    {
+     "code": "CH-AG-RF-ZE",
+     "shortName": "AG-RF-ZE"
+    },
+    {
+     "code": "CH-BS",
+     "shortName": "BS"
+    },
+    {
+     "code": "CH-TI",
+     "shortName": "TI"
+    }
+   ]
+  },
+  {
+   "id": "207a6205-201a-442e-bd13-488ff1366fc7",
+   "startDate": "2028-01-01",
+   "endDate": "2028-01-01",
+   "type": "Public",
+   "name": [
+    {
+     "language": "EN",
+     "text": "New Year's Day"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": true
+  }
+ ],
+ "school": [
+  {
+   "id": "a1749241-f4cd-4a10-824a-bd13c8ffeffb",
+   "startDate": "2026-12-19",
+   "endDate": "2027-01-03",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    }
+   ]
+  },
+  {
+   "id": "5a45d372-2f76-44d1-b48b-3764d6106b7e",
+   "startDate": "2027-01-30",
+   "endDate": "2027-02-07",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Sports holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI-OB",
+     "shortName": "AI-OB"
+    }
+   ]
+  },
+  {
+   "id": "cb383a32-7cc1-440a-af35-abf433254f09",
+   "startDate": "2027-02-05",
+   "endDate": "2027-02-14",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Sports holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI-AP",
+     "shortName": "AI-AP"
+    },
+    {
+     "code": "CH-AI-SH",
+     "shortName": "AI-SH"
+    },
+    {
+     "code": "CH-AI-GO",
+     "shortName": "AI-GO"
+    },
+    {
+     "code": "CH-AI-SR",
+     "shortName": "AI-SR"
+    }
+   ]
+  },
+  {
+   "id": "431dbe98-d17b-4f57-9c7f-bc11bd1fc7d8",
+   "startDate": "2027-04-10",
+   "endDate": "2027-04-25",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Spring holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    }
+   ]
+  },
+  {
+   "id": "3dbe5d58-3585-4a1d-b3ce-2bf5e8813229",
+   "startDate": "2027-07-03",
+   "endDate": "2027-08-15",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI-AP",
+     "shortName": "AI-AP"
+    },
+    {
+     "code": "CH-AI-SH",
+     "shortName": "AI-SH"
+    },
+    {
+     "code": "CH-AI-GO",
+     "shortName": "AI-GO"
+    },
+    {
+     "code": "CH-AI-SR",
+     "shortName": "AI-SR"
+    }
+   ]
+  },
+  {
+   "id": "116a317d-e0ee-458a-941d-22739183817e",
+   "startDate": "2027-07-10",
+   "endDate": "2027-08-15",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI-OB",
+     "shortName": "AI-OB"
+    }
+   ]
+  },
+  {
+   "id": "d7958cea-a7c1-45b7-828b-832dfec6de9f",
+   "startDate": "2027-10-02",
+   "endDate": "2027-10-24",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI-OB",
+     "shortName": "AI-OB"
+    }
+   ]
+  },
+  {
+   "id": "f02b1c24-cef5-43ee-9371-758123a96e69",
+   "startDate": "2027-10-02",
+   "endDate": "2027-10-17",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Autumn holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI-AP",
+     "shortName": "AI-AP"
+    },
+    {
+     "code": "CH-AI-SH",
+     "shortName": "AI-SH"
+    },
+    {
+     "code": "CH-AI-GO",
+     "shortName": "AI-GO"
+    },
+    {
+     "code": "CH-AI-SR",
+     "shortName": "AI-SR"
+    }
+   ]
+  },
+  {
+   "id": "307d9775-cc15-4d91-937e-43c3a9a0550e",
+   "startDate": "2027-12-18",
+   "endDate": "2028-01-02",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Christmas holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    }
+   ]
+  },
+  {
+   "id": "b3d7b4c2-ae4e-4200-9699-0b9e31ac77b3",
+   "startDate": "2028-04-08",
+   "endDate": "2028-04-23",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Spring holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    }
+   ]
+  },
+  {
+   "id": "8a8c62da-8c65-4662-9fa0-cf582012f3ec",
+   "startDate": "2028-07-01",
+   "endDate": "2028-08-13",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI-AP",
+     "shortName": "AI-AP"
+    },
+    {
+     "code": "CH-AI-SH",
+     "shortName": "AI-SH"
+    },
+    {
+     "code": "CH-AI-GO",
+     "shortName": "AI-GO"
+    },
+    {
+     "code": "CH-AI-SR",
+     "shortName": "AI-SR"
+    }
+   ]
+  },
+  {
+   "id": "2cc8dbb2-b0cc-4c61-800c-12ec705f6b39",
+   "startDate": "2028-07-08",
+   "endDate": "2028-08-13",
+   "type": "School",
+   "name": [
+    {
+     "language": "EN",
+     "text": "Summer holidays"
+    }
+   ],
+   "regionalScope": "Regional",
+   "temporalScope": "FullDay",
+   "nationwide": false,
+   "subdivisions": [
+    {
+     "code": "CH-AI-OB",
+     "shortName": "AI-OB"
+    }
+   ]
+  }
+ ],
+ "subdivisions": [
+  {
+   "code": "CH-AG",
+   "isoCode": "CH-AG",
+   "shortName": "AG",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Aargau"
+    },
+    {
+     "language": "FR",
+     "text": "Argovie"
+    },
+    {
+     "language": "IT",
+     "text": "Argovia"
+    },
+    {
+     "language": "RM",
+     "text": "Argovia"
+    },
+    {
+     "language": "EN",
+     "text": "Aargau"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-AI",
+   "isoCode": "CH-AI",
+   "shortName": "AI",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Appenzell Innerrhoden"
+    },
+    {
+     "language": "FR",
+     "text": "Appenzell Rhodes-Intérieures"
+    },
+    {
+     "language": "IT",
+     "text": "Appenzello Interno"
+    },
+    {
+     "language": "RM",
+     "text": "Appenzell Dadens"
+    },
+    {
+     "language": "EN",
+     "text": "Appenzell Innerrhoden"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "CH-AI-VS",
+     "shortName": "AI-VS"
+    }
+   ],
+   "children": [
+    {
+     "code": "CH-AI-AP",
+     "isoCode": "",
+     "shortName": "AI-AP",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Gemeinde"
+      },
+      {
+       "language": "FR",
+       "text": "commune"
+      },
+      {
+       "language": "IT",
+       "text": "comune"
+      },
+      {
+       "language": "RM",
+       "text": "vischnanca"
+      },
+      {
+       "language": "EN",
+       "text": "municipality"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Appenzell"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ]
+    },
+    {
+     "code": "CH-AI-SH",
+     "isoCode": "",
+     "shortName": "AI-SH",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Gemeinde"
+      },
+      {
+       "language": "FR",
+       "text": "commune"
+      },
+      {
+       "language": "IT",
+       "text": "comune"
+      },
+      {
+       "language": "RM",
+       "text": "vischnanca"
+      },
+      {
+       "language": "EN",
+       "text": "municipality"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Schlatt-Haslen"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ]
+    },
+    {
+     "code": "CH-AI-GO",
+     "isoCode": "",
+     "shortName": "AI-GO",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Gemeinde"
+      },
+      {
+       "language": "FR",
+       "text": "commune"
+      },
+      {
+       "language": "IT",
+       "text": "comune"
+      },
+      {
+       "language": "RM",
+       "text": "vischnanca"
+      },
+      {
+       "language": "EN",
+       "text": "municipality"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Gonten"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ]
+    },
+    {
+     "code": "CH-AI-SR",
+     "isoCode": "",
+     "shortName": "AI-SR",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Gemeinde"
+      },
+      {
+       "language": "FR",
+       "text": "commune"
+      },
+      {
+       "language": "IT",
+       "text": "comune"
+      },
+      {
+       "language": "RM",
+       "text": "vischnanca"
+      },
+      {
+       "language": "EN",
+       "text": "municipality"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Schwende-Rüte"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ]
+    },
+    {
+     "code": "CH-AI-OB",
+     "isoCode": "",
+     "shortName": "AI-OB",
+     "category": [
+      {
+       "language": "DE",
+       "text": "Gemeinde"
+      },
+      {
+       "language": "FR",
+       "text": "commune"
+      },
+      {
+       "language": "IT",
+       "text": "comune"
+      },
+      {
+       "language": "RM",
+       "text": "vischnanca"
+      },
+      {
+       "language": "EN",
+       "text": "municipality"
+      }
+     ],
+     "name": [
+      {
+       "language": "DE",
+       "text": "Oberegg"
+      }
+     ],
+     "officialLanguages": [
+      "DE"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "CH-AR",
+   "isoCode": "CH-AR",
+   "shortName": "AR",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Appenzell Ausserrhoden"
+    },
+    {
+     "language": "FR",
+     "text": "Appenzell Rhodes-Extérieures"
+    },
+    {
+     "language": "IT",
+     "text": "Appenzello Esterno"
+    },
+    {
+     "language": "RM",
+     "text": "Appenzell Dadora"
+    },
+    {
+     "language": "EN",
+     "text": "Appenzell Ausserrhoden"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "CH-AR-VS",
+     "shortName": "AR-VS"
+    }
+   ]
+  },
+  {
+   "code": "CH-BE",
+   "isoCode": "CH-BE",
+   "shortName": "BE",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Bern"
+    },
+    {
+     "language": "FR",
+     "text": "Berne"
+    },
+    {
+     "language": "IT",
+     "text": "Berna"
+    },
+    {
+     "language": "RM",
+     "text": "Berna"
+    },
+    {
+     "language": "EN",
+     "text": "Bern"
+    }
+   ],
+   "officialLanguages": [
+    "DE",
+    "FR"
+   ],
+   "groups": [
+    {
+     "code": "CH-BE-EO",
+     "shortName": "BE-EO"
+    },
+    {
+     "code": "CH-BE-VS",
+     "shortName": "BE-VS"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-BL",
+   "isoCode": "CH-BL",
+   "shortName": "BL",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Basel-Landschaft"
+    },
+    {
+     "language": "FR",
+     "text": "Bâle-Campagne"
+    },
+    {
+     "language": "IT",
+     "text": "Basilea Campagna"
+    },
+    {
+     "language": "RM",
+     "text": "Basilea-Champagna"
+    },
+    {
+     "language": "EN",
+     "text": "Basel-Landschaft"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-BS",
+   "isoCode": "CH-BS",
+   "shortName": "BS",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Basel-Stadt"
+    },
+    {
+     "language": "FR",
+     "text": "Bâle-Ville"
+    },
+    {
+     "language": "IT",
+     "text": "Basilea Città"
+    },
+    {
+     "language": "RM",
+     "text": "Basilea-Citad"
+    },
+    {
+     "language": "EN",
+     "text": "Basel-Stadt"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-FR",
+   "isoCode": "CH-FR",
+   "shortName": "FR",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Fribourg"
+    },
+    {
+     "language": "DE",
+     "text": "Freiburg"
+    },
+    {
+     "language": "IT",
+     "text": "Friburgo"
+    },
+    {
+     "language": "RM",
+     "text": "Friburg"
+    },
+    {
+     "language": "EN",
+     "text": "Fribourg"
+    }
+   ],
+   "officialLanguages": [
+    "FR",
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-GE",
+   "isoCode": "CH-GE",
+   "shortName": "GE",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Genève"
+    },
+    {
+     "language": "DE",
+     "text": "Genf"
+    },
+    {
+     "language": "IT",
+     "text": "Ginevra"
+    },
+    {
+     "language": "RM",
+     "text": "Genevra"
+    },
+    {
+     "language": "EN",
+     "text": "Geneva"
+    }
+   ],
+   "officialLanguages": [
+    "FR"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-GL",
+   "isoCode": "CH-GL",
+   "shortName": "GL",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Glarus"
+    },
+    {
+     "language": "FR",
+     "text": "Glaris"
+    },
+    {
+     "language": "IT",
+     "text": "Glarona"
+    },
+    {
+     "language": "RM",
+     "text": "Glaruna"
+    },
+    {
+     "language": "EN",
+     "text": "Glarus"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-GR",
+   "isoCode": "CH-GR",
+   "shortName": "GR",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Graubünden"
+    },
+    {
+     "language": "IT",
+     "text": "Grigioni"
+    },
+    {
+     "language": "RM",
+     "text": "Grischun"
+    },
+    {
+     "language": "FR",
+     "text": "Grisons"
+    },
+    {
+     "language": "EN",
+     "text": "Grisons"
+    }
+   ],
+   "officialLanguages": [
+    "DE",
+    "RM",
+    "IT"
+   ],
+   "groups": [
+    {
+     "code": "CH-GR-VS",
+     "shortName": "GR-VS"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-JU",
+   "isoCode": "CH-JU",
+   "shortName": "JU",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Jura"
+    },
+    {
+     "language": "DE",
+     "text": "Jura"
+    },
+    {
+     "language": "IT",
+     "text": "Giura"
+    },
+    {
+     "language": "RM",
+     "text": "Giura"
+    },
+    {
+     "language": "EN",
+     "text": "Jura"
+    }
+   ],
+   "officialLanguages": [
+    "FR"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-LU",
+   "isoCode": "CH-LU",
+   "shortName": "LU",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Luzern"
+    },
+    {
+     "language": "FR",
+     "text": "Lucerne"
+    },
+    {
+     "language": "IT",
+     "text": "Lucerna"
+    },
+    {
+     "language": "RM",
+     "text": "Lucerna"
+    },
+    {
+     "language": "EN",
+     "text": "Lucerne"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-NE",
+   "isoCode": "CH-NE",
+   "shortName": "NE",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Neuchâtel"
+    },
+    {
+     "language": "DE",
+     "text": "Neuenburg"
+    },
+    {
+     "language": "IT",
+     "text": "Neuchâtel"
+    },
+    {
+     "language": "RM",
+     "text": "Neuschatel"
+    },
+    {
+     "language": "EN",
+     "text": "Neuchâtel"
+    }
+   ],
+   "officialLanguages": [
+    "FR"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-NW",
+   "isoCode": "CH-NW",
+   "shortName": "NW",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Nidwalden"
+    },
+    {
+     "language": "FR",
+     "text": "Nidwald"
+    },
+    {
+     "language": "IT",
+     "text": "Nidvaldo"
+    },
+    {
+     "language": "RM",
+     "text": "Sutsilvania"
+    },
+    {
+     "language": "EN",
+     "text": "Nidwalden"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-OW",
+   "isoCode": "CH-OW",
+   "shortName": "OW",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Obwalden"
+    },
+    {
+     "language": "FR",
+     "text": "Obwald"
+    },
+    {
+     "language": "IT",
+     "text": "Obvaldo"
+    },
+    {
+     "language": "RM",
+     "text": "Sursilvania"
+    },
+    {
+     "language": "EN",
+     "text": "Obwalden"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-SG",
+   "isoCode": "CH-SG",
+   "shortName": "SG",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "St. Gallen"
+    },
+    {
+     "language": "FR",
+     "text": "Saint-Gall"
+    },
+    {
+     "language": "IT",
+     "text": "San Gallo"
+    },
+    {
+     "language": "RM",
+     "text": "Son Gagl"
+    },
+    {
+     "language": "EN",
+     "text": "St. Gallen"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-SH",
+   "isoCode": "CH-SH",
+   "shortName": "SH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Schaffhausen"
+    },
+    {
+     "language": "FR",
+     "text": "Schaffhouse"
+    },
+    {
+     "language": "IT",
+     "text": "Sciaffusa"
+    },
+    {
+     "language": "RM",
+     "text": "Schaffusa"
+    },
+    {
+     "language": "EN",
+     "text": "Schaffhausen"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-SO",
+   "isoCode": "CH-SO",
+   "shortName": "SO",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Solothurn"
+    },
+    {
+     "language": "FR",
+     "text": "Soleure"
+    },
+    {
+     "language": "IT",
+     "text": "Soletta"
+    },
+    {
+     "language": "RM",
+     "text": "Soloturn"
+    },
+    {
+     "language": "EN",
+     "text": "Solothurn"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "CH-SO-BS",
+     "shortName": "SO-BS"
+    },
+    {
+     "code": "CH-SO-MS",
+     "shortName": "SO-MS"
+    },
+    {
+     "code": "CH-SO-VS",
+     "shortName": "SO-VS"
+    }
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-SZ",
+   "isoCode": "CH-SZ",
+   "shortName": "SZ",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Schwyz"
+    },
+    {
+     "language": "FR",
+     "text": "Schwytz"
+    },
+    {
+     "language": "IT",
+     "text": "Svitto"
+    },
+    {
+     "language": "RM",
+     "text": "Sviz"
+    },
+    {
+     "language": "EN",
+     "text": "Schwyz"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-TG",
+   "isoCode": "CH-TG",
+   "shortName": "TG",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Thurgau"
+    },
+    {
+     "language": "FR",
+     "text": "Thurgovie"
+    },
+    {
+     "language": "IT",
+     "text": "Turgovia"
+    },
+    {
+     "language": "RM",
+     "text": "Turgovia"
+    },
+    {
+     "language": "EN",
+     "text": "Thurgau"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-TI",
+   "isoCode": "CH-TI",
+   "shortName": "TI",
+   "category": [
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "IT",
+     "text": "Ticino"
+    },
+    {
+     "language": "DE",
+     "text": "Tessin"
+    },
+    {
+     "language": "FR",
+     "text": "Tessin"
+    },
+    {
+     "language": "RM",
+     "text": "Tessin"
+    },
+    {
+     "language": "EN",
+     "text": "Ticino"
+    }
+   ],
+   "officialLanguages": [
+    "IT"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-UR",
+   "isoCode": "CH-UR",
+   "shortName": "UR",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Uri"
+    },
+    {
+     "language": "FR",
+     "text": "Uri"
+    },
+    {
+     "language": "IT",
+     "text": "Uri"
+    },
+    {
+     "language": "RM",
+     "text": "Uri"
+    },
+    {
+     "language": "EN",
+     "text": "Uri"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-VD",
+   "isoCode": "CH-VD",
+   "shortName": "VD",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Vaud"
+    },
+    {
+     "language": "DE",
+     "text": "Waadt"
+    },
+    {
+     "language": "IT",
+     "text": "Vaud"
+    },
+    {
+     "language": "RM",
+     "text": "Vad"
+    },
+    {
+     "language": "EN",
+     "text": "Vaud"
+    }
+   ],
+   "officialLanguages": [
+    "FR"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-VS",
+   "isoCode": "CH-VS",
+   "shortName": "VS",
+   "category": [
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "FR",
+     "text": "Valais"
+    },
+    {
+     "language": "DE",
+     "text": "Wallis"
+    },
+    {
+     "language": "IT",
+     "text": "Vallese"
+    },
+    {
+     "language": "RM",
+     "text": "Vallais"
+    },
+    {
+     "language": "EN",
+     "text": "Valais"
+    }
+   ],
+   "officialLanguages": [
+    "FR",
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-ZG",
+   "isoCode": "CH-ZG",
+   "shortName": "ZG",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Zug"
+    },
+    {
+     "language": "FR",
+     "text": "Zoug"
+    },
+    {
+     "language": "IT",
+     "text": "Zugo"
+    },
+    {
+     "language": "RM",
+     "text": "Zug"
+    },
+    {
+     "language": "EN",
+     "text": "Zug"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "children": []
+  },
+  {
+   "code": "CH-ZH",
+   "isoCode": "CH-ZH",
+   "shortName": "ZH",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Kanton"
+    },
+    {
+     "language": "FR",
+     "text": "canton"
+    },
+    {
+     "language": "IT",
+     "text": "canonte"
+    },
+    {
+     "language": "RM",
+     "text": "chantun"
+    },
+    {
+     "language": "EN",
+     "text": "canton"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Zürich"
+    },
+    {
+     "language": "FR",
+     "text": "Zurich"
+    },
+    {
+     "language": "IT",
+     "text": "Zurigo"
+    },
+    {
+     "language": "RM",
+     "text": "Turitg"
+    },
+    {
+     "language": "EN",
+     "text": "Zürich"
+    }
+   ],
+   "officialLanguages": [
+    "DE"
+   ],
+   "groups": [
+    {
+     "code": "CH-ZH-VS",
+     "shortName": "ZH-VS"
+    },
+    {
+     "code": "CH-ZH-BS",
+     "shortName": "ZH-BS"
+    },
+    {
+     "code": "CH-ZH-MS",
+     "shortName": "ZH-MS"
+    }
+   ],
+   "children": []
+  }
+ ],
+ "groups": [
+  {
+   "code": "CH-AI-VS",
+   "shortName": "AI-VS",
+   "category": [
+    {
+     "language": "DE",
+     "text": "Schulart"
+    },
+    {
+     "language": "FR",
+     "text": "type d'école"
+    },
+    {
+     "language": "IT",
+     "text": "tipo di scuola"
+    },
+    {
+     "language": "EN",
+     "text": "school type"
+    }
+   ],
+   "name": [
+    {
+     "language": "DE",
+     "text": "Volksschulen"
+    },
+    {
+     "language": "FR",
+     "text": "Écoles primaires"
+    },
+    {
+     "language": "IT",
+     "text": "Scuole elementari"
+    },
+    {
+     "language": "EN",
+     "text": "Primary Schools"
+    }
+   ],
+   "subdivisions": [
+    {
+     "code": "CH-AI",
+     "shortName": "AI"
+    },
+    {
+     "code": "CH-AI-AP",
+     "shortName": "AI-AP"
+    },
+    {
+     "code": "CH-AI-SH",
+     "shortName": "AI-SH"
+    },
+    {
+     "code": "CH-AI-GO",
+     "shortName": "AI-GO"
+    },
+    {
+     "code": "CH-AI-SR",
+     "shortName": "AI-SR"
+    },
+    {
+     "code": "CH-AI-OB",
+     "shortName": "AI-OB"
+    }
+   ]
+  }
+ ]
+}

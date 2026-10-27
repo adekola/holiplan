@@ -155,6 +155,16 @@ def covers(entry: dict, code: str) -> bool:
     return any(code == c or code.startswith(c + "-") for c in codes)
 
 
+def reaches(entry: dict, code: str) -> bool:
+    """Whether a holiday applies to at least part of subdivision `code`.
+
+    True when it `covers` the subdivision, or lists a place inside it: holidays
+    for Samedan (CH-GR-ML-SA) reach a home known only as Maloja (CH-GR-ML).
+    """
+    codes = [s.get("code", "") for s in entry.get("subdivisions", [])]
+    return covers(entry, code) or any(c.startswith(code + "-") for c in codes)
+
+
 def is_half_day(entry: dict) -> bool:
     return entry.get("temporalScope") == "HalfDay"
 

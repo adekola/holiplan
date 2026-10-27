@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.5.0
+
+- **School holidays by town.** Where OpenHolidays lists a region's school holidays per
+  municipality or district (Appenzell Innerrhoden: Oberegg's sports, summer and autumn
+  holidays differ from the rest of the canton; Graubünden: Moesa's Christmas), the profile's
+  `home` now picks the ones that apply, the same way it already picks local public holidays.
+  This applies to holiday windows, checks, bridge days and summaries; ledgers need no
+  migration.
+- **Without a home**, or with one the data doesn't know, a holiday whose dates differ by town
+  is shown once, from the earliest start to the latest end, instead of twice.
+  **Change:** windows and checks for those regions differ from 0.4.0; record the family's
+  town in `home` to get its own dates.
+- `holiplan.holidays.reaches` says whether a holiday applies to at least part of a
+  subdivision.
+
 ## 0.4.0
 
 - **One school type's holidays.** Where OpenHolidays lists a region's school holidays per

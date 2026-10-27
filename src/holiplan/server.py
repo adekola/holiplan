@@ -91,6 +91,10 @@ def get_holiday_windows(
     the group codes and `school_group` names the one shown: the profile's
     `school_group` if you pass it, otherwise the general schools. If the list
     has more than one, ask which the children attend and record it in the profile.
+
+    In a few regions school holidays differ by town (Appenzell Innerrhoden,
+    Graubünden): with `home`, only that town's windows are shown; without one,
+    a holiday whose dates differ is shown once, covering every town's dates.
     """
     return service.holiday_windows(country, year, region, home, language, school_group)
 
