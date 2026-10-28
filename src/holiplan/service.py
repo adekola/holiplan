@@ -19,7 +19,7 @@ from datetime import date
 from typing import Any
 
 from . import holidays as oh
-from .engine import bridges, checks, ics, leave, summary
+from .engine import bridges, checks, draft, ics, leave, summary
 from .engine.models import SCHEMA_VERSION, FamilyProfile, Ledger, Trip
 
 SOURCE = "OpenHolidays (CC BY 4.0)"
@@ -395,13 +395,60 @@ def deadlines(ledger: dict, today: str | None = None) -> list[dict]:
     return checks.deadlines(parsed, date.fromisoformat(today) if today else None)
 
 
-def summarise_plan(ledger: dict, today: str | None = None, language: str = "EN") -> dict[str, Any]:
-    """The whole plan at a glance: family, leave, trips, windows, issues, deadlines."""
+def draft_year(ledger: dict, year: int, language: str = "EN") -> dict[str, Any]:
+    """A first draft of `year`: one trip per school holiday, as the year's leave allows.
+
+    Returns the ledger with the drafted trips added (as ideas, see
+    `engine.draft`), the drafted trips with their days away and leave cost, and
+    the checks. Holidays that already have a plan are left alone. Trip names
+    follow `language`.
+    """
+    parsed = Ledger.from_dict(ledger)
+    profile = parsed.profile
+    if profile is None:
+        raise ValueError("The ledger has no profile, so there is no region or leave to draft a year from.")
+    region = oh.resolve_region(profile.country, profile.region)
+    full, half = holiday_sets(profile.country, region, *padded(year, year), profile)
+    windows = described_windows(
+        profile.country,
+        region,
+        f"{year}-01-01",
+        f"{year}-12-31",
+        full,
+        language,
+        profile.school_group,
+        profile.home,
+    )
+    trips = draft.draft_year(parsed, year, windows, full, half)
+    parsed.trips = sorted(parsed.trips + trips, key=lambda t: t.start)
+    drafted = []
+    for t in trips:
+        cost = leave.leave_cost(t.start_date, t.end_date, full, profile.day_pattern, t.id, half)
+        drafted.append(
+            {
+                "id": t.id,
+                "label": t.label,
+                "start": t.start,
+                "end": t.end,
+                "days_away": cost.days_away,
+                "leave_days": cost.leave_days,
+            }
+        )
+    return {"ledger": parsed.to_dict(), "drafted": drafted, "issues": _validate(parsed), "source": SOURCE}
+
+
+def summarise_plan(
+    ledger: dict, today: str | None = None, language: str = "EN", year: int | None = None
+) -> dict[str, Any]:
+    """The whole plan at a glance: family, leave, trips, windows, issues, deadlines.
+
+    `year` is the year being planned, for the children's ages (default: today's).
+    """
     parsed = Ledger.from_dict(ledger)
     as_of = date.fromisoformat(today) if today else date.today()
     profile = parsed.profile
     if profile is None:
-        return summary.summarise(parsed, set(), [], as_of)
+        return summary.summarise(parsed, set(), [], as_of, plan_year=year)
     region = oh.resolve_region(profile.country, profile.region)
     years = {a.year for a in profile.leave} | {
         y for t in parsed.trips for y in (t.start_date.year, t.end_date.year)
@@ -418,7 +465,7 @@ def summarise_plan(ledger: dict, today: str | None = None, language: str = "EN")
         profile.school_group,
         profile.home,
     )
-    return summary.summarise(parsed, full, windows, as_of, half)
+    return summary.summarise(parsed, full, windows, as_of, half, plan_year=year)
 
 
 def calendar(ledger: dict, include_deadlines: bool = True, language: str = "EN") -> str:

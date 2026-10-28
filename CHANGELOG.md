@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.6.0
+
+- **A drafted year.** `holiplan.service.draft_year(ledger, year)` drafts one trip per school
+  holiday as the year's leave allows, and returns the ledger with them added as ideas. Summer
+  comes first with two weeks, every other holiday gets a week, each where it costs the least
+  leave. Holidays that already have a plan, and Christmas (it crosses New Year), are left
+  alone, and the draft never goes over budget. The rules are in `holiplan.engine.draft`.
+- **What's still open.** The plan summary counts, per school holiday, the school days no plan
+  covers yet (`open_school_days`), and sums them per calendar year.
+- **Ages for the plan year.** `summarise_plan` takes an optional `year`; children get an `age`
+  for that year, so a 2027 plan made in 2026 shows the ages they'll be. `age_this_year` (as
+  of today) stays for older callers.
+
 ## 0.5.0
 
 - **School holidays by town.** Where OpenHolidays lists a region's school holidays per

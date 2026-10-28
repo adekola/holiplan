@@ -14,7 +14,7 @@ public and school holidays for a growing list of countries, with no API key.
 
 ## Status
 
-Pre-release (0.4). Stateless: your ledger is a JSON file you keep, and the server stores nothing.
+Pre-release (0.6). Stateless: your ledger is a JSON file you keep, and the server stores nothing.
 See [PRIVACY.md](https://github.com/adekola/holiplan/blob/main/PRIVACY.md) for exactly what goes where, and
 [docs/examples.md](https://github.com/adekola/holiplan/blob/main/docs/examples.md) for what a conversation looks like.
 
@@ -93,6 +93,9 @@ Prompts: *Set up my family profile*, *Plan my year*, *Plan this holiday window*,
   vocational schools in Mecklenburg-Vorpommern, primary and secondary in Zürich), the profile's
   `school_group` picks one; without it, the general schools'. `get_holiday_windows` lists the
   region's groups.
+- **A drafted year to start from.** `holiplan.service.draft_year` places one trip in each
+  school holiday, summer first with two weeks, where each costs the least leave, and never
+  over budget. Every drafted trip is an idea to keep, move or delete.
 - **Half-day holidays cost half a day.** Zürich's Sechseläuten afternoon is a half day off,
   not a full one.
 - **Regions accept ISO codes.** OpenHolidays uses its own codes where they differ (Vienna is

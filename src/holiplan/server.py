@@ -170,16 +170,20 @@ def list_deadlines(ledger: dict, today: str | None = None) -> list[dict]:
 
 
 @_tool
-def summarise_plan(ledger: dict, today: str | None = None, language: str = "EN") -> dict[str, Any]:
+def summarise_plan(
+    ledger: dict, today: str | None = None, language: str = "EN", year: int | None = None
+) -> dict[str, Any]:
     """The whole plan at a glance, for a brief to a partner or a quick recap.
 
     Returns the family, leave per year, every trip with its leave cost and
-    booking state, each school window with the plans in it, `open_windows`
-    still to decide, issues, and overdue and upcoming deadlines. Turn it into
-    prose; don't recalculate any figure in it.
-    School holiday names come in `language` ("EN", "DE", ...).
+    booking state, each school window with the plans in it and the school days
+    no plan covers yet (`open_school_days`, also summed per year),
+    `open_windows` still to decide, issues, and overdue and upcoming
+    deadlines. Turn it into prose; don't recalculate any figure in it.
+    School holiday names come in `language` ("EN", "DE", ...). Pass the
+    `year` being planned so children's ages are the ones they'll be then.
     """
-    return service.summarise_plan(ledger, today, language)
+    return service.summarise_plan(ledger, today, language, year)
 
 
 @_tool

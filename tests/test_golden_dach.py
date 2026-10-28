@@ -90,6 +90,30 @@ class ViennaTests(Recorded):
     def cost(self, start: str, end: str) -> float:
         return server.calculate_leave_cost(start, end, "AT", "AT-9", ledger=VIENNA)["leave_days"]
 
+    def test_a_drafted_year(self):
+        from holiplan import service
+
+        empty = {**VIENNA, "trips": []}
+        result = service.draft_year(empty, 2027)
+        self.assertEqual(
+            [(t["start"], t["end"], t["leave_days"]) for t in result["drafted"]],
+            [
+                # Semester holidays, Sat 30 Jan - Sun 7 Feb: Mon 1 - Fri 5 Feb.
+                ("2027-01-30", "2027-02-07", 5),
+                # Easter, Sat 20 - Sun 28 Mar: Good Friday is a workday in Austria, so 5.
+                ("2027-03-20", "2027-03-28", 5),
+                # Summer, two weeks from Sat 3 Jul: ten workdays.
+                ("2027-07-03", "2027-07-18", 10),
+                # Autumn, Tue 26 Oct - Mon 1 Nov, the whole holiday: National Day and All
+                # Saints' Day are free, 27-29 Oct is leave.
+                ("2027-10-26", "2027-11-01", 3),
+            ],
+        )
+        # Whitsun is a closure here, not a holiday to travel in; Christmas crosses New Year.
+        self.assertEqual(sum(t["leave_days"] for t in result["drafted"]), 23)
+        self.assertEqual(result["issues"], [])
+        self.assertEqual(len(result["ledger"]["trips"]), 4)
+
     def test_each_trip_costs_what_the_calendar_says(self):
         self.assertEqual(self.cost("2027-01-30", "2027-02-06"), 5)
         self.assertEqual(self.cost("2027-03-20", "2027-03-29"), 5)

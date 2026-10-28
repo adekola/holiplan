@@ -26,6 +26,7 @@ from holiplan.engine.checks import (  # noqa: E402
 )
 from holiplan.engine.ics import to_ics  # noqa: E402
 from holiplan.engine.leave import leave_cost, year_budget  # noqa: E402
+from holiplan.engine.draft import draft_year  # noqa: E402
 from holiplan.engine.models import DayPattern, Ledger  # noqa: E402
 from holiplan.engine.summary import summarise  # noqa: E402
 
@@ -684,7 +685,106 @@ class SummaryTests(unittest.TestCase):
         children = [{"alias": "older", "birth_year": 2019, "interests": ["horses"]}]
         ledger = {**LEDGER, "profile": {**LEDGER["profile"], "children": children}}
         family = self.summary(date(2027, 1, 15), ledger)["family"]
-        self.assertEqual(family["children"], [{"alias": "older", "age_this_year": 8, "interests": ["horses"]}])
+        self.assertEqual(
+            family["children"], [{"alias": "older", "age": 8, "age_this_year": 8, "interests": ["horses"]}]
+        )
+
+    def test_ages_are_for_the_plan_year(self):
+        # Planning 2027 in October 2026: a child born in 2019 turns 8 in the plan year.
+        children = [{"alias": "older", "birth_year": 2019}]
+        ledger = {**LEDGER, "profile": {**LEDGER["profile"], "children": children}}
+        windows = [
+            describe_window(w["name"], date.fromisoformat(w["start"]), date.fromisoformat(w["end"]), DE_BY_2027)
+            for w in self.WINDOWS
+        ]
+        family = summarise(Ledger.from_dict(ledger), DE_BY_2027, windows, date(2026, 10, 28), plan_year=2027)["family"]
+        self.assertEqual((family["plan_year"], family["children"][0]["age"]), (2027, 8))
+        self.assertEqual(family["children"][0]["age_this_year"], 7)
+
+    def test_open_school_days_count_what_no_plan_covers(self):
+        result = self.summary(date(2027, 1, 15))
+        open_days = {w["name"]: w["open_school_days"] for w in result["school_windows"]}
+        # Easter, 22 Mar - 2 Apr: eight school days (Good Friday, Easter Monday are holidays);
+        # the Lake Garda trip (20-29 Mar) covers 22-25 Mar, leaving 30 Mar - 2 Apr.
+        self.assertEqual(open_days["Easter Holidays"], 4)
+        # Spring holidays, 8-12 Feb: the Fasching week at home covers all five days.
+        self.assertEqual(open_days["Spring Holidays"], 0)
+        # Summer, 2 Aug - 13 Sep, nothing planned: 31 weekdays, none a public holiday on a
+        # weekday (15 Aug is a Sunday).
+        self.assertEqual(open_days["Summer"], 31)
+        self.assertEqual(result["open_school_days"]["2027"], sum(open_days.values()))
+
+
+# A family in Bavaria with 30 days of leave in 2027 and nothing planned yet.
+DRAFT_LEDGER = {"profile": {"country": "DE", "region": "DE-BY", "leave": [{"year": 2027, "allowance": 30}]}, "trips": []}
+DRAFT_WINDOWS = DE_BY_2027_WINDOWS + [
+    {"name": "Summer Holidays", "start": "2027-08-02", "end": "2027-09-13"},
+    {"name": "Christmas Holidays", "start": "2027-12-24", "end": "2028-01-07"},
+]
+
+
+class DraftYearTests(unittest.TestCase):
+    """Bavaria 2027, worked out by hand from the calendar."""
+
+    def draft(self, ledger: dict = DRAFT_LEDGER) -> list[tuple[str, str, str]]:
+        windows = [
+            describe_window(w["name"], date.fromisoformat(w["start"]), date.fromisoformat(w["end"]), NEW_YEAR_HOLIDAYS)
+            for w in DRAFT_WINDOWS
+        ]
+        trips = draft_year(Ledger.from_dict(ledger), 2027, windows, NEW_YEAR_HOLIDAYS)
+        return [(t.window, t.start, t.end) for t in trips]
+
+    def cost(self, trips: list[tuple[str, str, str]]) -> float:
+        return sum(leave_cost(date.fromisoformat(s), date.fromisoformat(e), NEW_YEAR_HOLIDAYS).leave_days for _, s, e in trips)
+
+    def test_one_trip_per_holiday_at_its_cheapest(self):
+        self.assertEqual(
+            self.draft(),
+            [
+                # Sat 6 - Sun 14 Feb: the whole holiday, 5 days of leave.
+                ("Spring Holidays", "2027-02-06", "2027-02-14"),
+                # Any 9 days of Easter cost at least 4 (only one of Good Friday and Easter
+                # Monday fits beside two weekends); the earliest is Sat 20 - Sun 28 Mar.
+                ("Easter Holidays", "2027-03-20", "2027-03-28"),
+                # Sat 15 - Sun 23 May takes in Whit Monday (17th): 4 days.
+                ("Pentecost Holidays", "2027-05-15", "2027-05-23"),
+                # Summer gets two weeks: Sat 31 Jul - Sun 15 Aug, 10 days (15 Aug is a Sunday).
+                ("Summer Holidays", "2027-07-31", "2027-08-15"),
+                # Christmas crosses New Year, so it stays open.
+            ],
+        )
+        self.assertEqual(self.cost(self.draft()), 23)
+
+    def test_summer_comes_first_and_the_draft_never_goes_over_budget(self):
+        tight = {**DRAFT_LEDGER, "profile": {**DRAFT_LEDGER["profile"], "leave": [{"year": 2027, "allowance": 18}]}}
+        # Summer takes 10, spring 5; Easter and Whitsun (4 each) no longer fit in the 3 left.
+        self.assertEqual([w for w, _, _ in self.draft(tight)], ["Spring Holidays", "Summer Holidays"])
+
+    def test_holidays_with_a_plan_are_left_alone(self):
+        easter = {"id": "garda", "label": "Lake Garda", "start": "2027-03-20", "end": "2027-03-29"}
+        windows = [w for w, _, _ in self.draft({**DRAFT_LEDGER, "trips": [easter]})]
+        self.assertNotIn("Easter Holidays", windows)
+        self.assertIn("Summer Holidays", windows)
+
+    def test_drafts_are_ideas_to_keep_or_change(self):
+        windows = [
+            describe_window(w["name"], date.fromisoformat(w["start"]), date.fromisoformat(w["end"]), NEW_YEAR_HOLIDAYS)
+            for w in DRAFT_WINDOWS
+        ]
+        trip = draft_year(Ledger.from_dict(DRAFT_LEDGER), 2027, windows, NEW_YEAR_HOLIDAYS)[0]
+        self.assertEqual((trip.id, trip.label, trip.intent, trip.status), ("draft-2027-02-06", "Spring Holidays", "trip", "idea"))
+
+    def test_only_the_summer_holidays_get_two_weeks(self):
+        # Without a summer holiday in the data, the longest one (Easter) still gets one week.
+        easter_only = [
+            describe_window("Easter Holidays", date(2027, 3, 22), date(2027, 4, 2), NEW_YEAR_HOLIDAYS)
+        ]
+        trips = draft_year(Ledger.from_dict(DRAFT_LEDGER), 2027, easter_only, NEW_YEAR_HOLIDAYS)
+        self.assertEqual([(t.start, t.end) for t in trips], [("2027-03-20", "2027-03-28")])
+
+    def test_nothing_to_draft_without_leave_for_the_year(self):
+        no_2027 = {**DRAFT_LEDGER, "profile": {**DRAFT_LEDGER["profile"], "leave": [{"year": 2028, "allowance": 30}]}}
+        self.assertEqual(self.draft(no_2027), [])
 
 
 class EffectiveWindowGuardTests(unittest.TestCase):

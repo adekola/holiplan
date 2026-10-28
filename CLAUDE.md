@@ -37,8 +37,8 @@ Two layers with a hard boundary:
 - **`src/holiplan/engine/`**: pure, offline, deterministic. `models.py` (dependency-free dataclasses,
   `migrate`, and a `_build` helper every `from_dict` goes through); `leave.py` (`leave_cost`,
   `year_budget`); `checks.py` (`validate_ledger`, `deadlines`, `effective_window`,
-  `describe_window`); `bridges.py` (`bridge_days`); `summary.py` (`summarise`); `ics.py` (RFC 5545
-  export). Public holidays are always **passed in**: a `set[str]` of full-day ISO dates, plus an
+  `describe_window`); `bridges.py` (`bridge_days`); `summary.py` (`summarise`); `draft.py` (`draft_year`: one trip per school
+  holiday, as leave allows, its rules in the module docstring); `ics.py` (RFC 5545 export). Public holidays are always **passed in**: a `set[str]` of full-day ISO dates, plus an
   optional `half_holidays` set. The engine never does I/O.
 - **`src/holiplan/holidays.py`**: the OpenHolidays client, with an in-process one-week cache. On a
   failed fetch it serves the expired cache entry if there is one, otherwise raises
