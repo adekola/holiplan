@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.1
+
+- **Plans across more than three years.** OpenHolidays refuses date ranges longer than 1095
+  days, so a plan with leave in 2026 and 2027 and a trip into 2028 (Christmas 2027/28) failed
+  with "HTTP 400". Longer ranges are now asked for in pieces it accepts, and a holiday across
+  the edge of two pieces comes back once.
+
 ## 0.6.0
 
 - **A drafted year.** `holiplan.service.draft_year(ledger, year)` drafts one trip per school

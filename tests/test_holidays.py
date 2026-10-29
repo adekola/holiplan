@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import sys
 import unittest
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -268,6 +269,35 @@ class FetchTests(unittest.TestCase):
         self.serve(lambda request: httpx.Response(400))
         with self.assertRaisesRegex(ValueError, "Check the country and region"):
             self.fetch()
+
+    def test_a_long_range_is_asked_for_in_pieces_openholidays_accepts(self):
+        # OpenHolidays refuses more than 1095 days; a plan from 2026 to 2028, padded by a month
+        # either side, asks for 38 months. Christmas 2026/27 crosses the edge between pieces.
+        christmas = {"id": "xmas", "startDate": "2026-12-23", "endDate": "2027-01-09"}
+        asked = []
+
+        def answer(request):
+            start, end = request.url.params["validFrom"], request.url.params["validTo"]
+            asked.append((start, end))
+            days = (date.fromisoformat(end) - date.fromisoformat(start)).days
+            if days > holidays.MAX_DAYS:
+                return httpx.Response(400, json={"detail": "The maximum date range is 1095 days."})
+            inside = [h for h in (christmas, {"id": "summer-28", "startDate": "2028-07-31", "endDate": "2028-09-11"})
+                      if h["startDate"] <= end and h["endDate"] >= start]
+            return httpx.Response(200, json=inside)
+
+        self.serve(answer)
+        found = holidays.school_holidays("DE", "2025-12-01", "2029-01-31", "DE-BB")
+        self.assertEqual([h["id"] for h in found], ["xmas", "summer-28"])
+        self.assertEqual(asked[0][0], "2025-12-01")
+        self.assertEqual(asked[-1][1], "2029-01-31")
+        self.assertTrue(all(b > a for (_, a), (b, _) in zip(asked, asked[1:])))  # no gaps, no overlaps
+
+    def test_a_short_range_is_one_request(self):
+        asked = []
+        self.serve(lambda request: asked.append(request) or httpx.Response(200, json=[]))
+        holidays.public_holidays("DE", "2026-12-01", "2029-11-30", "DE-BB")
+        self.assertEqual(len(asked), 1)
 
     def test_garbage_body_counts_as_an_outage(self):
         self.serve(lambda request: httpx.Response(200, text="<html>maintenance</html>"))

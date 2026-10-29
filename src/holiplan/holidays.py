@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import logging
 import time
+from datetime import date, timedelta
 from typing import Any
 
 import httpx
@@ -15,6 +16,7 @@ import httpx
 BASE = "https://openholidaysapi.org"
 _CACHE: dict[tuple, tuple[float, Any]] = {}
 _TTL = 60 * 60 * 24 * 7  # a week; holiday data changes rarely
+MAX_DAYS = 1095  # OpenHolidays refuses longer date ranges: "The maximum date range is 1095 days."
 
 log = logging.getLogger(__name__)
 
@@ -70,6 +72,37 @@ def _stale_or_raise(path: str, hit: tuple[float, Any] | None, exc: Exception) ->
     ) from exc
 
 
+def _spans(start: str, end: str) -> list[tuple[str, str]]:
+    """[start, end] cut into ranges OpenHolidays accepts, in order. A range it would refuse
+    for other reasons (end before start) stays whole, so the error is OpenHolidays' own."""
+    first, last = date.fromisoformat(start), date.fromisoformat(end)
+    if last - first <= timedelta(days=MAX_DAYS):
+        return [(start, end)]
+    spans = []
+    while first <= last:
+        stop = min(last, first + timedelta(days=MAX_DAYS))
+        spans.append((first.isoformat(), stop.isoformat()))
+        first = stop + timedelta(days=1)
+    return spans
+
+
+def _ranged(path: str, params: dict[str, str]) -> list[dict]:
+    """Every holiday from validFrom to validTo, asked for in pieces where the range is too long
+    for one request. A holiday across the edge of two pieces comes back in both: it's kept once."""
+    spans = _spans(params["validFrom"], params["validTo"])
+    if len(spans) == 1:
+        return _get(path, params)
+    seen: set = set()
+    found: list[dict] = []
+    for start, end in spans:
+        for item in _get(path, {**params, "validFrom": start, "validTo": end}):
+            key = item.get("id") or (item.get("startDate"), item.get("endDate"), repr(item.get("name")))
+            if key not in seen:
+                seen.add(key)
+                found.append(item)
+    return found
+
+
 def public_holidays(
     country: str, start: str, end: str, region: str | None = None, language: str = "EN"
 ) -> list[dict]:
@@ -81,7 +114,7 @@ def public_holidays(
     }
     if region:
         params["subdivisionCode"] = region
-    return _get("/PublicHolidays", params)
+    return _ranged("/PublicHolidays", params)
 
 
 def school_holidays(
@@ -95,7 +128,7 @@ def school_holidays(
     }
     if region:
         params["subdivisionCode"] = region
-    return _get("/SchoolHolidays", params)
+    return _ranged("/SchoolHolidays", params)
 
 
 def subdivisions(country: str) -> list[dict]:
