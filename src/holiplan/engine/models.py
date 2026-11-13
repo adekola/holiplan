@@ -119,6 +119,9 @@ class LeaveAccount:
     allowance: float
     carryover: float = 0.0
     carryover_expires: str | None = None  # ISO date
+    # Whose leave this is, as an alias ("A", "B"; never a real name), when each parent has an
+    # account of their own. None: the year has one account, the family's, as before.
+    parent: str | None = None
 
 
 @dataclass
@@ -154,11 +157,31 @@ class FamilyProfile:
                 _build(Child, c, f"Child {i + 1}") for i, c in enumerate(data.get("children") or [])
             ],
             day_pattern=_build(DayPattern, data.get("day_pattern") or {}, "The day pattern"),
-            leave=[
-                _build(LeaveAccount, a, f"Leave account {i + 1}", dates=("carryover_expires",))
-                for i, a in enumerate(data.get("leave") or [])
-            ],
+            leave=_accounts(data.get("leave") or []),
         )
+
+    def parents(self, year: int) -> list[str | None]:
+        """Whose leave accounts `year` has: each parent's alias, or [None] for one shared account."""
+        return [a.parent for a in self.leave if a.year == year]
+
+
+def _accounts(raw: list) -> list[LeaveAccount]:
+    """The leave accounts, checked: a year has one shared account or one per named parent."""
+    accounts = [
+        _build(LeaveAccount, a, f"Leave account {i + 1}", dates=("carryover_expires",))
+        for i, a in enumerate(raw)
+    ]
+    for year in sorted({a.year for a in accounts}):
+        whose = [a.parent for a in accounts if a.year == year]
+        if len(whose) > 1 and None in whose:
+            raise ValueError(
+                f"{year} has more than one leave account, so each needs a `parent` "
+                "(an alias like \"A\" or \"B\")."
+            )
+        if len(set(whose)) < len(whose):
+            twice = sorted({p for p in whose if whose.count(p) > 1})
+            raise ValueError(f"{year} has two leave accounts for {', '.join(twice)}.")
+    return accounts
 
 
 @dataclass
@@ -184,6 +207,16 @@ class Trip:
     bookings: list[Booking] = field(default_factory=list)
     notes: str | None = None
     takes_leave: bool | None = None  # None -> derive from intent
+    # Which parents take leave for it, by their accounts' `parent` alias, where each parent has
+    # an account: ["A"] when one of them covers a holiday alone. None: all of them (a trip
+    # together), or the one shared account.
+    leave_by: list[str] | None = None
+
+    def costs(self, parent: str | None) -> bool:
+        """Whether this entry spends `parent`'s leave (None: the shared account's)."""
+        if not self.consumes_leave:
+            return False
+        return parent is None or self.leave_by is None or parent in self.leave_by
 
     @property
     def consumes_leave(self) -> bool:

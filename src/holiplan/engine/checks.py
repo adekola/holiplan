@@ -167,8 +167,9 @@ class Issue:
 
     - bad_dates, overlap, outside_school_window: the trips are in `trip_ids`
     - no_leave_account: `years` without a leave account
-    - over_budget: `year`, `days` over
-    - carryover_at_risk: `year`, `days` at risk, the date they `expires`
+    - over_budget: `year`, `days` over, and `parent` when it's one parent's budget
+    - carryover_at_risk: `year`, `days` at risk, the date they `expires`, and `parent`
+    - unknown_parent: a trip's `leave_by` names `parents` with no leave account then
     """
 
     level: str  # "error" | "warning"
@@ -234,9 +235,27 @@ def validate_ledger(
                         {"years": missing},
                     )
                 )
+        for trip in trips:
+            if not trip.consumes_leave or trip.leave_by is None or trip.end_date < trip.start_date:
+                continue
+            years = range(trip.start_date.year, trip.end_date.year + 1)
+            known = {p for y in years for p in ledger.profile.parents(y) if p is not None}
+            unknown = sorted(set(trip.leave_by) - known)
+            if unknown:
+                issues.append(
+                    Issue(
+                        "warning",
+                        "unknown_parent",
+                        f"{trip.label} takes leave for {', '.join(unknown)}, who has no leave "
+                        "account then.",
+                        [trip.id],
+                        {"parents": unknown},
+                    )
+                )
         for account in ledger.profile.leave:
             budget = year_budget(
-                ledger, account.year, public_holidays, half_holidays=half_holidays
+                ledger, account.year, public_holidays, half_holidays=half_holidays,
+                parent=account.parent,
             )
             for notice, message in zip(budget.notices, budget.warnings):
                 issues.append(
