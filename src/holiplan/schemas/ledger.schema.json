@@ -64,7 +64,11 @@
               "year": { "type": "integer" },
               "allowance": { "type": "number" },
               "carryover": { "type": "number" },
-              "carryover_expires": { "type": ["string", "null"], "format": "date" }
+              "carryover_expires": { "type": ["string", "null"], "format": "date" },
+              "parent": {
+                "type": ["string", "null"],
+                "description": "Whose leave this is, as an alias (A, B; never a real name), when each parent has an account. Null: the year's one shared account"
+              }
             }
           }
         },
@@ -101,6 +105,12 @@
         "destination": { "type": ["string", "null"] },
         "window": { "type": ["string", "null"] },
         "takes_leave": { "type": ["boolean", "null"], "description": "Override; defaults from intent" },
+        "leave_by": {
+          "type": ["array", "null"],
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Which parents take leave for it, by their leave accounts' parent alias. Null: all of them (a trip together)"
+        },
         "notes": { "type": ["string", "null"] },
         "bookings": {
           "type": "array",

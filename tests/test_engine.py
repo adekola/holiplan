@@ -782,9 +782,92 @@ class DraftYearTests(unittest.TestCase):
         trips = draft_year(Ledger.from_dict(DRAFT_LEDGER), 2027, easter_only, NEW_YEAR_HOLIDAYS)
         self.assertEqual([(t.start, t.end) for t in trips], [("2027-03-20", "2027-03-28")])
 
+    def test_drafted_trips_fit_every_parents_leave(self):
+        # Trips are drafted together, so the parent with less leave sets the limit: 18 here,
+        # the same draft as one shared account of 18.
+        both = {**DRAFT_LEDGER, "profile": {**DRAFT_LEDGER["profile"], "leave": [
+            {"year": 2027, "allowance": 30, "parent": "A"}, {"year": 2027, "allowance": 18, "parent": "B"}]}}
+        self.assertEqual([w for w, _, _ in self.draft(both)], ["Spring Holidays", "Summer Holidays"])
+
     def test_nothing_to_draft_without_leave_for_the_year(self):
         no_2027 = {**DRAFT_LEDGER, "profile": {**DRAFT_LEDGER["profile"], "leave": [{"year": 2028, "allowance": 30}]}}
         self.assertEqual(self.draft(no_2027), [])
+
+
+def two_parents(trips: list[dict] | None = None, a: float = 30, b: float = 26) -> dict:
+    """LEDGER with a leave account per parent; Easter, Pentecost and the wedding as given."""
+    profile = {**LEDGER["profile"], "leave": [
+        {"year": 2027, "allowance": a, "parent": "A"},
+        {"year": 2027, "allowance": b, "parent": "B"},
+    ]}
+    return {**LEDGER, "profile": profile, "trips": LEDGER["trips"] if trips is None else trips}
+
+
+def with_leave_by(trip_id: str, parents: list[str]) -> list[dict]:
+    return [{**t, "leave_by": parents} if t["id"] == trip_id else t for t in LEDGER["trips"]]
+
+
+class ParentLeaveTests(unittest.TestCase):
+    """Each parent's leave, drawn down on its own."""
+
+    def budget(self, data: dict, parent: str):
+        return year_budget(Ledger.from_dict(data), 2027, DE_BY_2027, parent=parent)
+
+    def test_trips_together_spend_both_parents_leave(self):
+        # Easter 4, Pentecost 4, the wedding 1 (the home week costs nothing): 9 each.
+        a, b = self.budget(two_parents(), "A"), self.budget(two_parents(), "B")
+        self.assertEqual((a.planned, a.remaining, a.parent), (9, 21, "A"))
+        self.assertEqual((b.planned, b.remaining, b.parent), (9, 17, "B"))
+
+    def test_a_holiday_one_parent_covers_spends_only_theirs(self):
+        data = two_parents(with_leave_by("pentecost", ["B"]))
+        self.assertEqual(self.budget(data, "A").planned, 5)
+        self.assertEqual(self.budget(data, "B").planned, 9)
+
+    def test_each_parent_is_warned_on_their_own(self):
+        data = two_parents(with_leave_by("pentecost", ["B"]), a=30, b=8)
+        b = self.budget(data, "B")
+        self.assertEqual(b.notices, [{"level": "error", "code": "over_budget", "params": {"year": 2027, "days": 1, "parent": "B"}}])
+        self.assertEqual(b.warnings, ["B: Over budget by 1 days."])
+        self.assertEqual(self.budget(data, "A").notices, [])
+        issues = validate_ledger(Ledger.from_dict(data), DE_BY_2027)
+        self.assertEqual([(i["code"], i["params"].get("parent")) for i in issues if i["code"] == "over_budget"], [("over_budget", "B")])
+
+    def test_a_budget_needs_to_know_whose(self):
+        with self.assertRaisesRegex(ValueError, r"leave per parent \(A, B\); say whose"):
+            year_budget(Ledger.from_dict(two_parents()), 2027, DE_BY_2027)
+        with self.assertRaisesRegex(ValueError, "no leave account for 'C'"):
+            self.budget(two_parents(), "C")
+
+    def test_one_shared_account_works_as_before(self):
+        budget = year_budget(Ledger.from_dict(LEDGER), 2027, DE_BY_2027)
+        self.assertEqual((budget.planned, budget.parent), (9, None))
+        self.assertEqual(Ledger.from_dict(LEDGER).profile.parents(2027), [None])
+
+    def test_accounts_are_shared_or_one_per_parent(self):
+        mixed = {**LEDGER, "profile": {**LEDGER["profile"], "leave": [
+            {"year": 2027, "allowance": 30}, {"year": 2027, "allowance": 26, "parent": "B"}]}}
+        with self.assertRaisesRegex(ValueError, "each needs a `parent`"):
+            Ledger.from_dict(mixed)
+        twice = two_parents()
+        twice["profile"]["leave"][1]["parent"] = "A"
+        with self.assertRaisesRegex(ValueError, "two leave accounts for A"):
+            Ledger.from_dict(twice)
+
+    def test_a_trip_for_a_parent_without_an_account_is_flagged(self):
+        issues = validate_ledger(Ledger.from_dict(two_parents(with_leave_by("pentecost", ["C"]))), DE_BY_2027)
+        unknown = [i for i in issues if i["code"] == "unknown_parent"]
+        self.assertEqual([(i["trip_ids"], i["params"]) for i in unknown], [(["pentecost"], {"parents": ["C"]})])
+
+    def test_the_summary_has_a_budget_per_parent(self):
+        years = summarise(Ledger.from_dict(two_parents()), DE_BY_2027, [], date(2026, 11, 13))["years"]
+        self.assertEqual([(y["year"], y["parent"], y["remaining"]) for y in years], [(2027, "A", 21), (2027, "B", 17)])
+
+    def test_round_trip_keeps_who_takes_leave(self):
+        data = two_parents(with_leave_by("pentecost", ["B"]))
+        again = Ledger.from_dict(data).to_dict()
+        self.assertEqual(again["profile"]["leave"][1]["parent"], "B")
+        self.assertEqual(next(t for t in again["trips"] if t["id"] == "pentecost")["leave_by"], ["B"])
 
 
 class EffectiveWindowGuardTests(unittest.TestCase):

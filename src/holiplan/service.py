@@ -363,15 +363,17 @@ def bridge_days(
     }
 
 
-def year_budget(ledger: dict, year: int) -> dict[str, Any]:
-    """Leave planned versus available for a year, including carryover expiry."""
+def year_budget(ledger: dict, year: int, parent: str | None = None) -> dict[str, Any]:
+    """Leave planned versus available for a year, including carryover expiry.
+
+    Where each parent has a leave account, `parent` (their alias) says whose."""
     parsed = Ledger.from_dict(ledger)
     profile = parsed.profile
     if profile is None:
         raise ValueError("The ledger has no profile, so there is no leave allowance to check.")
     region = oh.resolve_region(profile.country, profile.region)
     full, half = holiday_sets(profile.country, region, f"{year}-01-01", f"{year}-12-31", profile)
-    return leave.year_budget(parsed, year, full, half_holidays=half).as_dict()
+    return leave.year_budget(parsed, year, full, half_holidays=half, parent=parent).as_dict()
 
 
 def upsert_trip(ledger: dict, trip: dict) -> dict[str, Any]:

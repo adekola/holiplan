@@ -85,10 +85,12 @@ def summarise(
 
     years = []
     if profile:
+        # One budget per account: per year, the shared one or each parent's.
         for account in sorted(profile.leave, key=lambda a: a.year):
             years.append(
                 year_budget(
-                    ledger, account.year, public_holidays, half_holidays=half_holidays
+                    ledger, account.year, public_holidays, half_holidays=half_holidays,
+                    parent=account.parent,
                 ).as_dict()
             )
 

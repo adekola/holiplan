@@ -110,8 +110,10 @@ class YearBudget:
     warnings: list[str]  # English sentences, one per notice
     # The same, structured: {"level", "code", "params"} for front ends that word
     # them themselves (in another language, say). Codes: over_budget (error;
-    # days), carryover_at_risk (warning; days, expires).
+    # days), carryover_at_risk (warning; days, expires); both carry `parent` when
+    # the budget is one parent's.
     notices: list[dict]
+    parent: str | None = None  # whose budget, where each parent has a leave account
 
     def as_dict(self) -> dict:
         return self.__dict__.copy()
@@ -123,19 +125,30 @@ def year_budget(
     public_holidays: set[str],
     profile: FamilyProfile | None = None,
     half_holidays: AbstractSet[str] = frozenset(),
+    parent: str | None = None,
 ) -> YearBudget:
     """Leave planned versus available for one year, including carryover expiry.
 
     Carryover is treated as spent first, but only by trips that finish on or
     before the expiry date -- that is what makes "use it before June" visible.
+
+    Where each parent has an account, `parent` picks whose budget: it counts the
+    trips that parent takes leave for (`Trip.leave_by`; all of them by default).
     """
     profile = profile or ledger.profile
     if profile is None:
         raise ValueError("ledger has no profile; pass one explicitly")
 
-    account = next((a for a in profile.leave if a.year == year), None)
-    if account is None:
+    whose = profile.parents(year)
+    if not whose:
         raise ValueError(f"no leave account for {year}")
+    if parent not in whose:
+        if parent is None:
+            raise ValueError(
+                f"{year} has leave per parent ({', '.join(whose)}); say whose budget."
+            )
+        raise ValueError(f"{year} has no leave account for {parent!r}.")
+    account = next(a for a in profile.leave if a.year == year and a.parent == parent)
 
     expiry = date.fromisoformat(account.carryover_expires) if account.carryover_expires else None
 
@@ -145,7 +158,7 @@ def year_budget(
 
     first_day, last_day = date(year, 1, 1), date(year, 12, 31)
     for trip in ledger.trips:
-        if trip.status == "cancelled" or not trip.consumes_leave:
+        if trip.status == "cancelled" or not trip.costs(parent):
             continue
         # A trip over New Year spends each year's leave only on that year's days.
         start, end = max(trip.start_date, first_day), min(trip.end_date, last_day)
@@ -163,21 +176,22 @@ def year_budget(
     remaining = round(account.allowance + account.carryover - planned, 2)
 
     notices: list[dict] = []
+    whom = {"parent": parent} if parent is not None else {}
     if remaining < 0:
-        warnings.append(f"Over budget by {_days(abs(remaining))} days.")
+        warnings.append(f"{_whose(parent)}Over budget by {_days(abs(remaining))} days.")
         notices.append(
-            {"level": "error", "code": "over_budget", "params": {"year": year, "days": abs(remaining)}}
+            {"level": "error", "code": "over_budget", "params": {"year": year, "days": abs(remaining), **whom}}
         )
     if at_risk > 0 and expiry:
         warnings.append(
-            f"{_days(at_risk)} carried-over day(s) expire on {expiry.isoformat()} "
+            f"{_whose(parent)}{_days(at_risk)} carried-over day(s) expire on {expiry.isoformat()} "
             "and no planned trip uses them."
         )
         notices.append(
             {
                 "level": "warning",
                 "code": "carryover_at_risk",
-                "params": {"year": year, "days": at_risk, "expires": expiry.isoformat()},
+                "params": {"year": year, "days": at_risk, "expires": expiry.isoformat(), **whom},
             }
         )
 
@@ -192,4 +206,26 @@ def year_budget(
         carryover_at_risk=at_risk,
         warnings=warnings,
         notices=notices,
+        parent=parent,
     )
+
+
+def year_budgets(
+    ledger: Ledger,
+    year: int,
+    public_holidays: set[str],
+    profile: FamilyProfile | None = None,
+    half_holidays: AbstractSet[str] = frozenset(),
+) -> list[YearBudget]:
+    """Every budget `year` has: the shared one, or one per parent in account order."""
+    profile = profile or ledger.profile
+    if profile is None:
+        raise ValueError("ledger has no profile; pass one explicitly")
+    return [
+        year_budget(ledger, year, public_holidays, profile, half_holidays, parent)
+        for parent in profile.parents(year)
+    ]
+
+
+def _whose(parent: str | None) -> str:
+    return f"{parent}: " if parent is not None else ""

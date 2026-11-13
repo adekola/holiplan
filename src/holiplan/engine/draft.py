@@ -13,6 +13,8 @@ predict them:
   public holidays and weekends -- and, of equal choices, the earliest.
 - A holiday that already has a plan is left alone, and a trip the remaining
   leave can't pay for is not drafted, so the draft never goes over budget.
+  Where each parent has a leave account, drafted trips are taken together, so
+  they must fit in every parent's remaining leave.
 """
 
 from __future__ import annotations
@@ -20,7 +22,7 @@ from __future__ import annotations
 from collections.abc import Set as AbstractSet
 from datetime import date, timedelta
 
-from .leave import leave_cost, year_budget
+from .leave import leave_cost, year_budgets
 from .models import Ledger, Trip
 
 WEEK_AWAY = 9  # Saturday to the Sunday after: five workdays
@@ -45,7 +47,7 @@ def draft_year(
     if profile is None or not any(a.year == year for a in profile.leave):
         return []
     pattern = profile.day_pattern
-    left = year_budget(ledger, year, set(public_holidays), half_holidays=half_holidays).remaining
+    left = min(b.remaining for b in year_budgets(ledger, year, set(public_holidays), half_holidays=half_holidays))
     active = [t for t in ledger.trips if t.status != "cancelled"]
 
     first, last = date(year, 1, 1), date(year, 12, 31)

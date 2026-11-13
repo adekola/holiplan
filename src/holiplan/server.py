@@ -132,12 +132,15 @@ def find_bridge_days(
 
 
 @_tool
-def get_year_budget(ledger: dict, year: int) -> dict[str, Any]:
+def get_year_budget(ledger: dict, year: int, parent: str | None = None) -> dict[str, Any]:
     """Leave planned versus available for a year, including carryover expiry.
 
-    Answers "can we afford all of this?" -- call it after every change.
+    Answers "can we afford all of this?" -- call it after every change. Where each
+    parent has a leave account (`parent` set on the profile's leave), ask once per
+    parent with their alias; a trip spends the leave of the parents in its
+    `leave_by`, or of every parent when it has none (a trip together).
     """
-    return service.year_budget(ledger, year)
+    return service.year_budget(ledger, year, parent)
 
 
 @_tool

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.7.0
+
+- **Each parent's leave.** A year can have a leave account per parent: give each a `parent`
+  alias ("A", "B"; never a real name). A trip spends the leave of the parents in its new
+  `leave_by` list, or of every parent when it has none (a trip together), so a holiday one
+  parent covers alone spends only theirs. Budgets are per parent: `year_budget` (and the
+  `get_year_budget` tool) take `parent`, the plan summary's `years` has one budget per account
+  with its `parent`, and `over_budget` / `carryover_at_risk` say whose. A trip naming a parent
+  with no account is flagged (`unknown_parent`). The draft takes trips together, so they fit in
+  every parent's remaining leave. A year keeps working with one shared account, as before; it
+  can't mix a shared account with named ones.
+
 ## 0.6.1
 
 - **Plans across more than three years.** OpenHolidays refuses date ranges longer than 1095
